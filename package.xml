@@ -1,22 +1,9 @@
-<package>
-
-  <name>kurtana_moveit_config</name>
-  <version>0.2.0</version>
-  <description>
+<?xml version='1.0' encoding='ASCII'?>
+<package><name>kurtana_moveit_config</name><version>0.2.0</version><description>
      An automatically generated package with all the configuration and launch files for using the Kurtana with the MoveIt Motion Planning Framework. The used robot arm is a Neuronics Katana 300 6m180 (5 DOF).
-  </description>
-  <author email="assistant@moveit.ros.org">MoveIt Setup Assistant</author>
-  <maintainer email="assistant@moveit.ros.org">MoveIt Setup Assistant</maintainer>
-
-  <license>BSD</license>
-
-  <url type="website">http://moveit.ros.org/</url>
-  <url type="bugtracker">https://github.com/ros-planning/moveit_setup_assistant/issues</url>
-  <url type="repository">https://github.com/ros-planning/moveit_setup_assistant</url>
-
-  <run_depend>moveit_ros_move_group</run_depend>
+  </description><author email="assistant@moveit.ros.org">MoveIt Setup Assistant</author><maintainer email="assistant@moveit.ros.org">MoveIt Setup Assistant</maintainer><license>BSD</license><url type="website">http://moveit.ros.org/</url><url type="bugtracker">https://github.com/ros-planning/moveit_setup_assistant/issues</url><url type="repository">https://github.com/ros-planning/moveit_setup_assistant</url><run_depend>moveit_ros_move_group</run_depend>
   ]
 
   <buildtool_depend>catkin</buildtool_depend>
   
-</package>
+<build_depend>moveit_core</build_depend><run_depend>moveit_core</run_depend><build_depend>pluginlib</build_depend><run_depend>pluginlib</run_depend><build_depend>roscpp</build_depend><run_depend>roscpp</run_depend><export><moveit_core plugin="${prefix}/kurtana_moveit_ikfast_plugin_description.xml"/></export></package>
