@@ -15,9 +15,9 @@
         <joint name="katana_motor3_lift_joint" />
         <joint name="katana_motor4_lift_joint" />
         <joint name="katana_motor5_wrist_roll_joint" />
+        <joint name="katana_gripper_joint" />
     </group>
     <group name="gripper">
-        <link name="katana_gripper_link" />
         <link name="katana_r_finger_link" />
         <link name="katana_l_finger_link" />
         <link name="katana_gripper_tool_frame" />
@@ -66,7 +66,7 @@
         <joint name="katana_motor5_wrist_roll_joint" value="0" />
     </group_state>
     <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
-    <end_effector name="gripper" parent_link="katana_motor5_wrist_roll_link" group="gripper" />
+    <end_effector name="gripper" parent_link="katana_gripper_link" group="gripper" />
     <!--DISABLE COLLISIONS: By default it is assumed that any link of the robot could potentially come into collision with any other link in the robot. This tag disables collision checking between a specified pair of links. -->
     <disable_collisions link1="base_link" link2="ir_back" reason="Adjacent" />
     <disable_collisions link1="base_link" link2="ir_left" reason="Adjacent" />
