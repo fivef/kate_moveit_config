@@ -68,19 +68,46 @@
     <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
     <end_effector name="gripper" parent_link="katana_gripper_link" group="gripper" />
     <!--DISABLE COLLISIONS: By default it is assumed that any link of the robot could potentially come into collision with any other link in the robot. This tag disables collision checking between a specified pair of links. -->
-    <disable_collisions link1="base_link" link2="ir_back" reason="Adjacent" />
-    <disable_collisions link1="base_link" link2="ir_left" reason="Adjacent" />
-    <disable_collisions link1="base_link" link2="ir_left_back" reason="Adjacent" />
-    <disable_collisions link1="base_link" link2="ir_left_front" reason="Adjacent" />
-    <disable_collisions link1="base_link" link2="ir_right" reason="Adjacent" />
-    <disable_collisions link1="base_link" link2="ir_right_back" reason="Adjacent" />
-    <disable_collisions link1="base_link" link2="ir_right_front" reason="Adjacent" />
+    <disable_collisions link1="back_sonar" link2="base_link" reason="Adjacent" />
+    <disable_collisions link1="back_sonar" link2="center_hubcap" reason="Never" />
+    <disable_collisions link1="back_sonar" link2="center_wheel" reason="Never" />
+    <disable_collisions link1="back_sonar" link2="front_sonar" reason="Never" />
+    <disable_collisions link1="back_sonar" link2="katana_base_link" reason="Never" />
+    <disable_collisions link1="back_sonar" link2="katana_baseplate_link" reason="Never" />
+    <disable_collisions link1="back_sonar" link2="katana_gripper_link" reason="Never" />
+    <disable_collisions link1="back_sonar" link2="katana_l_finger_link" reason="Never" />
+    <disable_collisions link1="back_sonar" link2="katana_motor1_pan_link" reason="Never" />
+    <disable_collisions link1="back_sonar" link2="katana_motor2_lift_link" reason="Never" />
+    <disable_collisions link1="back_sonar" link2="katana_motor3_lift_link" reason="Never" />
+    <disable_collisions link1="back_sonar" link2="katana_motor4_lift_link" reason="Never" />
+    <disable_collisions link1="back_sonar" link2="katana_motor5_wrist_roll_link" reason="Never" />
+    <disable_collisions link1="back_sonar" link2="katana_r_finger_link" reason="Never" />
+    <disable_collisions link1="back_sonar" link2="kinect_link" reason="Never" />
+    <disable_collisions link1="back_sonar" link2="kurtana_baseplate_link" reason="Never" />
+    <disable_collisions link1="back_sonar" link2="kurtana_horizontal_square_bar_link" reason="Never" />
+    <disable_collisions link1="back_sonar" link2="kurtana_kinect_mounting_plate_link" reason="Never" />
+    <disable_collisions link1="back_sonar" link2="kurtana_microphone_link" reason="Never" />
+    <disable_collisions link1="back_sonar" link2="kurtana_pitch_servo_link" reason="Never" />
+    <disable_collisions link1="back_sonar" link2="kurtana_pitch_servo_movable_part_link" reason="Never" />
+    <disable_collisions link1="back_sonar" link2="kurtana_pole_link" reason="Never" />
+    <disable_collisions link1="back_sonar" link2="kurtana_roll_servo_link" reason="Never" />
+    <disable_collisions link1="back_sonar" link2="kurtana_vertical_square_bar_link" reason="Never" />
+    <disable_collisions link1="back_sonar" link2="left_hub" reason="Never" />
+    <disable_collisions link1="back_sonar" link2="left_wheel_joint" reason="Never" />
+    <disable_collisions link1="back_sonar" link2="right_hub" reason="Never" />
+    <disable_collisions link1="back_sonar" link2="right_wheel_joint" reason="Never" />
+    <disable_collisions link1="back_sonar" link2="swivel" reason="Never" />
+    <disable_collisions link1="back_sonar" link2="top_plate" reason="Never" />
+    <disable_collisions link1="base_link" link2="center_hubcap" reason="Never" />
+    <disable_collisions link1="base_link" link2="front_sonar" reason="Adjacent" />
     <disable_collisions link1="base_link" link2="katana_base_link" reason="Never" />
     <disable_collisions link1="base_link" link2="katana_baseplate_link" reason="Never" />
+    <disable_collisions link1="base_link" link2="katana_gripper_link" reason="Never" />
     <disable_collisions link1="base_link" link2="katana_motor1_pan_link" reason="Never" />
     <disable_collisions link1="base_link" link2="katana_motor2_lift_link" reason="Never" />
     <disable_collisions link1="base_link" link2="katana_motor3_lift_link" reason="Never" />
     <disable_collisions link1="base_link" link2="katana_motor4_lift_link" reason="Never" />
+    <disable_collisions link1="base_link" link2="katana_motor5_wrist_roll_link" reason="Never" />
     <disable_collisions link1="base_link" link2="kinect_link" reason="Never" />
     <disable_collisions link1="base_link" link2="kurtana_baseplate_link" reason="Never" />
     <disable_collisions link1="base_link" link2="kurtana_horizontal_square_bar_link" reason="Never" />
@@ -89,233 +116,95 @@
     <disable_collisions link1="base_link" link2="kurtana_pitch_servo_link" reason="Never" />
     <disable_collisions link1="base_link" link2="kurtana_pitch_servo_movable_part_link" reason="Never" />
     <disable_collisions link1="base_link" link2="kurtana_pole_link" reason="Never" />
-    <disable_collisions link1="base_link" link2="kurtana_rackplate_link" reason="Adjacent" />
     <disable_collisions link1="base_link" link2="kurtana_roll_servo_link" reason="Never" />
     <disable_collisions link1="base_link" link2="kurtana_vertical_square_bar_link" reason="Never" />
-    <disable_collisions link1="base_link" link2="laser" reason="Never" />
-    <disable_collisions link1="base_link" link2="left_front_wheel_link" reason="Adjacent" />
-    <disable_collisions link1="base_link" link2="left_middle_wheel_link" reason="Adjacent" />
-    <disable_collisions link1="base_link" link2="left_rear_wheel_link" reason="Adjacent" />
-    <disable_collisions link1="base_link" link2="right_front_wheel_link" reason="Adjacent" />
-    <disable_collisions link1="base_link" link2="right_middle_wheel_link" reason="Adjacent" />
-    <disable_collisions link1="base_link" link2="right_rear_wheel_link" reason="Adjacent" />
-    <disable_collisions link1="base_link" link2="ultrasound_front" reason="Adjacent" />
-    <disable_collisions link1="ir_back" link2="ir_left" reason="Never" />
-    <disable_collisions link1="ir_back" link2="ir_left_back" reason="Never" />
-    <disable_collisions link1="ir_back" link2="ir_left_front" reason="Never" />
-    <disable_collisions link1="ir_back" link2="ir_right" reason="Never" />
-    <disable_collisions link1="ir_back" link2="ir_right_back" reason="Never" />
-    <disable_collisions link1="ir_back" link2="ir_right_front" reason="Never" />
-    <disable_collisions link1="ir_back" link2="katana_base_link" reason="Never" />
-    <disable_collisions link1="ir_back" link2="katana_baseplate_link" reason="Never" />
-    <disable_collisions link1="ir_back" link2="katana_gripper_link" reason="Never" />
-    <disable_collisions link1="ir_back" link2="katana_l_finger_link" reason="Never" />
-    <disable_collisions link1="ir_back" link2="katana_motor1_pan_link" reason="Never" />
-    <disable_collisions link1="ir_back" link2="katana_motor2_lift_link" reason="Never" />
-    <disable_collisions link1="ir_back" link2="katana_motor3_lift_link" reason="Never" />
-    <disable_collisions link1="ir_back" link2="katana_motor4_lift_link" reason="Never" />
-    <disable_collisions link1="ir_back" link2="katana_motor5_wrist_roll_link" reason="Never" />
-    <disable_collisions link1="ir_back" link2="katana_r_finger_link" reason="Never" />
-    <disable_collisions link1="ir_back" link2="kinect_link" reason="Never" />
-    <disable_collisions link1="ir_back" link2="kurtana_baseplate_link" reason="Never" />
-    <disable_collisions link1="ir_back" link2="kurtana_horizontal_square_bar_link" reason="Never" />
-    <disable_collisions link1="ir_back" link2="kurtana_kinect_mounting_plate_link" reason="Never" />
-    <disable_collisions link1="ir_back" link2="kurtana_microphone_link" reason="Never" />
-    <disable_collisions link1="ir_back" link2="kurtana_pitch_servo_link" reason="Never" />
-    <disable_collisions link1="ir_back" link2="kurtana_pitch_servo_movable_part_link" reason="Never" />
-    <disable_collisions link1="ir_back" link2="kurtana_pole_link" reason="Never" />
-    <disable_collisions link1="ir_back" link2="kurtana_rackplate_link" reason="Never" />
-    <disable_collisions link1="ir_back" link2="kurtana_roll_servo_link" reason="Never" />
-    <disable_collisions link1="ir_back" link2="kurtana_vertical_square_bar_link" reason="Never" />
-    <disable_collisions link1="ir_back" link2="laser" reason="Never" />
-    <disable_collisions link1="ir_back" link2="left_front_wheel_link" reason="Never" />
-    <disable_collisions link1="ir_back" link2="left_middle_wheel_link" reason="Never" />
-    <disable_collisions link1="ir_back" link2="left_rear_wheel_link" reason="Never" />
-    <disable_collisions link1="ir_back" link2="right_front_wheel_link" reason="Never" />
-    <disable_collisions link1="ir_back" link2="right_middle_wheel_link" reason="Never" />
-    <disable_collisions link1="ir_back" link2="right_rear_wheel_link" reason="Never" />
-    <disable_collisions link1="ir_back" link2="ultrasound_front" reason="Never" />
-    <disable_collisions link1="ir_left" link2="ir_left_back" reason="Never" />
-    <disable_collisions link1="ir_left" link2="ir_left_front" reason="Never" />
-    <disable_collisions link1="ir_left" link2="ir_right" reason="Never" />
-    <disable_collisions link1="ir_left" link2="ir_right_back" reason="Never" />
-    <disable_collisions link1="ir_left" link2="ir_right_front" reason="Never" />
-    <disable_collisions link1="ir_left" link2="katana_base_link" reason="Never" />
-    <disable_collisions link1="ir_left" link2="katana_baseplate_link" reason="Never" />
-    <disable_collisions link1="ir_left" link2="katana_gripper_link" reason="Never" />
-    <disable_collisions link1="ir_left" link2="katana_motor1_pan_link" reason="Never" />
-    <disable_collisions link1="ir_left" link2="katana_motor2_lift_link" reason="Never" />
-    <disable_collisions link1="ir_left" link2="katana_motor3_lift_link" reason="Never" />
-    <disable_collisions link1="ir_left" link2="katana_motor4_lift_link" reason="Never" />
-    <disable_collisions link1="ir_left" link2="katana_motor5_wrist_roll_link" reason="Never" />
-    <disable_collisions link1="ir_left" link2="katana_r_finger_link" reason="Never" />
-    <disable_collisions link1="ir_left" link2="kinect_link" reason="Never" />
-    <disable_collisions link1="ir_left" link2="kurtana_baseplate_link" reason="Never" />
-    <disable_collisions link1="ir_left" link2="kurtana_horizontal_square_bar_link" reason="Never" />
-    <disable_collisions link1="ir_left" link2="kurtana_kinect_mounting_plate_link" reason="Never" />
-    <disable_collisions link1="ir_left" link2="kurtana_microphone_link" reason="Never" />
-    <disable_collisions link1="ir_left" link2="kurtana_pitch_servo_link" reason="Never" />
-    <disable_collisions link1="ir_left" link2="kurtana_pitch_servo_movable_part_link" reason="Never" />
-    <disable_collisions link1="ir_left" link2="kurtana_pole_link" reason="Never" />
-    <disable_collisions link1="ir_left" link2="kurtana_rackplate_link" reason="Never" />
-    <disable_collisions link1="ir_left" link2="kurtana_roll_servo_link" reason="Never" />
-    <disable_collisions link1="ir_left" link2="kurtana_vertical_square_bar_link" reason="Never" />
-    <disable_collisions link1="ir_left" link2="laser" reason="Never" />
-    <disable_collisions link1="ir_left" link2="left_front_wheel_link" reason="Never" />
-    <disable_collisions link1="ir_left" link2="left_middle_wheel_link" reason="Never" />
-    <disable_collisions link1="ir_left" link2="left_rear_wheel_link" reason="Never" />
-    <disable_collisions link1="ir_left" link2="right_front_wheel_link" reason="Never" />
-    <disable_collisions link1="ir_left" link2="right_middle_wheel_link" reason="Never" />
-    <disable_collisions link1="ir_left" link2="right_rear_wheel_link" reason="Never" />
-    <disable_collisions link1="ir_left" link2="ultrasound_front" reason="Never" />
-    <disable_collisions link1="ir_left_back" link2="ir_left_front" reason="Never" />
-    <disable_collisions link1="ir_left_back" link2="ir_right" reason="Never" />
-    <disable_collisions link1="ir_left_back" link2="ir_right_back" reason="Never" />
-    <disable_collisions link1="ir_left_back" link2="ir_right_front" reason="Never" />
-    <disable_collisions link1="ir_left_back" link2="katana_base_link" reason="Never" />
-    <disable_collisions link1="ir_left_back" link2="katana_baseplate_link" reason="Never" />
-    <disable_collisions link1="ir_left_back" link2="katana_gripper_link" reason="Never" />
-    <disable_collisions link1="ir_left_back" link2="katana_motor1_pan_link" reason="Never" />
-    <disable_collisions link1="ir_left_back" link2="katana_motor2_lift_link" reason="Never" />
-    <disable_collisions link1="ir_left_back" link2="katana_motor3_lift_link" reason="Never" />
-    <disable_collisions link1="ir_left_back" link2="katana_motor4_lift_link" reason="Never" />
-    <disable_collisions link1="ir_left_back" link2="katana_motor5_wrist_roll_link" reason="Never" />
-    <disable_collisions link1="ir_left_back" link2="kinect_link" reason="Never" />
-    <disable_collisions link1="ir_left_back" link2="kurtana_baseplate_link" reason="Never" />
-    <disable_collisions link1="ir_left_back" link2="kurtana_horizontal_square_bar_link" reason="Never" />
-    <disable_collisions link1="ir_left_back" link2="kurtana_kinect_mounting_plate_link" reason="Never" />
-    <disable_collisions link1="ir_left_back" link2="kurtana_microphone_link" reason="Never" />
-    <disable_collisions link1="ir_left_back" link2="kurtana_pitch_servo_link" reason="Never" />
-    <disable_collisions link1="ir_left_back" link2="kurtana_pitch_servo_movable_part_link" reason="Never" />
-    <disable_collisions link1="ir_left_back" link2="kurtana_pole_link" reason="Never" />
-    <disable_collisions link1="ir_left_back" link2="kurtana_rackplate_link" reason="Never" />
-    <disable_collisions link1="ir_left_back" link2="kurtana_roll_servo_link" reason="Never" />
-    <disable_collisions link1="ir_left_back" link2="kurtana_vertical_square_bar_link" reason="Never" />
-    <disable_collisions link1="ir_left_back" link2="laser" reason="Never" />
-    <disable_collisions link1="ir_left_back" link2="left_front_wheel_link" reason="Never" />
-    <disable_collisions link1="ir_left_back" link2="left_middle_wheel_link" reason="Never" />
-    <disable_collisions link1="ir_left_back" link2="left_rear_wheel_link" reason="Never" />
-    <disable_collisions link1="ir_left_back" link2="right_front_wheel_link" reason="Never" />
-    <disable_collisions link1="ir_left_back" link2="right_middle_wheel_link" reason="Never" />
-    <disable_collisions link1="ir_left_back" link2="right_rear_wheel_link" reason="Never" />
-    <disable_collisions link1="ir_left_back" link2="ultrasound_front" reason="Never" />
-    <disable_collisions link1="ir_left_front" link2="ir_right" reason="Never" />
-    <disable_collisions link1="ir_left_front" link2="ir_right_back" reason="Never" />
-    <disable_collisions link1="ir_left_front" link2="ir_right_front" reason="Never" />
-    <disable_collisions link1="ir_left_front" link2="katana_base_link" reason="Never" />
-    <disable_collisions link1="ir_left_front" link2="katana_baseplate_link" reason="Never" />
-    <disable_collisions link1="ir_left_front" link2="katana_gripper_link" reason="Never" />
-    <disable_collisions link1="ir_left_front" link2="katana_motor1_pan_link" reason="Never" />
-    <disable_collisions link1="ir_left_front" link2="katana_motor2_lift_link" reason="Never" />
-    <disable_collisions link1="ir_left_front" link2="katana_motor3_lift_link" reason="Never" />
-    <disable_collisions link1="ir_left_front" link2="katana_motor4_lift_link" reason="Never" />
-    <disable_collisions link1="ir_left_front" link2="katana_motor5_wrist_roll_link" reason="Never" />
-    <disable_collisions link1="ir_left_front" link2="katana_r_finger_link" reason="Never" />
-    <disable_collisions link1="ir_left_front" link2="kinect_link" reason="Never" />
-    <disable_collisions link1="ir_left_front" link2="kurtana_baseplate_link" reason="Never" />
-    <disable_collisions link1="ir_left_front" link2="kurtana_horizontal_square_bar_link" reason="Never" />
-    <disable_collisions link1="ir_left_front" link2="kurtana_kinect_mounting_plate_link" reason="Never" />
-    <disable_collisions link1="ir_left_front" link2="kurtana_microphone_link" reason="Never" />
-    <disable_collisions link1="ir_left_front" link2="kurtana_pitch_servo_link" reason="Never" />
-    <disable_collisions link1="ir_left_front" link2="kurtana_pitch_servo_movable_part_link" reason="Never" />
-    <disable_collisions link1="ir_left_front" link2="kurtana_pole_link" reason="Never" />
-    <disable_collisions link1="ir_left_front" link2="kurtana_rackplate_link" reason="Never" />
-    <disable_collisions link1="ir_left_front" link2="kurtana_roll_servo_link" reason="Never" />
-    <disable_collisions link1="ir_left_front" link2="kurtana_vertical_square_bar_link" reason="Never" />
-    <disable_collisions link1="ir_left_front" link2="laser" reason="Never" />
-    <disable_collisions link1="ir_left_front" link2="left_front_wheel_link" reason="Never" />
-    <disable_collisions link1="ir_left_front" link2="left_middle_wheel_link" reason="Never" />
-    <disable_collisions link1="ir_left_front" link2="left_rear_wheel_link" reason="Never" />
-    <disable_collisions link1="ir_left_front" link2="right_front_wheel_link" reason="Never" />
-    <disable_collisions link1="ir_left_front" link2="right_middle_wheel_link" reason="Never" />
-    <disable_collisions link1="ir_left_front" link2="right_rear_wheel_link" reason="Never" />
-    <disable_collisions link1="ir_left_front" link2="ultrasound_front" reason="Never" />
-    <disable_collisions link1="ir_right" link2="ir_right_back" reason="Never" />
-    <disable_collisions link1="ir_right" link2="ir_right_front" reason="Never" />
-    <disable_collisions link1="ir_right" link2="katana_base_link" reason="Never" />
-    <disable_collisions link1="ir_right" link2="katana_baseplate_link" reason="Never" />
-    <disable_collisions link1="ir_right" link2="katana_motor1_pan_link" reason="Never" />
-    <disable_collisions link1="ir_right" link2="katana_motor2_lift_link" reason="Never" />
-    <disable_collisions link1="ir_right" link2="katana_motor3_lift_link" reason="Never" />
-    <disable_collisions link1="ir_right" link2="katana_motor4_lift_link" reason="Never" />
-    <disable_collisions link1="ir_right" link2="katana_motor5_wrist_roll_link" reason="Never" />
-    <disable_collisions link1="ir_right" link2="kinect_link" reason="Never" />
-    <disable_collisions link1="ir_right" link2="kurtana_baseplate_link" reason="Never" />
-    <disable_collisions link1="ir_right" link2="kurtana_horizontal_square_bar_link" reason="Never" />
-    <disable_collisions link1="ir_right" link2="kurtana_kinect_mounting_plate_link" reason="Never" />
-    <disable_collisions link1="ir_right" link2="kurtana_microphone_link" reason="Never" />
-    <disable_collisions link1="ir_right" link2="kurtana_pitch_servo_link" reason="Never" />
-    <disable_collisions link1="ir_right" link2="kurtana_pitch_servo_movable_part_link" reason="Never" />
-    <disable_collisions link1="ir_right" link2="kurtana_pole_link" reason="Never" />
-    <disable_collisions link1="ir_right" link2="kurtana_rackplate_link" reason="Never" />
-    <disable_collisions link1="ir_right" link2="kurtana_roll_servo_link" reason="Never" />
-    <disable_collisions link1="ir_right" link2="kurtana_vertical_square_bar_link" reason="Never" />
-    <disable_collisions link1="ir_right" link2="laser" reason="Never" />
-    <disable_collisions link1="ir_right" link2="left_front_wheel_link" reason="Never" />
-    <disable_collisions link1="ir_right" link2="left_middle_wheel_link" reason="Never" />
-    <disable_collisions link1="ir_right" link2="left_rear_wheel_link" reason="Never" />
-    <disable_collisions link1="ir_right" link2="right_front_wheel_link" reason="Never" />
-    <disable_collisions link1="ir_right" link2="right_middle_wheel_link" reason="Never" />
-    <disable_collisions link1="ir_right" link2="right_rear_wheel_link" reason="Never" />
-    <disable_collisions link1="ir_right" link2="ultrasound_front" reason="Never" />
-    <disable_collisions link1="ir_right_back" link2="ir_right_front" reason="Never" />
-    <disable_collisions link1="ir_right_back" link2="katana_base_link" reason="Never" />
-    <disable_collisions link1="ir_right_back" link2="katana_baseplate_link" reason="Never" />
-    <disable_collisions link1="ir_right_back" link2="katana_gripper_link" reason="Never" />
-    <disable_collisions link1="ir_right_back" link2="katana_l_finger_link" reason="Never" />
-    <disable_collisions link1="ir_right_back" link2="katana_motor1_pan_link" reason="Never" />
-    <disable_collisions link1="ir_right_back" link2="katana_motor2_lift_link" reason="Never" />
-    <disable_collisions link1="ir_right_back" link2="katana_motor3_lift_link" reason="Never" />
-    <disable_collisions link1="ir_right_back" link2="katana_motor4_lift_link" reason="Never" />
-    <disable_collisions link1="ir_right_back" link2="katana_motor5_wrist_roll_link" reason="Never" />
-    <disable_collisions link1="ir_right_back" link2="katana_r_finger_link" reason="Never" />
-    <disable_collisions link1="ir_right_back" link2="kinect_link" reason="Never" />
-    <disable_collisions link1="ir_right_back" link2="kurtana_baseplate_link" reason="Never" />
-    <disable_collisions link1="ir_right_back" link2="kurtana_horizontal_square_bar_link" reason="Never" />
-    <disable_collisions link1="ir_right_back" link2="kurtana_kinect_mounting_plate_link" reason="Never" />
-    <disable_collisions link1="ir_right_back" link2="kurtana_microphone_link" reason="Never" />
-    <disable_collisions link1="ir_right_back" link2="kurtana_pitch_servo_link" reason="Never" />
-    <disable_collisions link1="ir_right_back" link2="kurtana_pitch_servo_movable_part_link" reason="Never" />
-    <disable_collisions link1="ir_right_back" link2="kurtana_pole_link" reason="Never" />
-    <disable_collisions link1="ir_right_back" link2="kurtana_rackplate_link" reason="Never" />
-    <disable_collisions link1="ir_right_back" link2="kurtana_roll_servo_link" reason="Never" />
-    <disable_collisions link1="ir_right_back" link2="kurtana_vertical_square_bar_link" reason="Never" />
-    <disable_collisions link1="ir_right_back" link2="laser" reason="Never" />
-    <disable_collisions link1="ir_right_back" link2="left_front_wheel_link" reason="Never" />
-    <disable_collisions link1="ir_right_back" link2="left_middle_wheel_link" reason="Never" />
-    <disable_collisions link1="ir_right_back" link2="left_rear_wheel_link" reason="Never" />
-    <disable_collisions link1="ir_right_back" link2="right_front_wheel_link" reason="Never" />
-    <disable_collisions link1="ir_right_back" link2="right_middle_wheel_link" reason="Never" />
-    <disable_collisions link1="ir_right_back" link2="right_rear_wheel_link" reason="Never" />
-    <disable_collisions link1="ir_right_back" link2="ultrasound_front" reason="Never" />
-    <disable_collisions link1="ir_right_front" link2="katana_base_link" reason="Never" />
-    <disable_collisions link1="ir_right_front" link2="katana_baseplate_link" reason="Never" />
-    <disable_collisions link1="ir_right_front" link2="katana_gripper_link" reason="Never" />
-    <disable_collisions link1="ir_right_front" link2="katana_motor1_pan_link" reason="Never" />
-    <disable_collisions link1="ir_right_front" link2="katana_motor2_lift_link" reason="Never" />
-    <disable_collisions link1="ir_right_front" link2="katana_motor3_lift_link" reason="Never" />
-    <disable_collisions link1="ir_right_front" link2="katana_motor4_lift_link" reason="Never" />
-    <disable_collisions link1="ir_right_front" link2="katana_motor5_wrist_roll_link" reason="Never" />
-    <disable_collisions link1="ir_right_front" link2="katana_r_finger_link" reason="Never" />
-    <disable_collisions link1="ir_right_front" link2="kinect_link" reason="Never" />
-    <disable_collisions link1="ir_right_front" link2="kurtana_baseplate_link" reason="Never" />
-    <disable_collisions link1="ir_right_front" link2="kurtana_horizontal_square_bar_link" reason="Never" />
-    <disable_collisions link1="ir_right_front" link2="kurtana_kinect_mounting_plate_link" reason="Never" />
-    <disable_collisions link1="ir_right_front" link2="kurtana_microphone_link" reason="Never" />
-    <disable_collisions link1="ir_right_front" link2="kurtana_pitch_servo_link" reason="Never" />
-    <disable_collisions link1="ir_right_front" link2="kurtana_pitch_servo_movable_part_link" reason="Never" />
-    <disable_collisions link1="ir_right_front" link2="kurtana_pole_link" reason="Never" />
-    <disable_collisions link1="ir_right_front" link2="kurtana_rackplate_link" reason="Never" />
-    <disable_collisions link1="ir_right_front" link2="kurtana_roll_servo_link" reason="Never" />
-    <disable_collisions link1="ir_right_front" link2="kurtana_vertical_square_bar_link" reason="Never" />
-    <disable_collisions link1="ir_right_front" link2="laser" reason="Never" />
-    <disable_collisions link1="ir_right_front" link2="left_front_wheel_link" reason="Never" />
-    <disable_collisions link1="ir_right_front" link2="left_middle_wheel_link" reason="Never" />
-    <disable_collisions link1="ir_right_front" link2="left_rear_wheel_link" reason="Never" />
-    <disable_collisions link1="ir_right_front" link2="right_front_wheel_link" reason="Never" />
-    <disable_collisions link1="ir_right_front" link2="right_middle_wheel_link" reason="Never" />
-    <disable_collisions link1="ir_right_front" link2="right_rear_wheel_link" reason="Never" />
-    <disable_collisions link1="ir_right_front" link2="ultrasound_front" reason="Never" />
+    <disable_collisions link1="base_link" link2="left_hub" reason="Adjacent" />
+    <disable_collisions link1="base_link" link2="left_wheel_joint" reason="Never" />
+    <disable_collisions link1="base_link" link2="right_hub" reason="Adjacent" />
+    <disable_collisions link1="base_link" link2="right_wheel_joint" reason="Never" />
+    <disable_collisions link1="base_link" link2="swivel" reason="Adjacent" />
+    <disable_collisions link1="base_link" link2="top_plate" reason="Adjacent" />
+    <disable_collisions link1="center_hubcap" link2="center_wheel" reason="Adjacent" />
+    <disable_collisions link1="center_hubcap" link2="front_sonar" reason="Never" />
+    <disable_collisions link1="center_hubcap" link2="katana_base_link" reason="Never" />
+    <disable_collisions link1="center_hubcap" link2="katana_baseplate_link" reason="Never" />
+    <disable_collisions link1="center_hubcap" link2="katana_gripper_link" reason="Never" />
+    <disable_collisions link1="center_hubcap" link2="katana_l_finger_link" reason="Never" />
+    <disable_collisions link1="center_hubcap" link2="katana_motor1_pan_link" reason="Never" />
+    <disable_collisions link1="center_hubcap" link2="katana_motor2_lift_link" reason="Never" />
+    <disable_collisions link1="center_hubcap" link2="katana_motor3_lift_link" reason="Never" />
+    <disable_collisions link1="center_hubcap" link2="katana_motor4_lift_link" reason="Never" />
+    <disable_collisions link1="center_hubcap" link2="katana_motor5_wrist_roll_link" reason="Never" />
+    <disable_collisions link1="center_hubcap" link2="katana_r_finger_link" reason="Never" />
+    <disable_collisions link1="center_hubcap" link2="kinect_link" reason="Never" />
+    <disable_collisions link1="center_hubcap" link2="kurtana_baseplate_link" reason="Never" />
+    <disable_collisions link1="center_hubcap" link2="kurtana_horizontal_square_bar_link" reason="Never" />
+    <disable_collisions link1="center_hubcap" link2="kurtana_kinect_mounting_plate_link" reason="Never" />
+    <disable_collisions link1="center_hubcap" link2="kurtana_microphone_link" reason="Never" />
+    <disable_collisions link1="center_hubcap" link2="kurtana_pitch_servo_link" reason="Never" />
+    <disable_collisions link1="center_hubcap" link2="kurtana_pitch_servo_movable_part_link" reason="Never" />
+    <disable_collisions link1="center_hubcap" link2="kurtana_pole_link" reason="Never" />
+    <disable_collisions link1="center_hubcap" link2="kurtana_roll_servo_link" reason="Never" />
+    <disable_collisions link1="center_hubcap" link2="kurtana_vertical_square_bar_link" reason="Never" />
+    <disable_collisions link1="center_hubcap" link2="left_hub" reason="Never" />
+    <disable_collisions link1="center_hubcap" link2="left_wheel_joint" reason="Never" />
+    <disable_collisions link1="center_hubcap" link2="right_hub" reason="Never" />
+    <disable_collisions link1="center_hubcap" link2="right_wheel_joint" reason="Never" />
+    <disable_collisions link1="center_hubcap" link2="swivel" reason="Never" />
+    <disable_collisions link1="center_hubcap" link2="top_plate" reason="Never" />
+    <disable_collisions link1="center_wheel" link2="front_sonar" reason="Never" />
+    <disable_collisions link1="center_wheel" link2="katana_base_link" reason="Never" />
+    <disable_collisions link1="center_wheel" link2="katana_baseplate_link" reason="Never" />
+    <disable_collisions link1="center_wheel" link2="katana_gripper_link" reason="Never" />
+    <disable_collisions link1="center_wheel" link2="katana_l_finger_link" reason="Never" />
+    <disable_collisions link1="center_wheel" link2="katana_motor1_pan_link" reason="Never" />
+    <disable_collisions link1="center_wheel" link2="katana_motor2_lift_link" reason="Never" />
+    <disable_collisions link1="center_wheel" link2="katana_motor3_lift_link" reason="Never" />
+    <disable_collisions link1="center_wheel" link2="katana_motor4_lift_link" reason="Never" />
+    <disable_collisions link1="center_wheel" link2="katana_motor5_wrist_roll_link" reason="Never" />
+    <disable_collisions link1="center_wheel" link2="katana_r_finger_link" reason="Never" />
+    <disable_collisions link1="center_wheel" link2="kinect_link" reason="Never" />
+    <disable_collisions link1="center_wheel" link2="kurtana_baseplate_link" reason="Never" />
+    <disable_collisions link1="center_wheel" link2="kurtana_horizontal_square_bar_link" reason="Never" />
+    <disable_collisions link1="center_wheel" link2="kurtana_kinect_mounting_plate_link" reason="Never" />
+    <disable_collisions link1="center_wheel" link2="kurtana_microphone_link" reason="Never" />
+    <disable_collisions link1="center_wheel" link2="kurtana_pitch_servo_link" reason="Never" />
+    <disable_collisions link1="center_wheel" link2="kurtana_pitch_servo_movable_part_link" reason="Never" />
+    <disable_collisions link1="center_wheel" link2="kurtana_pole_link" reason="Never" />
+    <disable_collisions link1="center_wheel" link2="kurtana_roll_servo_link" reason="Never" />
+    <disable_collisions link1="center_wheel" link2="kurtana_vertical_square_bar_link" reason="Never" />
+    <disable_collisions link1="center_wheel" link2="left_hub" reason="Never" />
+    <disable_collisions link1="center_wheel" link2="left_wheel_joint" reason="Never" />
+    <disable_collisions link1="center_wheel" link2="right_hub" reason="Never" />
+    <disable_collisions link1="center_wheel" link2="right_wheel_joint" reason="Never" />
+    <disable_collisions link1="center_wheel" link2="swivel" reason="Adjacent" />
+    <disable_collisions link1="center_wheel" link2="top_plate" reason="Never" />
+    <disable_collisions link1="front_sonar" link2="katana_base_link" reason="Never" />
+    <disable_collisions link1="front_sonar" link2="katana_baseplate_link" reason="Never" />
+    <disable_collisions link1="front_sonar" link2="katana_gripper_link" reason="Never" />
+    <disable_collisions link1="front_sonar" link2="katana_l_finger_link" reason="Never" />
+    <disable_collisions link1="front_sonar" link2="katana_motor1_pan_link" reason="Never" />
+    <disable_collisions link1="front_sonar" link2="katana_motor2_lift_link" reason="Never" />
+    <disable_collisions link1="front_sonar" link2="katana_motor3_lift_link" reason="Never" />
+    <disable_collisions link1="front_sonar" link2="katana_motor4_lift_link" reason="Never" />
+    <disable_collisions link1="front_sonar" link2="katana_motor5_wrist_roll_link" reason="Never" />
+    <disable_collisions link1="front_sonar" link2="katana_r_finger_link" reason="Never" />
+    <disable_collisions link1="front_sonar" link2="kinect_link" reason="Never" />
+    <disable_collisions link1="front_sonar" link2="kurtana_baseplate_link" reason="Never" />
+    <disable_collisions link1="front_sonar" link2="kurtana_horizontal_square_bar_link" reason="Never" />
+    <disable_collisions link1="front_sonar" link2="kurtana_kinect_mounting_plate_link" reason="Never" />
+    <disable_collisions link1="front_sonar" link2="kurtana_microphone_link" reason="Never" />
+    <disable_collisions link1="front_sonar" link2="kurtana_pitch_servo_link" reason="Never" />
+    <disable_collisions link1="front_sonar" link2="kurtana_pitch_servo_movable_part_link" reason="Never" />
+    <disable_collisions link1="front_sonar" link2="kurtana_pole_link" reason="Never" />
+    <disable_collisions link1="front_sonar" link2="kurtana_roll_servo_link" reason="Never" />
+    <disable_collisions link1="front_sonar" link2="kurtana_vertical_square_bar_link" reason="Never" />
+    <disable_collisions link1="front_sonar" link2="left_hub" reason="Never" />
+    <disable_collisions link1="front_sonar" link2="left_wheel_joint" reason="Never" />
+    <disable_collisions link1="front_sonar" link2="right_hub" reason="Never" />
+    <disable_collisions link1="front_sonar" link2="right_wheel_joint" reason="Never" />
+    <disable_collisions link1="front_sonar" link2="swivel" reason="Never" />
+    <disable_collisions link1="front_sonar" link2="top_plate" reason="Never" />
     <disable_collisions link1="katana_base_link" link2="katana_baseplate_link" reason="Adjacent" />
     <disable_collisions link1="katana_base_link" link2="katana_motor1_pan_link" reason="Adjacent" />
     <disable_collisions link1="katana_base_link" link2="katana_motor2_lift_link" reason="Never" />
@@ -328,17 +217,14 @@
     <disable_collisions link1="katana_base_link" link2="kurtana_pitch_servo_link" reason="Never" />
     <disable_collisions link1="katana_base_link" link2="kurtana_pitch_servo_movable_part_link" reason="Never" />
     <disable_collisions link1="katana_base_link" link2="kurtana_pole_link" reason="Never" />
-    <disable_collisions link1="katana_base_link" link2="kurtana_rackplate_link" reason="Never" />
     <disable_collisions link1="katana_base_link" link2="kurtana_roll_servo_link" reason="Never" />
     <disable_collisions link1="katana_base_link" link2="kurtana_vertical_square_bar_link" reason="Never" />
-    <disable_collisions link1="katana_base_link" link2="laser" reason="Never" />
-    <disable_collisions link1="katana_base_link" link2="left_front_wheel_link" reason="Never" />
-    <disable_collisions link1="katana_base_link" link2="left_middle_wheel_link" reason="Never" />
-    <disable_collisions link1="katana_base_link" link2="left_rear_wheel_link" reason="Never" />
-    <disable_collisions link1="katana_base_link" link2="right_front_wheel_link" reason="Never" />
-    <disable_collisions link1="katana_base_link" link2="right_middle_wheel_link" reason="Never" />
-    <disable_collisions link1="katana_base_link" link2="right_rear_wheel_link" reason="Never" />
-    <disable_collisions link1="katana_base_link" link2="ultrasound_front" reason="Never" />
+    <disable_collisions link1="katana_base_link" link2="left_hub" reason="Never" />
+    <disable_collisions link1="katana_base_link" link2="left_wheel_joint" reason="Never" />
+    <disable_collisions link1="katana_base_link" link2="right_hub" reason="Never" />
+    <disable_collisions link1="katana_base_link" link2="right_wheel_joint" reason="Never" />
+    <disable_collisions link1="katana_base_link" link2="swivel" reason="Never" />
+    <disable_collisions link1="katana_base_link" link2="top_plate" reason="Never" />
     <disable_collisions link1="katana_baseplate_link" link2="katana_motor1_pan_link" reason="Never" />
     <disable_collisions link1="katana_baseplate_link" link2="katana_motor2_lift_link" reason="Never" />
     <disable_collisions link1="katana_baseplate_link" link2="katana_motor3_lift_link" reason="Never" />
@@ -350,17 +236,14 @@
     <disable_collisions link1="katana_baseplate_link" link2="kurtana_pitch_servo_link" reason="Never" />
     <disable_collisions link1="katana_baseplate_link" link2="kurtana_pitch_servo_movable_part_link" reason="Never" />
     <disable_collisions link1="katana_baseplate_link" link2="kurtana_pole_link" reason="Never" />
-    <disable_collisions link1="katana_baseplate_link" link2="kurtana_rackplate_link" reason="Never" />
     <disable_collisions link1="katana_baseplate_link" link2="kurtana_roll_servo_link" reason="Never" />
     <disable_collisions link1="katana_baseplate_link" link2="kurtana_vertical_square_bar_link" reason="Never" />
-    <disable_collisions link1="katana_baseplate_link" link2="laser" reason="Never" />
-    <disable_collisions link1="katana_baseplate_link" link2="left_front_wheel_link" reason="Never" />
-    <disable_collisions link1="katana_baseplate_link" link2="left_middle_wheel_link" reason="Never" />
-    <disable_collisions link1="katana_baseplate_link" link2="left_rear_wheel_link" reason="Never" />
-    <disable_collisions link1="katana_baseplate_link" link2="right_front_wheel_link" reason="Never" />
-    <disable_collisions link1="katana_baseplate_link" link2="right_middle_wheel_link" reason="Never" />
-    <disable_collisions link1="katana_baseplate_link" link2="right_rear_wheel_link" reason="Never" />
-    <disable_collisions link1="katana_baseplate_link" link2="ultrasound_front" reason="Never" />
+    <disable_collisions link1="katana_baseplate_link" link2="left_hub" reason="Never" />
+    <disable_collisions link1="katana_baseplate_link" link2="left_wheel_joint" reason="Never" />
+    <disable_collisions link1="katana_baseplate_link" link2="right_hub" reason="Never" />
+    <disable_collisions link1="katana_baseplate_link" link2="right_wheel_joint" reason="Never" />
+    <disable_collisions link1="katana_baseplate_link" link2="swivel" reason="Never" />
+    <disable_collisions link1="katana_baseplate_link" link2="top_plate" reason="Never" />
     <disable_collisions link1="katana_gripper_link" link2="katana_l_finger_link" reason="Adjacent" />
     <disable_collisions link1="katana_gripper_link" link2="katana_motor3_lift_link" reason="Never" />
     <disable_collisions link1="katana_gripper_link" link2="katana_motor4_lift_link" reason="Never" />
@@ -368,15 +251,21 @@
     <disable_collisions link1="katana_gripper_link" link2="katana_r_finger_link" reason="Adjacent" />
     <disable_collisions link1="katana_gripper_link" link2="kurtana_kinect_mounting_plate_link" reason="Never" />
     <disable_collisions link1="katana_gripper_link" link2="kurtana_pitch_servo_movable_part_link" reason="Never" />
-    <disable_collisions link1="katana_gripper_link" link2="left_front_wheel_link" reason="Never" />
-    <disable_collisions link1="katana_gripper_link" link2="left_middle_wheel_link" reason="Never" />
-    <disable_collisions link1="katana_gripper_link" link2="right_front_wheel_link" reason="Never" />
-    <disable_collisions link1="katana_gripper_link" link2="right_middle_wheel_link" reason="Never" />
-    <disable_collisions link1="katana_gripper_link" link2="right_rear_wheel_link" reason="Never" />
+    <disable_collisions link1="katana_gripper_link" link2="left_hub" reason="Never" />
+    <disable_collisions link1="katana_gripper_link" link2="left_wheel_joint" reason="Never" />
+    <disable_collisions link1="katana_gripper_link" link2="right_hub" reason="Never" />
+    <disable_collisions link1="katana_gripper_link" link2="right_wheel_joint" reason="Never" />
+    <disable_collisions link1="katana_gripper_link" link2="swivel" reason="Never" />
+    <disable_collisions link1="katana_gripper_link" link2="top_plate" reason="Never" />
     <disable_collisions link1="katana_l_finger_link" link2="katana_motor3_lift_link" reason="Never" />
     <disable_collisions link1="katana_l_finger_link" link2="katana_motor4_lift_link" reason="Never" />
     <disable_collisions link1="katana_l_finger_link" link2="katana_motor5_wrist_roll_link" reason="Never" />
     <disable_collisions link1="katana_l_finger_link" link2="katana_r_finger_link" reason="Never" />
+    <disable_collisions link1="katana_l_finger_link" link2="left_hub" reason="Never" />
+    <disable_collisions link1="katana_l_finger_link" link2="left_wheel_joint" reason="Never" />
+    <disable_collisions link1="katana_l_finger_link" link2="right_hub" reason="Never" />
+    <disable_collisions link1="katana_l_finger_link" link2="right_wheel_joint" reason="Never" />
+    <disable_collisions link1="katana_l_finger_link" link2="swivel" reason="Never" />
     <disable_collisions link1="katana_motor1_pan_link" link2="katana_motor2_lift_link" reason="Adjacent" />
     <disable_collisions link1="katana_motor1_pan_link" link2="katana_motor3_lift_link" reason="Never" />
     <disable_collisions link1="katana_motor1_pan_link" link2="kinect_link" reason="Never" />
@@ -387,17 +276,14 @@
     <disable_collisions link1="katana_motor1_pan_link" link2="kurtana_pitch_servo_link" reason="Never" />
     <disable_collisions link1="katana_motor1_pan_link" link2="kurtana_pitch_servo_movable_part_link" reason="Never" />
     <disable_collisions link1="katana_motor1_pan_link" link2="kurtana_pole_link" reason="Never" />
-    <disable_collisions link1="katana_motor1_pan_link" link2="kurtana_rackplate_link" reason="Never" />
     <disable_collisions link1="katana_motor1_pan_link" link2="kurtana_roll_servo_link" reason="Never" />
     <disable_collisions link1="katana_motor1_pan_link" link2="kurtana_vertical_square_bar_link" reason="Never" />
-    <disable_collisions link1="katana_motor1_pan_link" link2="laser" reason="Never" />
-    <disable_collisions link1="katana_motor1_pan_link" link2="left_front_wheel_link" reason="Never" />
-    <disable_collisions link1="katana_motor1_pan_link" link2="left_middle_wheel_link" reason="Never" />
-    <disable_collisions link1="katana_motor1_pan_link" link2="left_rear_wheel_link" reason="Never" />
-    <disable_collisions link1="katana_motor1_pan_link" link2="right_front_wheel_link" reason="Never" />
-    <disable_collisions link1="katana_motor1_pan_link" link2="right_middle_wheel_link" reason="Never" />
-    <disable_collisions link1="katana_motor1_pan_link" link2="right_rear_wheel_link" reason="Never" />
-    <disable_collisions link1="katana_motor1_pan_link" link2="ultrasound_front" reason="Never" />
+    <disable_collisions link1="katana_motor1_pan_link" link2="left_hub" reason="Never" />
+    <disable_collisions link1="katana_motor1_pan_link" link2="left_wheel_joint" reason="Never" />
+    <disable_collisions link1="katana_motor1_pan_link" link2="right_hub" reason="Never" />
+    <disable_collisions link1="katana_motor1_pan_link" link2="right_wheel_joint" reason="Never" />
+    <disable_collisions link1="katana_motor1_pan_link" link2="swivel" reason="Never" />
+    <disable_collisions link1="katana_motor1_pan_link" link2="top_plate" reason="Never" />
     <disable_collisions link1="katana_motor2_lift_link" link2="katana_motor3_lift_link" reason="Adjacent" />
     <disable_collisions link1="katana_motor2_lift_link" link2="kinect_link" reason="Never" />
     <disable_collisions link1="katana_motor2_lift_link" link2="kurtana_baseplate_link" reason="Never" />
@@ -407,17 +293,14 @@
     <disable_collisions link1="katana_motor2_lift_link" link2="kurtana_pitch_servo_link" reason="Never" />
     <disable_collisions link1="katana_motor2_lift_link" link2="kurtana_pitch_servo_movable_part_link" reason="Never" />
     <disable_collisions link1="katana_motor2_lift_link" link2="kurtana_pole_link" reason="Never" />
-    <disable_collisions link1="katana_motor2_lift_link" link2="kurtana_rackplate_link" reason="Never" />
     <disable_collisions link1="katana_motor2_lift_link" link2="kurtana_roll_servo_link" reason="Never" />
     <disable_collisions link1="katana_motor2_lift_link" link2="kurtana_vertical_square_bar_link" reason="Never" />
-    <disable_collisions link1="katana_motor2_lift_link" link2="laser" reason="Never" />
-    <disable_collisions link1="katana_motor2_lift_link" link2="left_front_wheel_link" reason="Never" />
-    <disable_collisions link1="katana_motor2_lift_link" link2="left_middle_wheel_link" reason="Never" />
-    <disable_collisions link1="katana_motor2_lift_link" link2="left_rear_wheel_link" reason="Never" />
-    <disable_collisions link1="katana_motor2_lift_link" link2="right_front_wheel_link" reason="Never" />
-    <disable_collisions link1="katana_motor2_lift_link" link2="right_middle_wheel_link" reason="Never" />
-    <disable_collisions link1="katana_motor2_lift_link" link2="right_rear_wheel_link" reason="Never" />
-    <disable_collisions link1="katana_motor2_lift_link" link2="ultrasound_front" reason="Never" />
+    <disable_collisions link1="katana_motor2_lift_link" link2="left_hub" reason="Never" />
+    <disable_collisions link1="katana_motor2_lift_link" link2="left_wheel_joint" reason="Never" />
+    <disable_collisions link1="katana_motor2_lift_link" link2="right_hub" reason="Never" />
+    <disable_collisions link1="katana_motor2_lift_link" link2="right_wheel_joint" reason="Never" />
+    <disable_collisions link1="katana_motor2_lift_link" link2="swivel" reason="Never" />
+    <disable_collisions link1="katana_motor2_lift_link" link2="top_plate" reason="Never" />
     <disable_collisions link1="katana_motor3_lift_link" link2="katana_motor4_lift_link" reason="Adjacent" />
     <disable_collisions link1="katana_motor3_lift_link" link2="katana_motor5_wrist_roll_link" reason="Never" />
     <disable_collisions link1="katana_motor3_lift_link" link2="katana_r_finger_link" reason="Never" />
@@ -428,17 +311,14 @@
     <disable_collisions link1="katana_motor3_lift_link" link2="kurtana_microphone_link" reason="Never" />
     <disable_collisions link1="katana_motor3_lift_link" link2="kurtana_pitch_servo_link" reason="Never" />
     <disable_collisions link1="katana_motor3_lift_link" link2="kurtana_pitch_servo_movable_part_link" reason="Never" />
-    <disable_collisions link1="katana_motor3_lift_link" link2="kurtana_rackplate_link" reason="Never" />
     <disable_collisions link1="katana_motor3_lift_link" link2="kurtana_roll_servo_link" reason="Never" />
     <disable_collisions link1="katana_motor3_lift_link" link2="kurtana_vertical_square_bar_link" reason="Never" />
-    <disable_collisions link1="katana_motor3_lift_link" link2="laser" reason="Never" />
-    <disable_collisions link1="katana_motor3_lift_link" link2="left_front_wheel_link" reason="Never" />
-    <disable_collisions link1="katana_motor3_lift_link" link2="left_middle_wheel_link" reason="Never" />
-    <disable_collisions link1="katana_motor3_lift_link" link2="left_rear_wheel_link" reason="Never" />
-    <disable_collisions link1="katana_motor3_lift_link" link2="right_front_wheel_link" reason="Never" />
-    <disable_collisions link1="katana_motor3_lift_link" link2="right_middle_wheel_link" reason="Never" />
-    <disable_collisions link1="katana_motor3_lift_link" link2="right_rear_wheel_link" reason="Never" />
-    <disable_collisions link1="katana_motor3_lift_link" link2="ultrasound_front" reason="Never" />
+    <disable_collisions link1="katana_motor3_lift_link" link2="left_hub" reason="Never" />
+    <disable_collisions link1="katana_motor3_lift_link" link2="left_wheel_joint" reason="Never" />
+    <disable_collisions link1="katana_motor3_lift_link" link2="right_hub" reason="Never" />
+    <disable_collisions link1="katana_motor3_lift_link" link2="right_wheel_joint" reason="Never" />
+    <disable_collisions link1="katana_motor3_lift_link" link2="swivel" reason="Never" />
+    <disable_collisions link1="katana_motor3_lift_link" link2="top_plate" reason="Never" />
     <disable_collisions link1="katana_motor4_lift_link" link2="katana_motor5_wrist_roll_link" reason="Adjacent" />
     <disable_collisions link1="katana_motor4_lift_link" link2="katana_r_finger_link" reason="Never" />
     <disable_collisions link1="katana_motor4_lift_link" link2="kinect_link" reason="Never" />
@@ -447,30 +327,30 @@
     <disable_collisions link1="katana_motor4_lift_link" link2="kurtana_microphone_link" reason="Never" />
     <disable_collisions link1="katana_motor4_lift_link" link2="kurtana_pitch_servo_link" reason="Never" />
     <disable_collisions link1="katana_motor4_lift_link" link2="kurtana_pitch_servo_movable_part_link" reason="Never" />
-    <disable_collisions link1="katana_motor4_lift_link" link2="kurtana_rackplate_link" reason="Never" />
     <disable_collisions link1="katana_motor4_lift_link" link2="kurtana_roll_servo_link" reason="Never" />
     <disable_collisions link1="katana_motor4_lift_link" link2="kurtana_vertical_square_bar_link" reason="Never" />
-    <disable_collisions link1="katana_motor4_lift_link" link2="left_front_wheel_link" reason="Never" />
-    <disable_collisions link1="katana_motor4_lift_link" link2="left_middle_wheel_link" reason="Never" />
-    <disable_collisions link1="katana_motor4_lift_link" link2="left_rear_wheel_link" reason="Never" />
-    <disable_collisions link1="katana_motor4_lift_link" link2="right_front_wheel_link" reason="Never" />
-    <disable_collisions link1="katana_motor4_lift_link" link2="right_middle_wheel_link" reason="Never" />
-    <disable_collisions link1="katana_motor4_lift_link" link2="right_rear_wheel_link" reason="Never" />
-    <disable_collisions link1="katana_motor4_lift_link" link2="ultrasound_front" reason="Never" />
+    <disable_collisions link1="katana_motor4_lift_link" link2="left_hub" reason="Never" />
+    <disable_collisions link1="katana_motor4_lift_link" link2="left_wheel_joint" reason="Never" />
+    <disable_collisions link1="katana_motor4_lift_link" link2="right_hub" reason="Never" />
+    <disable_collisions link1="katana_motor4_lift_link" link2="right_wheel_joint" reason="Never" />
+    <disable_collisions link1="katana_motor4_lift_link" link2="swivel" reason="Never" />
+    <disable_collisions link1="katana_motor4_lift_link" link2="top_plate" reason="Never" />
     <disable_collisions link1="katana_motor5_wrist_roll_link" link2="katana_r_finger_link" reason="Never" />
     <disable_collisions link1="katana_motor5_wrist_roll_link" link2="kinect_link" reason="Never" />
     <disable_collisions link1="katana_motor5_wrist_roll_link" link2="kurtana_kinect_mounting_plate_link" reason="Never" />
     <disable_collisions link1="katana_motor5_wrist_roll_link" link2="kurtana_pitch_servo_link" reason="Never" />
     <disable_collisions link1="katana_motor5_wrist_roll_link" link2="kurtana_pitch_servo_movable_part_link" reason="Never" />
-    <disable_collisions link1="katana_motor5_wrist_roll_link" link2="left_front_wheel_link" reason="Never" />
-    <disable_collisions link1="katana_motor5_wrist_roll_link" link2="left_middle_wheel_link" reason="Never" />
-    <disable_collisions link1="katana_motor5_wrist_roll_link" link2="left_rear_wheel_link" reason="Never" />
-    <disable_collisions link1="katana_motor5_wrist_roll_link" link2="right_front_wheel_link" reason="Never" />
-    <disable_collisions link1="katana_motor5_wrist_roll_link" link2="right_middle_wheel_link" reason="Never" />
-    <disable_collisions link1="katana_motor5_wrist_roll_link" link2="right_rear_wheel_link" reason="Never" />
-    <disable_collisions link1="katana_motor5_wrist_roll_link" link2="ultrasound_front" reason="Never" />
-    <disable_collisions link1="katana_r_finger_link" link2="left_middle_wheel_link" reason="Never" />
-    <disable_collisions link1="katana_r_finger_link" link2="right_front_wheel_link" reason="Never" />
+    <disable_collisions link1="katana_motor5_wrist_roll_link" link2="left_hub" reason="Never" />
+    <disable_collisions link1="katana_motor5_wrist_roll_link" link2="left_wheel_joint" reason="Never" />
+    <disable_collisions link1="katana_motor5_wrist_roll_link" link2="right_hub" reason="Never" />
+    <disable_collisions link1="katana_motor5_wrist_roll_link" link2="right_wheel_joint" reason="Never" />
+    <disable_collisions link1="katana_motor5_wrist_roll_link" link2="swivel" reason="Never" />
+    <disable_collisions link1="katana_motor5_wrist_roll_link" link2="top_plate" reason="Never" />
+    <disable_collisions link1="katana_r_finger_link" link2="left_hub" reason="Never" />
+    <disable_collisions link1="katana_r_finger_link" link2="left_wheel_joint" reason="Never" />
+    <disable_collisions link1="katana_r_finger_link" link2="right_hub" reason="Never" />
+    <disable_collisions link1="katana_r_finger_link" link2="right_wheel_joint" reason="Never" />
+    <disable_collisions link1="katana_r_finger_link" link2="swivel" reason="Never" />
     <disable_collisions link1="kinect_link" link2="kurtana_baseplate_link" reason="Never" />
     <disable_collisions link1="kinect_link" link2="kurtana_horizontal_square_bar_link" reason="Never" />
     <disable_collisions link1="kinect_link" link2="kurtana_kinect_mounting_plate_link" reason="Adjacent" />
@@ -478,168 +358,117 @@
     <disable_collisions link1="kinect_link" link2="kurtana_pitch_servo_link" reason="Never" />
     <disable_collisions link1="kinect_link" link2="kurtana_pitch_servo_movable_part_link" reason="Never" />
     <disable_collisions link1="kinect_link" link2="kurtana_pole_link" reason="Never" />
-    <disable_collisions link1="kinect_link" link2="kurtana_rackplate_link" reason="Never" />
     <disable_collisions link1="kinect_link" link2="kurtana_roll_servo_link" reason="Never" />
     <disable_collisions link1="kinect_link" link2="kurtana_vertical_square_bar_link" reason="Never" />
-    <disable_collisions link1="kinect_link" link2="laser" reason="Never" />
-    <disable_collisions link1="kinect_link" link2="left_front_wheel_link" reason="Never" />
-    <disable_collisions link1="kinect_link" link2="left_middle_wheel_link" reason="Never" />
-    <disable_collisions link1="kinect_link" link2="left_rear_wheel_link" reason="Never" />
-    <disable_collisions link1="kinect_link" link2="right_front_wheel_link" reason="Never" />
-    <disable_collisions link1="kinect_link" link2="right_middle_wheel_link" reason="Never" />
-    <disable_collisions link1="kinect_link" link2="right_rear_wheel_link" reason="Never" />
-    <disable_collisions link1="kinect_link" link2="ultrasound_front" reason="Never" />
+    <disable_collisions link1="kinect_link" link2="left_hub" reason="Never" />
+    <disable_collisions link1="kinect_link" link2="left_wheel_joint" reason="Never" />
+    <disable_collisions link1="kinect_link" link2="right_hub" reason="Never" />
+    <disable_collisions link1="kinect_link" link2="right_wheel_joint" reason="Never" />
+    <disable_collisions link1="kinect_link" link2="swivel" reason="Never" />
+    <disable_collisions link1="kinect_link" link2="top_plate" reason="Never" />
     <disable_collisions link1="kurtana_baseplate_link" link2="kurtana_horizontal_square_bar_link" reason="Never" />
     <disable_collisions link1="kurtana_baseplate_link" link2="kurtana_kinect_mounting_plate_link" reason="Never" />
     <disable_collisions link1="kurtana_baseplate_link" link2="kurtana_microphone_link" reason="Never" />
     <disable_collisions link1="kurtana_baseplate_link" link2="kurtana_pitch_servo_link" reason="Never" />
     <disable_collisions link1="kurtana_baseplate_link" link2="kurtana_pitch_servo_movable_part_link" reason="Never" />
     <disable_collisions link1="kurtana_baseplate_link" link2="kurtana_pole_link" reason="Adjacent" />
-    <disable_collisions link1="kurtana_baseplate_link" link2="kurtana_rackplate_link" reason="Adjacent" />
     <disable_collisions link1="kurtana_baseplate_link" link2="kurtana_roll_servo_link" reason="Never" />
     <disable_collisions link1="kurtana_baseplate_link" link2="kurtana_vertical_square_bar_link" reason="Never" />
-    <disable_collisions link1="kurtana_baseplate_link" link2="laser" reason="Adjacent" />
-    <disable_collisions link1="kurtana_baseplate_link" link2="left_front_wheel_link" reason="Never" />
-    <disable_collisions link1="kurtana_baseplate_link" link2="left_middle_wheel_link" reason="Never" />
-    <disable_collisions link1="kurtana_baseplate_link" link2="left_rear_wheel_link" reason="Never" />
-    <disable_collisions link1="kurtana_baseplate_link" link2="right_front_wheel_link" reason="Never" />
-    <disable_collisions link1="kurtana_baseplate_link" link2="right_middle_wheel_link" reason="Never" />
-    <disable_collisions link1="kurtana_baseplate_link" link2="right_rear_wheel_link" reason="Never" />
-    <disable_collisions link1="kurtana_baseplate_link" link2="ultrasound_front" reason="Never" />
+    <disable_collisions link1="kurtana_baseplate_link" link2="left_hub" reason="Never" />
+    <disable_collisions link1="kurtana_baseplate_link" link2="left_wheel_joint" reason="Never" />
+    <disable_collisions link1="kurtana_baseplate_link" link2="right_hub" reason="Never" />
+    <disable_collisions link1="kurtana_baseplate_link" link2="right_wheel_joint" reason="Never" />
+    <disable_collisions link1="kurtana_baseplate_link" link2="swivel" reason="Never" />
+    <disable_collisions link1="kurtana_baseplate_link" link2="top_plate" reason="Adjacent" />
     <disable_collisions link1="kurtana_horizontal_square_bar_link" link2="kurtana_kinect_mounting_plate_link" reason="Never" />
     <disable_collisions link1="kurtana_horizontal_square_bar_link" link2="kurtana_microphone_link" reason="Never" />
     <disable_collisions link1="kurtana_horizontal_square_bar_link" link2="kurtana_pitch_servo_link" reason="Never" />
     <disable_collisions link1="kurtana_horizontal_square_bar_link" link2="kurtana_pitch_servo_movable_part_link" reason="Never" />
     <disable_collisions link1="kurtana_horizontal_square_bar_link" link2="kurtana_pole_link" reason="Adjacent" />
-    <disable_collisions link1="kurtana_horizontal_square_bar_link" link2="kurtana_rackplate_link" reason="Never" />
     <disable_collisions link1="kurtana_horizontal_square_bar_link" link2="kurtana_roll_servo_link" reason="Never" />
     <disable_collisions link1="kurtana_horizontal_square_bar_link" link2="kurtana_vertical_square_bar_link" reason="Adjacent" />
-    <disable_collisions link1="kurtana_horizontal_square_bar_link" link2="laser" reason="Never" />
-    <disable_collisions link1="kurtana_horizontal_square_bar_link" link2="left_front_wheel_link" reason="Never" />
-    <disable_collisions link1="kurtana_horizontal_square_bar_link" link2="left_middle_wheel_link" reason="Never" />
-    <disable_collisions link1="kurtana_horizontal_square_bar_link" link2="left_rear_wheel_link" reason="Never" />
-    <disable_collisions link1="kurtana_horizontal_square_bar_link" link2="right_front_wheel_link" reason="Never" />
-    <disable_collisions link1="kurtana_horizontal_square_bar_link" link2="right_middle_wheel_link" reason="Never" />
-    <disable_collisions link1="kurtana_horizontal_square_bar_link" link2="right_rear_wheel_link" reason="Never" />
-    <disable_collisions link1="kurtana_horizontal_square_bar_link" link2="ultrasound_front" reason="Never" />
+    <disable_collisions link1="kurtana_horizontal_square_bar_link" link2="left_hub" reason="Never" />
+    <disable_collisions link1="kurtana_horizontal_square_bar_link" link2="left_wheel_joint" reason="Never" />
+    <disable_collisions link1="kurtana_horizontal_square_bar_link" link2="right_hub" reason="Never" />
+    <disable_collisions link1="kurtana_horizontal_square_bar_link" link2="right_wheel_joint" reason="Never" />
+    <disable_collisions link1="kurtana_horizontal_square_bar_link" link2="swivel" reason="Never" />
+    <disable_collisions link1="kurtana_horizontal_square_bar_link" link2="top_plate" reason="Never" />
     <disable_collisions link1="kurtana_kinect_mounting_plate_link" link2="kurtana_microphone_link" reason="Never" />
     <disable_collisions link1="kurtana_kinect_mounting_plate_link" link2="kurtana_pitch_servo_link" reason="Never" />
     <disable_collisions link1="kurtana_kinect_mounting_plate_link" link2="kurtana_pitch_servo_movable_part_link" reason="Adjacent" />
     <disable_collisions link1="kurtana_kinect_mounting_plate_link" link2="kurtana_pole_link" reason="Never" />
-    <disable_collisions link1="kurtana_kinect_mounting_plate_link" link2="kurtana_rackplate_link" reason="Never" />
     <disable_collisions link1="kurtana_kinect_mounting_plate_link" link2="kurtana_roll_servo_link" reason="Never" />
     <disable_collisions link1="kurtana_kinect_mounting_plate_link" link2="kurtana_vertical_square_bar_link" reason="Never" />
-    <disable_collisions link1="kurtana_kinect_mounting_plate_link" link2="laser" reason="Never" />
-    <disable_collisions link1="kurtana_kinect_mounting_plate_link" link2="left_front_wheel_link" reason="Never" />
-    <disable_collisions link1="kurtana_kinect_mounting_plate_link" link2="left_middle_wheel_link" reason="Never" />
-    <disable_collisions link1="kurtana_kinect_mounting_plate_link" link2="left_rear_wheel_link" reason="Never" />
-    <disable_collisions link1="kurtana_kinect_mounting_plate_link" link2="right_front_wheel_link" reason="Never" />
-    <disable_collisions link1="kurtana_kinect_mounting_plate_link" link2="right_middle_wheel_link" reason="Never" />
-    <disable_collisions link1="kurtana_kinect_mounting_plate_link" link2="right_rear_wheel_link" reason="Never" />
-    <disable_collisions link1="kurtana_kinect_mounting_plate_link" link2="ultrasound_front" reason="Never" />
+    <disable_collisions link1="kurtana_kinect_mounting_plate_link" link2="left_hub" reason="Never" />
+    <disable_collisions link1="kurtana_kinect_mounting_plate_link" link2="left_wheel_joint" reason="Never" />
+    <disable_collisions link1="kurtana_kinect_mounting_plate_link" link2="right_hub" reason="Never" />
+    <disable_collisions link1="kurtana_kinect_mounting_plate_link" link2="right_wheel_joint" reason="Never" />
+    <disable_collisions link1="kurtana_kinect_mounting_plate_link" link2="swivel" reason="Never" />
+    <disable_collisions link1="kurtana_kinect_mounting_plate_link" link2="top_plate" reason="Never" />
     <disable_collisions link1="kurtana_microphone_link" link2="kurtana_pitch_servo_link" reason="Never" />
     <disable_collisions link1="kurtana_microphone_link" link2="kurtana_pitch_servo_movable_part_link" reason="Never" />
     <disable_collisions link1="kurtana_microphone_link" link2="kurtana_pole_link" reason="Adjacent" />
-    <disable_collisions link1="kurtana_microphone_link" link2="kurtana_rackplate_link" reason="Never" />
     <disable_collisions link1="kurtana_microphone_link" link2="kurtana_roll_servo_link" reason="Never" />
     <disable_collisions link1="kurtana_microphone_link" link2="kurtana_vertical_square_bar_link" reason="Never" />
-    <disable_collisions link1="kurtana_microphone_link" link2="laser" reason="Never" />
-    <disable_collisions link1="kurtana_microphone_link" link2="left_front_wheel_link" reason="Never" />
-    <disable_collisions link1="kurtana_microphone_link" link2="left_middle_wheel_link" reason="Never" />
-    <disable_collisions link1="kurtana_microphone_link" link2="left_rear_wheel_link" reason="Never" />
-    <disable_collisions link1="kurtana_microphone_link" link2="right_front_wheel_link" reason="Never" />
-    <disable_collisions link1="kurtana_microphone_link" link2="right_middle_wheel_link" reason="Never" />
-    <disable_collisions link1="kurtana_microphone_link" link2="right_rear_wheel_link" reason="Never" />
-    <disable_collisions link1="kurtana_microphone_link" link2="ultrasound_front" reason="Never" />
+    <disable_collisions link1="kurtana_microphone_link" link2="left_hub" reason="Never" />
+    <disable_collisions link1="kurtana_microphone_link" link2="left_wheel_joint" reason="Never" />
+    <disable_collisions link1="kurtana_microphone_link" link2="right_hub" reason="Never" />
+    <disable_collisions link1="kurtana_microphone_link" link2="right_wheel_joint" reason="Never" />
+    <disable_collisions link1="kurtana_microphone_link" link2="swivel" reason="Never" />
+    <disable_collisions link1="kurtana_microphone_link" link2="top_plate" reason="Never" />
     <disable_collisions link1="kurtana_pitch_servo_link" link2="kurtana_pitch_servo_movable_part_link" reason="Adjacent" />
     <disable_collisions link1="kurtana_pitch_servo_link" link2="kurtana_pole_link" reason="Never" />
-    <disable_collisions link1="kurtana_pitch_servo_link" link2="kurtana_rackplate_link" reason="Never" />
     <disable_collisions link1="kurtana_pitch_servo_link" link2="kurtana_roll_servo_link" reason="Adjacent" />
     <disable_collisions link1="kurtana_pitch_servo_link" link2="kurtana_vertical_square_bar_link" reason="Never" />
-    <disable_collisions link1="kurtana_pitch_servo_link" link2="laser" reason="Never" />
-    <disable_collisions link1="kurtana_pitch_servo_link" link2="left_front_wheel_link" reason="Never" />
-    <disable_collisions link1="kurtana_pitch_servo_link" link2="left_middle_wheel_link" reason="Never" />
-    <disable_collisions link1="kurtana_pitch_servo_link" link2="left_rear_wheel_link" reason="Never" />
-    <disable_collisions link1="kurtana_pitch_servo_link" link2="right_front_wheel_link" reason="Never" />
-    <disable_collisions link1="kurtana_pitch_servo_link" link2="right_middle_wheel_link" reason="Never" />
-    <disable_collisions link1="kurtana_pitch_servo_link" link2="right_rear_wheel_link" reason="Never" />
-    <disable_collisions link1="kurtana_pitch_servo_link" link2="ultrasound_front" reason="Never" />
+    <disable_collisions link1="kurtana_pitch_servo_link" link2="left_hub" reason="Never" />
+    <disable_collisions link1="kurtana_pitch_servo_link" link2="left_wheel_joint" reason="Never" />
+    <disable_collisions link1="kurtana_pitch_servo_link" link2="right_hub" reason="Never" />
+    <disable_collisions link1="kurtana_pitch_servo_link" link2="right_wheel_joint" reason="Never" />
+    <disable_collisions link1="kurtana_pitch_servo_link" link2="swivel" reason="Never" />
+    <disable_collisions link1="kurtana_pitch_servo_link" link2="top_plate" reason="Never" />
     <disable_collisions link1="kurtana_pitch_servo_movable_part_link" link2="kurtana_pole_link" reason="Never" />
-    <disable_collisions link1="kurtana_pitch_servo_movable_part_link" link2="kurtana_rackplate_link" reason="Never" />
     <disable_collisions link1="kurtana_pitch_servo_movable_part_link" link2="kurtana_roll_servo_link" reason="Never" />
     <disable_collisions link1="kurtana_pitch_servo_movable_part_link" link2="kurtana_vertical_square_bar_link" reason="Never" />
-    <disable_collisions link1="kurtana_pitch_servo_movable_part_link" link2="laser" reason="Never" />
-    <disable_collisions link1="kurtana_pitch_servo_movable_part_link" link2="left_front_wheel_link" reason="Never" />
-    <disable_collisions link1="kurtana_pitch_servo_movable_part_link" link2="left_middle_wheel_link" reason="Never" />
-    <disable_collisions link1="kurtana_pitch_servo_movable_part_link" link2="left_rear_wheel_link" reason="Never" />
-    <disable_collisions link1="kurtana_pitch_servo_movable_part_link" link2="right_front_wheel_link" reason="Never" />
-    <disable_collisions link1="kurtana_pitch_servo_movable_part_link" link2="right_middle_wheel_link" reason="Never" />
-    <disable_collisions link1="kurtana_pitch_servo_movable_part_link" link2="right_rear_wheel_link" reason="Never" />
-    <disable_collisions link1="kurtana_pitch_servo_movable_part_link" link2="ultrasound_front" reason="Never" />
-    <disable_collisions link1="kurtana_pole_link" link2="kurtana_rackplate_link" reason="Never" />
+    <disable_collisions link1="kurtana_pitch_servo_movable_part_link" link2="left_hub" reason="Never" />
+    <disable_collisions link1="kurtana_pitch_servo_movable_part_link" link2="left_wheel_joint" reason="Never" />
+    <disable_collisions link1="kurtana_pitch_servo_movable_part_link" link2="right_hub" reason="Never" />
+    <disable_collisions link1="kurtana_pitch_servo_movable_part_link" link2="right_wheel_joint" reason="Never" />
+    <disable_collisions link1="kurtana_pitch_servo_movable_part_link" link2="swivel" reason="Never" />
+    <disable_collisions link1="kurtana_pitch_servo_movable_part_link" link2="top_plate" reason="Never" />
     <disable_collisions link1="kurtana_pole_link" link2="kurtana_roll_servo_link" reason="Never" />
     <disable_collisions link1="kurtana_pole_link" link2="kurtana_vertical_square_bar_link" reason="Never" />
-    <disable_collisions link1="kurtana_pole_link" link2="laser" reason="Never" />
-    <disable_collisions link1="kurtana_pole_link" link2="left_front_wheel_link" reason="Never" />
-    <disable_collisions link1="kurtana_pole_link" link2="left_middle_wheel_link" reason="Never" />
-    <disable_collisions link1="kurtana_pole_link" link2="left_rear_wheel_link" reason="Never" />
-    <disable_collisions link1="kurtana_pole_link" link2="right_front_wheel_link" reason="Never" />
-    <disable_collisions link1="kurtana_pole_link" link2="right_middle_wheel_link" reason="Never" />
-    <disable_collisions link1="kurtana_pole_link" link2="right_rear_wheel_link" reason="Never" />
-    <disable_collisions link1="kurtana_pole_link" link2="ultrasound_front" reason="Never" />
-    <disable_collisions link1="kurtana_rackplate_link" link2="kurtana_roll_servo_link" reason="Never" />
-    <disable_collisions link1="kurtana_rackplate_link" link2="kurtana_vertical_square_bar_link" reason="Never" />
-    <disable_collisions link1="kurtana_rackplate_link" link2="laser" reason="Never" />
-    <disable_collisions link1="kurtana_rackplate_link" link2="left_front_wheel_link" reason="Never" />
-    <disable_collisions link1="kurtana_rackplate_link" link2="left_middle_wheel_link" reason="Never" />
-    <disable_collisions link1="kurtana_rackplate_link" link2="left_rear_wheel_link" reason="Never" />
-    <disable_collisions link1="kurtana_rackplate_link" link2="right_front_wheel_link" reason="Never" />
-    <disable_collisions link1="kurtana_rackplate_link" link2="right_middle_wheel_link" reason="Never" />
-    <disable_collisions link1="kurtana_rackplate_link" link2="right_rear_wheel_link" reason="Never" />
-    <disable_collisions link1="kurtana_rackplate_link" link2="ultrasound_front" reason="Never" />
+    <disable_collisions link1="kurtana_pole_link" link2="left_hub" reason="Never" />
+    <disable_collisions link1="kurtana_pole_link" link2="left_wheel_joint" reason="Never" />
+    <disable_collisions link1="kurtana_pole_link" link2="right_hub" reason="Never" />
+    <disable_collisions link1="kurtana_pole_link" link2="right_wheel_joint" reason="Never" />
+    <disable_collisions link1="kurtana_pole_link" link2="swivel" reason="Never" />
+    <disable_collisions link1="kurtana_pole_link" link2="top_plate" reason="Never" />
     <disable_collisions link1="kurtana_roll_servo_link" link2="kurtana_vertical_square_bar_link" reason="Adjacent" />
-    <disable_collisions link1="kurtana_roll_servo_link" link2="laser" reason="Never" />
-    <disable_collisions link1="kurtana_roll_servo_link" link2="left_front_wheel_link" reason="Never" />
-    <disable_collisions link1="kurtana_roll_servo_link" link2="left_middle_wheel_link" reason="Never" />
-    <disable_collisions link1="kurtana_roll_servo_link" link2="left_rear_wheel_link" reason="Never" />
-    <disable_collisions link1="kurtana_roll_servo_link" link2="right_front_wheel_link" reason="Never" />
-    <disable_collisions link1="kurtana_roll_servo_link" link2="right_middle_wheel_link" reason="Never" />
-    <disable_collisions link1="kurtana_roll_servo_link" link2="right_rear_wheel_link" reason="Never" />
-    <disable_collisions link1="kurtana_roll_servo_link" link2="ultrasound_front" reason="Never" />
-    <disable_collisions link1="kurtana_vertical_square_bar_link" link2="laser" reason="Never" />
-    <disable_collisions link1="kurtana_vertical_square_bar_link" link2="left_front_wheel_link" reason="Never" />
-    <disable_collisions link1="kurtana_vertical_square_bar_link" link2="left_middle_wheel_link" reason="Never" />
-    <disable_collisions link1="kurtana_vertical_square_bar_link" link2="left_rear_wheel_link" reason="Never" />
-    <disable_collisions link1="kurtana_vertical_square_bar_link" link2="right_front_wheel_link" reason="Never" />
-    <disable_collisions link1="kurtana_vertical_square_bar_link" link2="right_middle_wheel_link" reason="Never" />
-    <disable_collisions link1="kurtana_vertical_square_bar_link" link2="right_rear_wheel_link" reason="Never" />
-    <disable_collisions link1="kurtana_vertical_square_bar_link" link2="ultrasound_front" reason="Never" />
-    <disable_collisions link1="laser" link2="left_front_wheel_link" reason="Never" />
-    <disable_collisions link1="laser" link2="left_middle_wheel_link" reason="Never" />
-    <disable_collisions link1="laser" link2="left_rear_wheel_link" reason="Never" />
-    <disable_collisions link1="laser" link2="right_front_wheel_link" reason="Never" />
-    <disable_collisions link1="laser" link2="right_middle_wheel_link" reason="Never" />
-    <disable_collisions link1="laser" link2="right_rear_wheel_link" reason="Never" />
-    <disable_collisions link1="laser" link2="ultrasound_front" reason="Never" />
-    <disable_collisions link1="left_front_wheel_link" link2="left_middle_wheel_link" reason="Never" />
-    <disable_collisions link1="left_front_wheel_link" link2="left_rear_wheel_link" reason="Never" />
-    <disable_collisions link1="left_front_wheel_link" link2="right_front_wheel_link" reason="Never" />
-    <disable_collisions link1="left_front_wheel_link" link2="right_middle_wheel_link" reason="Never" />
-    <disable_collisions link1="left_front_wheel_link" link2="right_rear_wheel_link" reason="Never" />
-    <disable_collisions link1="left_front_wheel_link" link2="ultrasound_front" reason="Never" />
-    <disable_collisions link1="left_middle_wheel_link" link2="left_rear_wheel_link" reason="Never" />
-    <disable_collisions link1="left_middle_wheel_link" link2="right_front_wheel_link" reason="Never" />
-    <disable_collisions link1="left_middle_wheel_link" link2="right_middle_wheel_link" reason="Never" />
-    <disable_collisions link1="left_middle_wheel_link" link2="right_rear_wheel_link" reason="Never" />
-    <disable_collisions link1="left_middle_wheel_link" link2="ultrasound_front" reason="Never" />
-    <disable_collisions link1="left_rear_wheel_link" link2="right_front_wheel_link" reason="Never" />
-    <disable_collisions link1="left_rear_wheel_link" link2="right_middle_wheel_link" reason="Never" />
-    <disable_collisions link1="left_rear_wheel_link" link2="right_rear_wheel_link" reason="Never" />
-    <disable_collisions link1="left_rear_wheel_link" link2="ultrasound_front" reason="Never" />
-    <disable_collisions link1="right_front_wheel_link" link2="right_middle_wheel_link" reason="Never" />
-    <disable_collisions link1="right_front_wheel_link" link2="right_rear_wheel_link" reason="Never" />
-    <disable_collisions link1="right_front_wheel_link" link2="ultrasound_front" reason="Never" />
-    <disable_collisions link1="right_middle_wheel_link" link2="right_rear_wheel_link" reason="Never" />
-    <disable_collisions link1="right_middle_wheel_link" link2="ultrasound_front" reason="Never" />
-    <disable_collisions link1="right_rear_wheel_link" link2="ultrasound_front" reason="Never" />
+    <disable_collisions link1="kurtana_roll_servo_link" link2="left_hub" reason="Never" />
+    <disable_collisions link1="kurtana_roll_servo_link" link2="left_wheel_joint" reason="Never" />
+    <disable_collisions link1="kurtana_roll_servo_link" link2="right_hub" reason="Never" />
+    <disable_collisions link1="kurtana_roll_servo_link" link2="right_wheel_joint" reason="Never" />
+    <disable_collisions link1="kurtana_roll_servo_link" link2="swivel" reason="Never" />
+    <disable_collisions link1="kurtana_roll_servo_link" link2="top_plate" reason="Never" />
+    <disable_collisions link1="kurtana_vertical_square_bar_link" link2="left_hub" reason="Never" />
+    <disable_collisions link1="kurtana_vertical_square_bar_link" link2="left_wheel_joint" reason="Never" />
+    <disable_collisions link1="kurtana_vertical_square_bar_link" link2="right_hub" reason="Never" />
+    <disable_collisions link1="kurtana_vertical_square_bar_link" link2="right_wheel_joint" reason="Never" />
+    <disable_collisions link1="kurtana_vertical_square_bar_link" link2="swivel" reason="Never" />
+    <disable_collisions link1="kurtana_vertical_square_bar_link" link2="top_plate" reason="Never" />
+    <disable_collisions link1="left_hub" link2="left_wheel_joint" reason="Adjacent" />
+    <disable_collisions link1="left_hub" link2="right_hub" reason="Never" />
+    <disable_collisions link1="left_hub" link2="right_wheel_joint" reason="Never" />
+    <disable_collisions link1="left_hub" link2="swivel" reason="Never" />
+    <disable_collisions link1="left_hub" link2="top_plate" reason="Never" />
+    <disable_collisions link1="left_wheel_joint" link2="right_hub" reason="Never" />
+    <disable_collisions link1="left_wheel_joint" link2="right_wheel_joint" reason="Never" />
+    <disable_collisions link1="left_wheel_joint" link2="swivel" reason="Never" />
+    <disable_collisions link1="left_wheel_joint" link2="top_plate" reason="Never" />
+    <disable_collisions link1="right_hub" link2="right_wheel_joint" reason="Adjacent" />
+    <disable_collisions link1="right_hub" link2="swivel" reason="Never" />
+    <disable_collisions link1="right_hub" link2="top_plate" reason="Never" />
+    <disable_collisions link1="right_wheel_joint" link2="swivel" reason="Never" />
+    <disable_collisions link1="right_wheel_joint" link2="top_plate" reason="Never" />
+    <disable_collisions link1="swivel" link2="top_plate" reason="Never" />
 </robot>
