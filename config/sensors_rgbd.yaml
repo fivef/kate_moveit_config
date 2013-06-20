@@ -13,15 +13,15 @@ sensors:
             - name: katana_base_link
             - name: katana_motor1_pan_link
             - name: katana_motor2_lift_link
-              padding: 0.06
+              padding: 0.07
             - name: katana_motor3_lift_link
-              padding: 0.06
+              padding: 0.07
             - name: katana_motor4_lift_link
-              padding: 0.06
+              padding: 0.07
             - name: katana_motor5_wrist_roll_link
-              padding: 0.04
+              padding: 0.07
             - name: katana_gripper_link
-              padding: 0.02
+              padding: 0.03
             - name: katana_l_finger_link
               padding: 0.02
             - name: katana_r_finger_link
@@ -29,4 +29,3 @@ sensors:
             - name: kurtana_baseplate_link
             - name: laser
             - name: kurtana_pole_link
-            - name: kurtana_innerpole_stretch_link
