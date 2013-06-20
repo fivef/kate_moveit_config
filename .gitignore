@@ -16,3 +16,4 @@ catkin_generated/
 catkin/
 devel/
 *~
+default_warehouse_mongo_db/
