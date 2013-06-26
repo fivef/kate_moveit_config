@@ -344,32 +344,32 @@
   <joint name="kurtana_pole_joint" type="fixed">
     <parent link="kurtana_baseplate_link"/>
     <child link="kurtana_pole_link"/>
-    <origin xyz="-0.23 0 0.335"/>
+    <origin xyz="-0.18 0 0.35"/>
   </joint>
   <link name="kurtana_pole_link">
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <box size="0.03 0.03 0.67"/>
+        <box size="0.03 0.03 0.7"/>
       </geometry>
       <material name="grey"/>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <box size="0.03 0.03 0.67"/>
+        <box size="0.03 0.03 0.7"/>
       </geometry>
     </collision>
     <inertial>
       <mass value="3.0"/>
       <origin xyz="0 0 0"/>
-      <inertia ixx="0.11244995502" ixy="0.0" ixz="0.0" iyy="0.11244995502" iyz="0.0" izz="0.00044999982"/>
+      <inertia ixx="0.12272495091" ixy="0.0" ixz="0.0" iyy="0.12272495091" iyz="0.0" izz="0.00044999982"/>
     </inertial>
   </link>
   <joint name="kurtana_microphone_joint" type="fixed">
     <parent link="kurtana_pole_link"/>
     <child link="kurtana_microphone_link"/>
-    <origin xyz="0.06 -0.055 0.37"/>
+    <origin xyz="0.06 -0.055 0.385"/>
   </joint>
   <link name="kurtana_microphone_link">
     <visual>
@@ -394,7 +394,7 @@
   <joint name="kurtana_horizontal_square_bar_joint" type="fixed">
     <parent link="kurtana_pole_link"/>
     <child link="kurtana_horizontal_square_bar_link"/>
-    <origin xyz="0.0715 0 0.32"/>
+    <origin xyz="0.0715 0 0.335"/>
   </joint>
   <link name="kurtana_horizontal_square_bar_link">
     <visual>
@@ -496,7 +496,7 @@
   <joint name="kurtana_pitch_joint" type="revolute">
     <parent link="kurtana_pitch_servo_link"/>
     <child link="kurtana_pitch_servo_movable_part_link"/>
-    <origin rpy="0 0 0" xyz="0 0 0.008"/>
+    <origin rpy="0 0.045 0" xyz="0 0 0.008"/>
     <axis xyz="0 1 0"/>
     <limit effort="1000.0" lower="0.8" upper="1.2" velocity="2.0"/>
   </joint>
@@ -1130,7 +1130,7 @@
   <joint name="top_base_joint" type="fixed">
     <parent link="top_plate"/>
     <child link="kurtana_baseplate_link"/>
-    <origin xyz="0 0.0 0.2435"/>
+    <origin xyz="0 0.0 0.2115"/>
   </joint>
 </robot>
 
