@@ -327,8 +327,22 @@ int IKFastKinematicsPlugin::solve(KDL::Frame &pose_frame, const std::vector<doub
   // IKFast56/61
   solutions.Clear();
 
+
   //KDL::Rotation rot = KDL::Rotation::RotY(M_PI/2);
+  //KDL::Rotation rot = KDL::Rotation::RotY(M_PI);
+  //KDL::Rotation rot = KDL::Rotation::RotX(M_PI/2); 
+  //KDL::Rotation rot = KDL::Rotation::RotZ(M_PI/2);
+
+  //KDL::Rotation rot = KDL::Rotation::RPY(-M_PI/2,0,M_PI/2); 
   KDL::Rotation orig = pose_frame.M;
+
+  double roll;
+  double pitch;
+  double yaw;
+
+  orig.GetRPY(roll,pitch,yaw);
+  ROS_INFO_STREAM("pose: " << roll << " " << pitch << " " << yaw);
+
   KDL::Rotation mult = orig;//*rot;
 
   double vals[9];
@@ -349,6 +363,8 @@ int IKFastKinematicsPlugin::solve(KDL::Frame &pose_frame, const std::vector<doub
 
   // IKFast56/61
   ComputeIk(trans, vals, vfree.size() > 0 ? &vfree[0] : NULL, solutions);
+
+  ROS_INFO_STREAM("found " << solutions.GetNumSolutions() << " solutions");
   return solutions.GetNumSolutions();
 }
 
@@ -786,7 +802,7 @@ bool IKFastKinematicsPlugin::getPositionIK(const geometry_msgs::Pose &ik_pose,
     {
       std::vector<double> sol;
       getSolution(solutions,s,sol);
-      ROS_DEBUG_NAMED("ikfast","Sol %d: %e   %e   %e   %e   %e   %e", s, sol[0], sol[1], sol[2], sol[3], sol[4], sol[5]);
+      ROS_INFO_NAMED("ikfast","Sol %d: %e   %e   %e   %e   %e   %e", s, sol[0], sol[1], sol[2], sol[3], sol[4], sol[5]);
 
       bool obeys_limits = true;
       for(unsigned int i = 0; i < sol.size(); i++)
