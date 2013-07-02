@@ -340,33 +340,22 @@ int IKFastKinematicsPlugin::solve(KDL::Frame &pose_frame, const std::vector<doub
   double pitch;
   double yaw;
 
-
-
   orig.GetRPY(roll,pitch,yaw);
   ROS_INFO_STREAM("pose: " << roll << " " << pitch << " " << yaw);
 
   KDL::Rotation mult = orig;//*rot;
 
-  //KDL::Vector direction = mult * KDL::Vector(0, 0, 1);
-  KDL::Vector direction = mult * KDL::Vector(1, 0, 0);
-
-  //KDL::Vector direction = mult * KDL::Vector(0, 0, -1);
-  //KDL::Vector direction = mult * KDL::Vector(-1, 0, 0); //seems to work
-  //KDL::Vector direction = mult * KDL::Vector(0, 1, 0);
-
-  ROS_INFO_STREAM("Direction: " << direction.x() << " " << direction.y() << " " << direction.z());
+  KDL::Vector direction = mult * KDL::Vector(0, 0, 1);
 
   double trans[3];
   trans[0] = pose_frame.p[0];//-.18;
   trans[1] = pose_frame.p[1];
   trans[2] = pose_frame.p[2];
 
-  ROS_INFO_STREAM("Position: " << trans[0] << " " << trans[1] << " " << trans[2]);
-
   // IKFast56/61
   ComputeIk(trans, direction.data, vfree.size() > 0 ? &vfree[0] : NULL, solutions);
 
-  //ROS_DEBUG_STREAM("found " << solutions.GetNumSolutions() << " solutions");
+  ROS_INFO_STREAM("found " << solutions.GetNumSolutions() << " solutions");
   return solutions.GetNumSolutions();
 }
 
@@ -504,14 +493,11 @@ bool IKFastKinematicsPlugin::getPositionFK(const std::vector<std::string> &link_
                                            const std::vector<double> &joint_angles,
                                            std::vector<geometry_msgs::Pose> &poses) const
 {
-  // This method assumes that ComputeFk returns a 3x3 rotation matrix in eerot
-  // (which it does for Transform6D), but for TranslationDirection 5D, a
-  // 3D direction vector (of the z axis) is returned.
-  ROS_ERROR("Cannot compute FK when using TranslationDirection5D!");
+    
+  //not working for 5dof
   return false;
 
-  /*
-
+/*
   KDL::Frame p_out;
   if(link_names.size() == 0) {
     ROS_WARN_STREAM_NAMED("ikfast","Link names with nothing");
@@ -545,6 +531,7 @@ bool IKFastKinematicsPlugin::getPositionFK(const std::vector<std::string> &link_
   return valid;
 */
 }
+
 bool IKFastKinematicsPlugin::searchPositionIK(const geometry_msgs::Pose &ik_pose,
                                            const std::vector<double> &ik_seed_state,
                                            double timeout,
@@ -812,7 +799,7 @@ bool IKFastKinematicsPlugin::getPositionIK(const geometry_msgs::Pose &ik_pose,
     {
       std::vector<double> sol;
       getSolution(solutions,s,sol);
-      ROS_DEBUG_NAMED("ikfast","Sol %d: %e   %e   %e   %e   %e   %e", s, sol[0], sol[1], sol[2], sol[3], sol[4], sol[5]);
+      ROS_INFO_NAMED("ikfast","Sol %d: %e   %e   %e   %e   %e   %e", s, sol[0], sol[1], sol[2], sol[3], sol[4], sol[5]);
 
       bool obeys_limits = true;
       for(unsigned int i = 0; i < sol.size(); i++)

@@ -4,8 +4,8 @@
 		<contributor>
 			<authoring_tool>URDF Collada Writer</authoring_tool>
 		</contributor>
-		<created>2013-06-26T13:15:02.000000</created>
-		<modified>2013-06-26T13:15:02.000000</modified>
+		<created>2013-07-01T12:57:32.000000</created>
+		<modified>2013-07-01T12:57:32.000000</modified>
 		<unit/>
 		<up_axis>Z_UP</up_axis>
 	</asset>
@@ -54,7 +54,7 @@
 							</bind_material>
 						</instance_geometry>
 					</node>
-					<node id="vkmodel0_node35" name="swivel" sid="node35">
+					<node id="vkmodel0_node34" name="swivel" sid="node34">
 						<translate>0.045 -0 -0.148</translate>
 						<rotate>1 0 0 0</rotate>
 						<translate>-0.185 0 0.055</translate>
@@ -102,7 +102,7 @@
 							</node>
 						</node>
 					</node>
-					<node id="vkmodel0_node36" name="top_plate" sid="node36">
+					<node id="vkmodel0_node35" name="top_plate" sid="node35">
 						<translate>0.045 -0 -0.148</translate>
 						<rotate>1 0 0 0</rotate>
 						<translate>-0.045 0 0.234</translate>
@@ -117,7 +117,7 @@
 								</technique_common>
 							</bind_material>
 						</instance_geometry>
-						<node id="vkmodel0_node22" name="kurtana_baseplate_link" sid="node22">
+						<node id="vkmodel0_node21" name="kurtana_baseplate_link" sid="node21">
 							<translate>-0 -0 -0</translate>
 							<rotate>1 0 0 0</rotate>
 							<translate>0 0 0.2115</translate>
@@ -132,7 +132,7 @@
 									</technique_common>
 								</bind_material>
 							</instance_geometry>
-							<node id="vkmodel0_node7" name="katana_baseplate_link" sid="node7">
+							<node id="vkmodel0_node6" name="katana_baseplate_link" sid="node6">
 								<translate>-0 -0 -0</translate>
 								<rotate>1 0 0 0</rotate>
 								<translate>0.05 0 0.008999999999999999</translate>
@@ -147,7 +147,7 @@
 										</technique_common>
 									</bind_material>
 								</instance_geometry>
-								<node id="vkmodel0_node6" name="katana_base_link" sid="node6">
+								<node id="vkmodel0_node5" name="katana_base_link" sid="node5">
 									<translate>-0 -0 -0</translate>
 									<rotate>1 0 0 0</rotate>
 									<translate>0 0 0</translate>
@@ -162,16 +162,7 @@
 											</technique_common>
 										</bind_material>
 									</instance_geometry>
-									<node id="vkmodel0_node5" name="katana_base_frame" sid="node5">
-										<translate>-0 -0 -0</translate>
-										<rotate>1 0 0 0</rotate>
-										<translate>0 0 0.2015</translate>
-										<rotate>1 0 0 0</rotate>
-										<rotate sid="node_katana_base_frame_joint_axis0">0 0 0 0</rotate>
-										<translate>0 0 0</translate>
-										<rotate>1 0 0 0</rotate>
-									</node>
-									<node id="vkmodel0_node11" name="katana_motor1_pan_link" sid="node11">
+									<node id="vkmodel0_node10" name="katana_motor1_pan_link" sid="node10">
 										<translate>-0 -0 -0</translate>
 										<rotate>1 0 0 0</rotate>
 										<translate>0 0 0.2015</translate>
@@ -186,7 +177,7 @@
 												</technique_common>
 											</bind_material>
 										</instance_geometry>
-										<node id="vkmodel0_node12" name="katana_motor2_lift_link" sid="node12">
+										<node id="vkmodel0_node11" name="katana_motor2_lift_link" sid="node11">
 											<translate>-0 -0 0.2015</translate>
 											<rotate>1 0 0 0</rotate>
 											<translate>0 0 0</translate>
@@ -201,7 +192,7 @@
 													</technique_common>
 												</bind_material>
 											</instance_geometry>
-											<node id="vkmodel0_node13" name="katana_motor3_lift_link" sid="node13">
+											<node id="vkmodel0_node12" name="katana_motor3_lift_link" sid="node12">
 												<translate>-0 -0 -0</translate>
 												<rotate>1 -0 -0 89.99999999971946</rotate>
 												<translate>0.19 0 0</translate>
@@ -216,7 +207,7 @@
 														</technique_common>
 													</bind_material>
 												</instance_geometry>
-												<node id="vkmodel0_node14" name="katana_motor4_lift_link" sid="node14">
+												<node id="vkmodel0_node13" name="katana_motor4_lift_link" sid="node13">
 													<translate>-0 -0 -0</translate>
 													<rotate>1 -0 -0 89.99999999971946</rotate>
 													<translate>0.139 0 0</translate>
@@ -231,7 +222,7 @@
 															</technique_common>
 														</bind_material>
 													</instance_geometry>
-													<node id="vkmodel0_node15" name="katana_motor5_wrist_roll_link" sid="node15">
+													<node id="vkmodel0_node14" name="katana_motor5_wrist_roll_link" sid="node14">
 														<translate>-0 -0 -0</translate>
 														<rotate>-1 -0 -0 89.99999999971946</rotate>
 														<translate>0.1523 0 0</translate>
@@ -246,7 +237,7 @@
 																</technique_common>
 															</bind_material>
 														</instance_geometry>
-														<node id="vkmodel0_node8" name="katana_gripper_link" sid="node8">
+														<node id="vkmodel0_node7" name="katana_gripper_link" sid="node7">
 															<translate>-0 -0 -0</translate>
 															<rotate>-0 1 -0 179.9999999999882</rotate>
 															<translate>0 0 -0.0323</translate>
@@ -261,7 +252,7 @@
 																	</technique_common>
 																</bind_material>
 															</instance_geometry>
-															<node id="vkmodel0_node10" name="katana_l_finger_link" sid="node10">
+															<node id="vkmodel0_node9" name="katana_l_finger_link" sid="node9">
 																<translate>-0 -0 -0</translate>
 																<rotate>-0 1 -0 179.9999999999882</rotate>
 																<translate>0.034 0 0</translate>
@@ -277,7 +268,7 @@
 																	</bind_material>
 																</instance_geometry>
 															</node>
-															<node id="vkmodel0_node16" name="katana_r_finger_link" sid="node16">
+															<node id="vkmodel0_node15" name="katana_r_finger_link" sid="node15">
 																<translate>-0 -0 -0</translate>
 																<rotate>-0 1 -0 179.9999999999882</rotate>
 																<translate>0.034 0 0</translate>
@@ -294,10 +285,10 @@
 																</instance_geometry>
 															</node>
 														</node>
-														<node id="vkmodel0_node9" name="katana_gripper_tool_frame" sid="node9">
+														<node id="vkmodel0_node8" name="katana_gripper_tool_frame" sid="node8">
 															<translate>-0 -0 -0</translate>
 															<rotate>-0 1 -0 179.9999999999882</rotate>
-															<translate>0 0 -0.1505</translate>
+															<translate>0 0 -0.11</translate>
 															<rotate>0 1 0 89.99999999971946</rotate>
 															<rotate sid="node_katana_gripper_tool_frame_joint_axis0">0 0 0 0</rotate>
 															<translate>0 0 0</translate>
@@ -310,7 +301,7 @@
 									</node>
 								</node>
 							</node>
-							<node id="vkmodel0_node28" name="kurtana_pole_link" sid="node28">
+							<node id="vkmodel0_node27" name="kurtana_pole_link" sid="node27">
 								<translate>-0 -0 -0</translate>
 								<rotate>1 0 0 0</rotate>
 								<translate>-0.18 0 0.35</translate>
@@ -325,7 +316,7 @@
 										</technique_common>
 									</bind_material>
 								</instance_geometry>
-								<node id="vkmodel0_node23" name="kurtana_horizontal_square_bar_link" sid="node23">
+								<node id="vkmodel0_node22" name="kurtana_horizontal_square_bar_link" sid="node22">
 									<translate>-0 -0 -0</translate>
 									<rotate>1 0 0 0</rotate>
 									<translate>0.07149999999999999 0 0.335</translate>
@@ -340,7 +331,7 @@
 											</technique_common>
 										</bind_material>
 									</instance_geometry>
-									<node id="vkmodel0_node30" name="kurtana_vertical_square_bar_link" sid="node30">
+									<node id="vkmodel0_node29" name="kurtana_vertical_square_bar_link" sid="node29">
 										<translate>-0 -0 -0</translate>
 										<rotate>1 0 0 0</rotate>
 										<translate>0.0415 0 0.05875</translate>
@@ -355,7 +346,7 @@
 												</technique_common>
 											</bind_material>
 										</instance_geometry>
-										<node id="vkmodel0_node29" name="kurtana_roll_servo_link" sid="node29">
+										<node id="vkmodel0_node28" name="kurtana_roll_servo_link" sid="node28">
 											<translate>-0 -0 -0</translate>
 											<rotate>1 0 0 0</rotate>
 											<translate>0.049 0 0.01875</translate>
@@ -370,7 +361,7 @@
 													</technique_common>
 												</bind_material>
 											</instance_geometry>
-											<node id="vkmodel0_node26" name="kurtana_pitch_servo_link" sid="node26">
+											<node id="vkmodel0_node25" name="kurtana_pitch_servo_link" sid="node25">
 												<translate>-0 -0 -0</translate>
 												<rotate>1 0 0 0</rotate>
 												<translate>0.008 0 0.059</translate>
@@ -385,7 +376,7 @@
 														</technique_common>
 													</bind_material>
 												</instance_geometry>
-												<node id="vkmodel0_node27" name="kurtana_pitch_servo_movable_part_link" sid="node27">
+												<node id="vkmodel0_node26" name="kurtana_pitch_servo_movable_part_link" sid="node26">
 													<translate>-0 -0 -0</translate>
 													<rotate>1 0 0 0</rotate>
 													<translate>0 0 0.008</translate>
@@ -400,7 +391,7 @@
 															</technique_common>
 														</bind_material>
 													</instance_geometry>
-													<node id="vkmodel0_node24" name="kurtana_kinect_mounting_plate_link" sid="node24">
+													<node id="vkmodel0_node23" name="kurtana_kinect_mounting_plate_link" sid="node23">
 														<translate>-0 -0 -0</translate>
 														<rotate>1 0 0 0</rotate>
 														<translate>0 0 0.021</translate>
@@ -415,7 +406,7 @@
 																</technique_common>
 															</bind_material>
 														</instance_geometry>
-														<node id="vkmodel0_node19" name="kinect_link" sid="node19">
+														<node id="vkmodel0_node18" name="kinect_link" sid="node18">
 															<translate>-0 -0 -0</translate>
 															<rotate>1 0 0 0</rotate>
 															<translate>0.03 0 0.018</translate>
@@ -430,7 +421,7 @@
 																	</technique_common>
 																</bind_material>
 															</instance_geometry>
-															<node id="vkmodel0_node17" name="kinect_depth_frame" sid="node17">
+															<node id="vkmodel0_node16" name="kinect_depth_frame" sid="node16">
 																<translate>-0 -0 -0</translate>
 																<rotate>1 0 0 0</rotate>
 																<translate>0 0.018 0</translate>
@@ -438,7 +429,7 @@
 																<rotate sid="node_kinect_depth_joint_axis0">0 0 0 0</rotate>
 																<translate>0 0 0</translate>
 																<rotate>1 0 0 0</rotate>
-																<node id="vkmodel0_node18" name="kinect_depth_optical_frame" sid="node18">
+																<node id="vkmodel0_node17" name="kinect_depth_optical_frame" sid="node17">
 																	<translate>-0 -0 -0</translate>
 																	<rotate>1 0 0 0</rotate>
 																	<translate>0 0 0</translate>
@@ -448,7 +439,7 @@
 																	<rotate>1 0 0 0</rotate>
 																</node>
 															</node>
-															<node id="vkmodel0_node20" name="kinect_rgb_frame" sid="node20">
+															<node id="vkmodel0_node19" name="kinect_rgb_frame" sid="node19">
 																<translate>-0 -0 -0</translate>
 																<rotate>1 0 0 0</rotate>
 																<translate>0 -0.005 0</translate>
@@ -456,7 +447,7 @@
 																<rotate sid="node_kinect_rgb_joint_axis0">0 0 0 0</rotate>
 																<translate>0 0 0</translate>
 																<rotate>1 0 0 0</rotate>
-																<node id="vkmodel0_node21" name="kinect_rgb_optical_frame" sid="node21">
+																<node id="vkmodel0_node20" name="kinect_rgb_optical_frame" sid="node20">
 																	<translate>-0 -0 -0</translate>
 																	<rotate>1 0 0 0</rotate>
 																	<translate>0 0 0</translate>
@@ -473,7 +464,7 @@
 										</node>
 									</node>
 								</node>
-								<node id="vkmodel0_node25" name="kurtana_microphone_link" sid="node25">
+								<node id="vkmodel0_node24" name="kurtana_microphone_link" sid="node24">
 									<translate>-0 -0 -0</translate>
 									<rotate>1 0 0 0</rotate>
 									<translate>0.06 -0.055 0.385</translate>
@@ -492,7 +483,7 @@
 							</node>
 						</node>
 					</node>
-					<node id="vkmodel0_node31" name="left_hub" sid="node31">
+					<node id="vkmodel0_node30" name="left_hub" sid="node30">
 						<translate>0.045 -0 -0.148</translate>
 						<rotate>1 0 0 0</rotate>
 						<translate>0 0.15 0.08</translate>
@@ -507,7 +498,7 @@
 								</technique_common>
 							</bind_material>
 						</instance_geometry>
-						<node id="vkmodel0_node32" name="left_wheel_joint" sid="node32">
+						<node id="vkmodel0_node31" name="left_wheel_joint" sid="node31">
 							<translate>-0 -0 -0</translate>
 							<rotate>1 0 0 0</rotate>
 							<translate>0 0 0</translate>
@@ -524,7 +515,7 @@
 							</instance_geometry>
 						</node>
 					</node>
-					<node id="vkmodel0_node33" name="right_hub" sid="node33">
+					<node id="vkmodel0_node32" name="right_hub" sid="node32">
 						<translate>0.045 -0 -0.148</translate>
 						<rotate>1 0 0 0</rotate>
 						<translate>0 -0.15 0.08</translate>
@@ -539,7 +530,7 @@
 								</technique_common>
 							</bind_material>
 						</instance_geometry>
-						<node id="vkmodel0_node34" name="right_wheel_joint" sid="node34">
+						<node id="vkmodel0_node33" name="right_wheel_joint" sid="node33">
 							<translate>-0 -0 -0</translate>
 							<rotate>1 0 0 0</rotate>
 							<translate>0 0 0</translate>
@@ -2315,15 +2306,6 @@
 						</limits>
 					</revolute>
 				</joint>
-				<joint name="katana_base_frame_joint" sid="katana_base_frame_joint">
-					<revolute sid="axis0">
-						<axis>0 0 0</axis>
-						<limits>
-							<min>0</min>
-							<max>0</max>
-						</limits>
-					</revolute>
-				</joint>
 				<joint name="katana_baseplate_joint" sid="katana_baseplate_joint">
 					<revolute sid="axis0">
 						<axis>0 0 0</axis>
@@ -2634,11 +2616,6 @@
 												<translate>0 0 0</translate>
 												<rotate>1 0 0 0</rotate>
 												<link sid="katana_base_link" name="katana_base_link">
-													<attachment_full joint="kmodel0/katana_base_frame_joint">
-														<translate>0 0 0.2015</translate>
-														<rotate>1 0 0 0</rotate>
-														<link sid="katana_base_frame" name="katana_base_frame"/>
-													</attachment_full>
 													<attachment_full joint="kmodel0/katana_motor1_pan_joint">
 														<translate>0 0 0.2015</translate>
 														<rotate>1 0 0 0</rotate>
@@ -2676,7 +2653,7 @@
 																								</link>
 																							</attachment_full>
 																							<attachment_full joint="kmodel0/katana_gripper_tool_frame_joint">
-																								<translate>0 0 -0.1505</translate>
+																								<translate>0 0 -0.11</translate>
 																								<rotate>0 1 0 89.99999999971946</rotate>
 																								<link sid="katana_gripper_tool_frame" name="katana_gripper_tool_frame"/>
 																							</attachment_full>
@@ -2835,12 +2812,6 @@
 					</newparam>
 					<newparam sid="robot0_motion_robot0_kinematics_kmodel0_inst_center_wheel_joint_axis0_value">
 						<SIDREF>robot0_kinematics/robot0_kinematics_kmodel0_inst_center_wheel_joint_axis0_value</SIDREF>
-					</newparam>
-					<newparam sid="robot0_motion_robot0_kinematics_kmodel0_inst_katana_base_frame_joint_axis0">
-						<SIDREF>robot0_kinematics/robot0_kinematics_kmodel0_inst_katana_base_frame_joint_axis0</SIDREF>
-					</newparam>
-					<newparam sid="robot0_motion_robot0_kinematics_kmodel0_inst_katana_base_frame_joint_axis0_value">
-						<SIDREF>robot0_kinematics/robot0_kinematics_kmodel0_inst_katana_base_frame_joint_axis0_value</SIDREF>
 					</newparam>
 					<newparam sid="robot0_motion_robot0_kinematics_kmodel0_inst_katana_baseplate_joint_axis0">
 						<SIDREF>robot0_kinematics/robot0_kinematics_kmodel0_inst_katana_baseplate_joint_axis0</SIDREF>
@@ -3039,8 +3010,7 @@
 					<axis_info axis="robot0_kinematics/axis_info_inst5"/>
 					<axis_info axis="robot0_kinematics/axis_info_inst6"/>
 					<axis_info axis="robot0_kinematics/axis_info_inst7"/>
-					<axis_info axis="robot0_kinematics/axis_info_inst8"/>
-					<axis_info axis="robot0_kinematics/axis_info_inst9">
+					<axis_info axis="robot0_kinematics/axis_info_inst8">
 						<speed>
 							<float>0.718834</float>
 						</speed>
@@ -3048,7 +3018,7 @@
 							<float>0.5</float>
 						</acceleration>
 					</axis_info>
-					<axis_info axis="robot0_kinematics/axis_info_inst10">
+					<axis_info axis="robot0_kinematics/axis_info_inst9">
 						<speed>
 							<float>2.208932</float>
 						</speed>
@@ -3056,7 +3026,7 @@
 							<float>1.5</float>
 						</acceleration>
 					</axis_info>
-					<axis_info axis="robot0_kinematics/axis_info_inst11">
+					<axis_info axis="robot0_kinematics/axis_info_inst10">
 						<speed>
 							<float>1.190799</float>
 						</speed>
@@ -3064,7 +3034,7 @@
 							<float>0.6</float>
 						</acceleration>
 					</axis_info>
-					<axis_info axis="robot0_kinematics/axis_info_inst12">
+					<axis_info axis="robot0_kinematics/axis_info_inst11">
 						<speed>
 							<float>1.190799</float>
 						</speed>
@@ -3072,7 +3042,7 @@
 							<float>0.25</float>
 						</acceleration>
 					</axis_info>
-					<axis_info axis="robot0_kinematics/axis_info_inst13">
+					<axis_info axis="robot0_kinematics/axis_info_inst12">
 						<speed>
 							<float>2.208932</float>
 						</speed>
@@ -3080,7 +3050,7 @@
 							<float>0.1</float>
 						</acceleration>
 					</axis_info>
-					<axis_info axis="robot0_kinematics/axis_info_inst14">
+					<axis_info axis="robot0_kinematics/axis_info_inst13">
 						<speed>
 							<float>2.208932</float>
 						</speed>
@@ -3088,7 +3058,7 @@
 							<float>0.01</float>
 						</acceleration>
 					</axis_info>
-					<axis_info axis="robot0_kinematics/axis_info_inst15">
+					<axis_info axis="robot0_kinematics/axis_info_inst14">
 						<speed>
 							<float>0.718834</float>
 						</speed>
@@ -3096,6 +3066,7 @@
 							<float>0.5</float>
 						</acceleration>
 					</axis_info>
+					<axis_info axis="robot0_kinematics/axis_info_inst15"/>
 					<axis_info axis="robot0_kinematics/axis_info_inst16"/>
 					<axis_info axis="robot0_kinematics/axis_info_inst17"/>
 					<axis_info axis="robot0_kinematics/axis_info_inst18"/>
@@ -3104,8 +3075,7 @@
 					<axis_info axis="robot0_kinematics/axis_info_inst21"/>
 					<axis_info axis="robot0_kinematics/axis_info_inst22"/>
 					<axis_info axis="robot0_kinematics/axis_info_inst23"/>
-					<axis_info axis="robot0_kinematics/axis_info_inst24"/>
-					<axis_info axis="robot0_kinematics/axis_info_inst25">
+					<axis_info axis="robot0_kinematics/axis_info_inst24">
 						<speed>
 							<float>2</float>
 						</speed>
@@ -3113,8 +3083,8 @@
 							<float>1000</float>
 						</acceleration>
 					</axis_info>
-					<axis_info axis="robot0_kinematics/axis_info_inst26"/>
-					<axis_info axis="robot0_kinematics/axis_info_inst27">
+					<axis_info axis="robot0_kinematics/axis_info_inst25"/>
+					<axis_info axis="robot0_kinematics/axis_info_inst26">
 						<speed>
 							<float>2</float>
 						</speed>
@@ -3122,13 +3092,13 @@
 							<float>1000</float>
 						</acceleration>
 					</axis_info>
+					<axis_info axis="robot0_kinematics/axis_info_inst27"/>
 					<axis_info axis="robot0_kinematics/axis_info_inst28"/>
 					<axis_info axis="robot0_kinematics/axis_info_inst29"/>
 					<axis_info axis="robot0_kinematics/axis_info_inst30"/>
 					<axis_info axis="robot0_kinematics/axis_info_inst31"/>
 					<axis_info axis="robot0_kinematics/axis_info_inst32"/>
-					<axis_info axis="robot0_kinematics/axis_info_inst33"/>
-					<axis_info axis="robot0_kinematics/axis_info_inst34">
+					<axis_info axis="robot0_kinematics/axis_info_inst33">
 						<speed>
 							<float>100</float>
 						</speed>
@@ -3136,7 +3106,7 @@
 							<float>100</float>
 						</acceleration>
 					</axis_info>
-					<axis_info axis="robot0_kinematics/axis_info_inst35"/>
+					<axis_info axis="robot0_kinematics/axis_info_inst34"/>
 				</technique_common>
 			</motion>
 		</articulated_system>
@@ -3174,12 +3144,6 @@
 						<SIDREF>robot0_kinematics/kmodel0_inst/center_wheel_joint/axis0</SIDREF>
 					</newparam>
 					<newparam sid="robot0_kinematics_kmodel0_inst_center_wheel_joint_axis0_value">
-						<float>0</float>
-					</newparam>
-					<newparam sid="robot0_kinematics_kmodel0_inst_katana_base_frame_joint_axis0">
-						<SIDREF>robot0_kinematics/kmodel0_inst/katana_base_frame_joint/axis0</SIDREF>
-					</newparam>
-					<newparam sid="robot0_kinematics_kmodel0_inst_katana_base_frame_joint_axis0_value">
 						<float>0</float>
 					</newparam>
 					<newparam sid="robot0_kinematics_kmodel0_inst_katana_baseplate_joint_axis0">
@@ -3436,7 +3400,7 @@
 							</max>
 						</limits>
 					</axis_info>
-					<axis_info sid="axis_info_inst5" axis="kmodel0/katana_base_frame_joint/axis0">
+					<axis_info sid="axis_info_inst5" axis="kmodel0/katana_baseplate_joint/axis0">
 						<active>
 							<bool>false</bool>
 						</active>
@@ -3452,7 +3416,7 @@
 							</max>
 						</limits>
 					</axis_info>
-					<axis_info sid="axis_info_inst6" axis="kmodel0/katana_baseplate_joint/axis0">
+					<axis_info sid="axis_info_inst6" axis="kmodel0/katana_gripper_joint/axis0">
 						<active>
 							<bool>false</bool>
 						</active>
@@ -3468,7 +3432,7 @@
 							</max>
 						</limits>
 					</axis_info>
-					<axis_info sid="axis_info_inst7" axis="kmodel0/katana_gripper_joint/axis0">
+					<axis_info sid="axis_info_inst7" axis="kmodel0/katana_gripper_tool_frame_joint/axis0">
 						<active>
 							<bool>false</bool>
 						</active>
@@ -3484,23 +3448,7 @@
 							</max>
 						</limits>
 					</axis_info>
-					<axis_info sid="axis_info_inst8" axis="kmodel0/katana_gripper_tool_frame_joint/axis0">
-						<active>
-							<bool>false</bool>
-						</active>
-						<locked>
-							<bool>false</bool>
-						</locked>
-						<limits>
-							<min>
-								<float>0</float>
-							</min>
-							<max>
-								<float>0</float>
-							</max>
-						</limits>
-					</axis_info>
-					<axis_info sid="axis_info_inst9" axis="kmodel0/katana_l_finger_joint/axis0">
+					<axis_info sid="axis_info_inst8" axis="kmodel0/katana_l_finger_joint/axis0">
 						<active>
 							<bool>true</bool>
 						</active>
@@ -3516,7 +3464,7 @@
 							</max>
 						</limits>
 					</axis_info>
-					<axis_info sid="axis_info_inst10" axis="kmodel0/katana_motor1_pan_joint/axis0">
+					<axis_info sid="axis_info_inst9" axis="kmodel0/katana_motor1_pan_joint/axis0">
 						<active>
 							<bool>true</bool>
 						</active>
@@ -3532,7 +3480,7 @@
 							</max>
 						</limits>
 					</axis_info>
-					<axis_info sid="axis_info_inst11" axis="kmodel0/katana_motor2_lift_joint/axis0">
+					<axis_info sid="axis_info_inst10" axis="kmodel0/katana_motor2_lift_joint/axis0">
 						<active>
 							<bool>true</bool>
 						</active>
@@ -3548,7 +3496,7 @@
 							</max>
 						</limits>
 					</axis_info>
-					<axis_info sid="axis_info_inst12" axis="kmodel0/katana_motor3_lift_joint/axis0">
+					<axis_info sid="axis_info_inst11" axis="kmodel0/katana_motor3_lift_joint/axis0">
 						<active>
 							<bool>true</bool>
 						</active>
@@ -3564,7 +3512,7 @@
 							</max>
 						</limits>
 					</axis_info>
-					<axis_info sid="axis_info_inst13" axis="kmodel0/katana_motor4_lift_joint/axis0">
+					<axis_info sid="axis_info_inst12" axis="kmodel0/katana_motor4_lift_joint/axis0">
 						<active>
 							<bool>true</bool>
 						</active>
@@ -3580,7 +3528,7 @@
 							</max>
 						</limits>
 					</axis_info>
-					<axis_info sid="axis_info_inst14" axis="kmodel0/katana_motor5_wrist_roll_joint/axis0">
+					<axis_info sid="axis_info_inst13" axis="kmodel0/katana_motor5_wrist_roll_joint/axis0">
 						<active>
 							<bool>true</bool>
 						</active>
@@ -3596,7 +3544,7 @@
 							</max>
 						</limits>
 					</axis_info>
-					<axis_info sid="axis_info_inst15" axis="kmodel0/katana_r_finger_joint/axis0">
+					<axis_info sid="axis_info_inst14" axis="kmodel0/katana_r_finger_joint/axis0">
 						<active>
 							<bool>true</bool>
 						</active>
@@ -3612,7 +3560,7 @@
 							</max>
 						</limits>
 					</axis_info>
-					<axis_info sid="axis_info_inst16" axis="kmodel0/kinect_depth_joint/axis0">
+					<axis_info sid="axis_info_inst15" axis="kmodel0/kinect_depth_joint/axis0">
 						<active>
 							<bool>false</bool>
 						</active>
@@ -3628,7 +3576,7 @@
 							</max>
 						</limits>
 					</axis_info>
-					<axis_info sid="axis_info_inst17" axis="kmodel0/kinect_depth_optical_joint/axis0">
+					<axis_info sid="axis_info_inst16" axis="kmodel0/kinect_depth_optical_joint/axis0">
 						<active>
 							<bool>false</bool>
 						</active>
@@ -3644,7 +3592,7 @@
 							</max>
 						</limits>
 					</axis_info>
-					<axis_info sid="axis_info_inst18" axis="kmodel0/kinect_rgb_joint/axis0">
+					<axis_info sid="axis_info_inst17" axis="kmodel0/kinect_rgb_joint/axis0">
 						<active>
 							<bool>false</bool>
 						</active>
@@ -3660,7 +3608,7 @@
 							</max>
 						</limits>
 					</axis_info>
-					<axis_info sid="axis_info_inst19" axis="kmodel0/kinect_rgb_optical_joint/axis0">
+					<axis_info sid="axis_info_inst18" axis="kmodel0/kinect_rgb_optical_joint/axis0">
 						<active>
 							<bool>false</bool>
 						</active>
@@ -3676,7 +3624,7 @@
 							</max>
 						</limits>
 					</axis_info>
-					<axis_info sid="axis_info_inst20" axis="kmodel0/kurtana_baseplate_katana_baseplate_joint/axis0">
+					<axis_info sid="axis_info_inst19" axis="kmodel0/kurtana_baseplate_katana_baseplate_joint/axis0">
 						<active>
 							<bool>false</bool>
 						</active>
@@ -3692,7 +3640,7 @@
 							</max>
 						</limits>
 					</axis_info>
-					<axis_info sid="axis_info_inst21" axis="kmodel0/kurtana_horizontal_square_bar_joint/axis0">
+					<axis_info sid="axis_info_inst20" axis="kmodel0/kurtana_horizontal_square_bar_joint/axis0">
 						<active>
 							<bool>false</bool>
 						</active>
@@ -3708,7 +3656,7 @@
 							</max>
 						</limits>
 					</axis_info>
-					<axis_info sid="axis_info_inst22" axis="kmodel0/kurtana_kinect_joint/axis0">
+					<axis_info sid="axis_info_inst21" axis="kmodel0/kurtana_kinect_joint/axis0">
 						<active>
 							<bool>false</bool>
 						</active>
@@ -3724,7 +3672,7 @@
 							</max>
 						</limits>
 					</axis_info>
-					<axis_info sid="axis_info_inst23" axis="kmodel0/kurtana_kinect_mounting_plate_joint/axis0">
+					<axis_info sid="axis_info_inst22" axis="kmodel0/kurtana_kinect_mounting_plate_joint/axis0">
 						<active>
 							<bool>false</bool>
 						</active>
@@ -3740,7 +3688,7 @@
 							</max>
 						</limits>
 					</axis_info>
-					<axis_info sid="axis_info_inst24" axis="kmodel0/kurtana_microphone_joint/axis0">
+					<axis_info sid="axis_info_inst23" axis="kmodel0/kurtana_microphone_joint/axis0">
 						<active>
 							<bool>false</bool>
 						</active>
@@ -3756,7 +3704,7 @@
 							</max>
 						</limits>
 					</axis_info>
-					<axis_info sid="axis_info_inst25" axis="kmodel0/kurtana_pitch_joint/axis0">
+					<axis_info sid="axis_info_inst24" axis="kmodel0/kurtana_pitch_joint/axis0">
 						<active>
 							<bool>true</bool>
 						</active>
@@ -3772,7 +3720,7 @@
 							</max>
 						</limits>
 					</axis_info>
-					<axis_info sid="axis_info_inst26" axis="kmodel0/kurtana_pole_joint/axis0">
+					<axis_info sid="axis_info_inst25" axis="kmodel0/kurtana_pole_joint/axis0">
 						<active>
 							<bool>false</bool>
 						</active>
@@ -3788,7 +3736,7 @@
 							</max>
 						</limits>
 					</axis_info>
-					<axis_info sid="axis_info_inst27" axis="kmodel0/kurtana_roll_joint/axis0">
+					<axis_info sid="axis_info_inst26" axis="kmodel0/kurtana_roll_joint/axis0">
 						<active>
 							<bool>true</bool>
 						</active>
@@ -3804,7 +3752,7 @@
 							</max>
 						</limits>
 					</axis_info>
-					<axis_info sid="axis_info_inst28" axis="kmodel0/kurtana_roll_servo_joint/axis0">
+					<axis_info sid="axis_info_inst27" axis="kmodel0/kurtana_roll_servo_joint/axis0">
 						<active>
 							<bool>false</bool>
 						</active>
@@ -3820,7 +3768,7 @@
 							</max>
 						</limits>
 					</axis_info>
-					<axis_info sid="axis_info_inst29" axis="kmodel0/kurtana_vertical_square_bar_joint/axis0">
+					<axis_info sid="axis_info_inst28" axis="kmodel0/kurtana_vertical_square_bar_joint/axis0">
 						<active>
 							<bool>false</bool>
 						</active>
@@ -3836,7 +3784,7 @@
 							</max>
 						</limits>
 					</axis_info>
-					<axis_info sid="axis_info_inst30" axis="kmodel0/left_hub_joint/axis0">
+					<axis_info sid="axis_info_inst29" axis="kmodel0/left_hub_joint/axis0">
 						<active>
 							<bool>false</bool>
 						</active>
@@ -3852,7 +3800,7 @@
 							</max>
 						</limits>
 					</axis_info>
-					<axis_info sid="axis_info_inst31" axis="kmodel0/left_wheel_joint/axis0">
+					<axis_info sid="axis_info_inst30" axis="kmodel0/left_wheel_joint/axis0">
 						<active>
 							<bool>false</bool>
 						</active>
@@ -3868,7 +3816,7 @@
 							</max>
 						</limits>
 					</axis_info>
-					<axis_info sid="axis_info_inst32" axis="kmodel0/right_hub_joint/axis0">
+					<axis_info sid="axis_info_inst31" axis="kmodel0/right_hub_joint/axis0">
 						<active>
 							<bool>false</bool>
 						</active>
@@ -3884,7 +3832,7 @@
 							</max>
 						</limits>
 					</axis_info>
-					<axis_info sid="axis_info_inst33" axis="kmodel0/right_wheel_joint/axis0">
+					<axis_info sid="axis_info_inst32" axis="kmodel0/right_wheel_joint/axis0">
 						<active>
 							<bool>false</bool>
 						</active>
@@ -3900,7 +3848,7 @@
 							</max>
 						</limits>
 					</axis_info>
-					<axis_info sid="axis_info_inst34" axis="kmodel0/swivel_hubcap_joint/axis0">
+					<axis_info sid="axis_info_inst33" axis="kmodel0/swivel_hubcap_joint/axis0">
 						<active>
 							<bool>true</bool>
 						</active>
@@ -3908,7 +3856,7 @@
 							<bool>false</bool>
 						</locked>
 					</axis_info>
-					<axis_info sid="axis_info_inst35" axis="kmodel0/top_base_joint/axis0">
+					<axis_info sid="axis_info_inst34" axis="kmodel0/top_base_joint/axis0">
 						<active>
 							<bool>false</bool>
 						</active>
@@ -3963,12 +3911,6 @@
 				</bind>
 				<bind symbol="kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_center_wheel_joint_axis0_value">
 					<param ref="robot0_motion/robot0_motion_robot0_kinematics_kmodel0_inst_center_wheel_joint_axis0_value"/>
-				</bind>
-				<bind symbol="kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_katana_base_frame_joint_axis0">
-					<param ref="robot0_motion/robot0_motion_robot0_kinematics_kmodel0_inst_katana_base_frame_joint_axis0"/>
-				</bind>
-				<bind symbol="kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_katana_base_frame_joint_axis0_value">
-					<param ref="robot0_motion/robot0_motion_robot0_kinematics_kmodel0_inst_katana_base_frame_joint_axis0_value"/>
 				</bind>
 				<bind symbol="kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_katana_baseplate_joint_axis0">
 					<param ref="robot0_motion/robot0_motion_robot0_kinematics_kmodel0_inst_katana_baseplate_joint_axis0"/>
@@ -4192,7 +4134,6 @@
 				<instance_rigid_body body="rigid33" target="#vkmodel0_node33"/>
 				<instance_rigid_body body="rigid34" target="#vkmodel0_node34"/>
 				<instance_rigid_body body="rigid35" target="#vkmodel0_node35"/>
-				<instance_rigid_body body="rigid36" target="#vkmodel0_node36"/>
 			</instance_physics_model>
 			<technique_common>
 				<gravity>0 0 0</gravity>
@@ -4248,10 +4189,7 @@
 					<inertia>1 1 1</inertia>
 				</technique_common>
 			</rigid_body>
-			<rigid_body sid="rigid5" name="katana_base_frame">
-				<technique_common/>
-			</rigid_body>
-			<rigid_body sid="rigid6" name="katana_base_link">
+			<rigid_body sid="rigid5" name="katana_base_link">
 				<technique_common>
 					<dynamic>true</dynamic>
 					<mass>1.4047990875</mass>
@@ -4262,7 +4200,7 @@
 					<inertia>0.003000799119174857 0.002975662634175358 0.001433802246649784</inertia>
 				</technique_common>
 			</rigid_body>
-			<rigid_body sid="rigid7" name="katana_baseplate_link">
+			<rigid_body sid="rigid6" name="katana_baseplate_link">
 				<technique_common>
 					<dynamic>true</dynamic>
 					<mass>0.4</mass>
@@ -4273,7 +4211,7 @@
 					<inertia>0.0008159996736 0.0008159996736 0.00162239935104</inertia>
 				</technique_common>
 			</rigid_body>
-			<rigid_body sid="rigid8" name="katana_gripper_link">
+			<rigid_body sid="rigid7" name="katana_gripper_link">
 				<technique_common>
 					<dynamic>true</dynamic>
 					<mass>0.0552136183596</mass>
@@ -4284,10 +4222,10 @@
 					<inertia>1.146827485648266e-05 1.128972514351734e-05 1.383e-05</inertia>
 				</technique_common>
 			</rigid_body>
-			<rigid_body sid="rigid9" name="katana_gripper_tool_frame">
+			<rigid_body sid="rigid8" name="katana_gripper_tool_frame">
 				<technique_common/>
 			</rigid_body>
-			<rigid_body sid="rigid10" name="katana_l_finger_link">
+			<rigid_body sid="rigid9" name="katana_l_finger_link">
 				<technique_common>
 					<dynamic>true</dynamic>
 					<mass>0.0251722230462</mass>
@@ -4298,7 +4236,7 @@
 					<inertia>1.818420878141208e-06 2.348035900484865e-05 2.403622011701014e-05</inertia>
 				</technique_common>
 			</rigid_body>
-			<rigid_body sid="rigid11" name="katana_motor1_pan_link">
+			<rigid_body sid="rigid10" name="katana_motor1_pan_link">
 				<technique_common>
 					<dynamic>true</dynamic>
 					<mass>0.74793301875</mass>
@@ -4309,7 +4247,7 @@
 					<inertia>0.001737242360736009 0.001349908352109252 0.0009980422871547392</inertia>
 				</technique_common>
 			</rigid_body>
-			<rigid_body sid="rigid12" name="katana_motor2_lift_link">
+			<rigid_body sid="rigid11" name="katana_motor2_lift_link">
 				<technique_common>
 					<dynamic>true</dynamic>
 					<mass>0.8017494187500001</mass>
@@ -4320,7 +4258,7 @@
 					<inertia>0.0004765317803445477 0.004316351894140018 0.004625448325515434</inertia>
 				</technique_common>
 			</rigid_body>
-			<rigid_body sid="rigid13" name="katana_motor3_lift_link">
+			<rigid_body sid="rigid12" name="katana_motor3_lift_link">
 				<technique_common>
 					<dynamic>true</dynamic>
 					<mass>0.79241664375</mass>
@@ -4331,7 +4269,7 @@
 					<inertia>0.001145100617917819 0.002316624475045349 0.003128657907036832</inertia>
 				</technique_common>
 			</rigid_body>
-			<rigid_body sid="rigid14" name="katana_motor4_lift_link">
+			<rigid_body sid="rigid13" name="katana_motor4_lift_link">
 				<technique_common>
 					<dynamic>true</dynamic>
 					<mass>0.69149323125</mass>
@@ -4342,7 +4280,7 @@
 					<inertia>0.0007632327749129095 0.001506879894079633 0.001887278331007457</inertia>
 				</technique_common>
 			</rigid_body>
-			<rigid_body sid="rigid15" name="katana_motor5_wrist_roll_link">
+			<rigid_body sid="rigid14" name="katana_motor5_wrist_roll_link">
 				<technique_common>
 					<dynamic>true</dynamic>
 					<mass>0.25622555625</mass>
@@ -4353,7 +4291,7 @@
 					<inertia>0.0001205248838405131 9.347768845538619e-05 0.0001321304277041007</inertia>
 				</technique_common>
 			</rigid_body>
-			<rigid_body sid="rigid16" name="katana_r_finger_link">
+			<rigid_body sid="rigid15" name="katana_r_finger_link">
 				<technique_common>
 					<dynamic>true</dynamic>
 					<mass>0.0251722230462</mass>
@@ -4364,7 +4302,7 @@
 					<inertia>1.818420878141208e-06 2.348035900484865e-05 2.403622011701014e-05</inertia>
 				</technique_common>
 			</rigid_body>
-			<rigid_body sid="rigid17" name="kinect_depth_frame">
+			<rigid_body sid="rigid16" name="kinect_depth_frame">
 				<technique_common>
 					<dynamic>true</dynamic>
 					<mass>1e-06</mass>
@@ -4375,7 +4313,7 @@
 					<inertia>0.0001 0.0001 0.0001</inertia>
 				</technique_common>
 			</rigid_body>
-			<rigid_body sid="rigid18" name="kinect_depth_optical_frame">
+			<rigid_body sid="rigid17" name="kinect_depth_optical_frame">
 				<technique_common>
 					<dynamic>true</dynamic>
 					<mass>1e-06</mass>
@@ -4386,7 +4324,7 @@
 					<inertia>0.0001 0.0001 0.0001</inertia>
 				</technique_common>
 			</rigid_body>
-			<rigid_body sid="rigid19" name="kinect_link">
+			<rigid_body sid="rigid18" name="kinect_link">
 				<technique_common>
 					<dynamic>true</dynamic>
 					<mass>0.43</mass>
@@ -4397,7 +4335,7 @@
 					<inertia>0.00291539883384 0.000376715682647 0.0029205946651</inertia>
 				</technique_common>
 			</rigid_body>
-			<rigid_body sid="rigid20" name="kinect_rgb_frame">
+			<rigid_body sid="rigid19" name="kinect_rgb_frame">
 				<technique_common>
 					<dynamic>true</dynamic>
 					<mass>1e-06</mass>
@@ -4408,7 +4346,7 @@
 					<inertia>0.0001 0.0001 0.0001</inertia>
 				</technique_common>
 			</rigid_body>
-			<rigid_body sid="rigid21" name="kinect_rgb_optical_frame">
+			<rigid_body sid="rigid20" name="kinect_rgb_optical_frame">
 				<technique_common>
 					<dynamic>true</dynamic>
 					<mass>1e-06</mass>
@@ -4419,7 +4357,7 @@
 					<inertia>0.0001 0.0001 0.0001</inertia>
 				</technique_common>
 			</rigid_body>
-			<rigid_body sid="rigid22" name="kurtana_baseplate_link">
+			<rigid_body sid="rigid21" name="kurtana_baseplate_link">
 				<technique_common>
 					<dynamic>true</dynamic>
 					<mass>0.5</mass>
@@ -4430,7 +4368,7 @@
 					<inertia>0.005644164409 0.009205662984400001 0.0148468273946</inertia>
 				</technique_common>
 			</rigid_body>
-			<rigid_body sid="rigid23" name="kurtana_horizontal_square_bar_link">
+			<rigid_body sid="rigid22" name="kurtana_horizontal_square_bar_link">
 				<technique_common>
 					<dynamic>true</dynamic>
 					<mass>0.1</mass>
@@ -4441,7 +4379,7 @@
 					<inertia>1.4999994e-05 0.00011390828777 0.00011390828777</inertia>
 				</technique_common>
 			</rigid_body>
-			<rigid_body sid="rigid24" name="kurtana_kinect_mounting_plate_link">
+			<rigid_body sid="rigid23" name="kurtana_kinect_mounting_plate_link">
 				<technique_common>
 					<dynamic>true</dynamic>
 					<mass>0.05</mass>
@@ -4452,7 +4390,7 @@
 					<inertia>0.000120620785085 8.641663210000001e-06 0.000128854115125</inertia>
 				</technique_common>
 			</rigid_body>
-			<rigid_body sid="rigid25" name="kurtana_microphone_link">
+			<rigid_body sid="rigid24" name="kurtana_microphone_link">
 				<technique_common>
 					<dynamic>true</dynamic>
 					<mass>0.3</mass>
@@ -4463,7 +4401,7 @@
 					<inertia>0.00148687440525 0.00148687440525 9.375e-05</inertia>
 				</technique_common>
 			</rigid_body>
-			<rigid_body sid="rigid26" name="kurtana_pitch_servo_link">
+			<rigid_body sid="rigid25" name="kurtana_pitch_servo_link">
 				<technique_common>
 					<dynamic>true</dynamic>
 					<mass>0.15</mass>
@@ -4474,7 +4412,7 @@
 					<inertia>8.904996438e-05 7.059997176e-05 4.404998238e-05</inertia>
 				</technique_common>
 			</rigid_body>
-			<rigid_body sid="rigid27" name="kurtana_pitch_servo_movable_part_link">
+			<rigid_body sid="rigid26" name="kurtana_pitch_servo_movable_part_link">
 				<technique_common>
 					<dynamic>true</dynamic>
 					<mass>0.15</mass>
@@ -4485,7 +4423,7 @@
 					<inertia>4.6562481375e-05 2.8112488755e-05 4.404998238e-05</inertia>
 				</technique_common>
 			</rigid_body>
-			<rigid_body sid="rigid28" name="kurtana_pole_link">
+			<rigid_body sid="rigid27" name="kurtana_pole_link">
 				<technique_common>
 					<dynamic>true</dynamic>
 					<mass>3</mass>
@@ -4496,7 +4434,7 @@
 					<inertia>0.12272495091 0.12272495091 0.00044999982</inertia>
 				</technique_common>
 			</rigid_body>
-			<rigid_body sid="rigid29" name="kurtana_roll_servo_link">
+			<rigid_body sid="rigid28" name="kurtana_roll_servo_link">
 				<technique_common>
 					<dynamic>true</dynamic>
 					<mass>0.15</mass>
@@ -4507,7 +4445,7 @@
 					<inertia>4.404998238e-05 8.904996438e-05 7.059997176e-05</inertia>
 				</technique_common>
 			</rigid_body>
-			<rigid_body sid="rigid30" name="kurtana_vertical_square_bar_link">
+			<rigid_body sid="rigid29" name="kurtana_vertical_square_bar_link">
 				<technique_common>
 					<dynamic>true</dynamic>
 					<mass>0.1</mass>
@@ -4518,19 +4456,19 @@
 					<inertia>7.13020548125e-05 7.13020548125e-05 1.4999994e-05</inertia>
 				</technique_common>
 			</rigid_body>
-			<rigid_body sid="rigid31" name="left_hub">
+			<rigid_body sid="rigid30" name="left_hub">
 				<technique_common/>
 			</rigid_body>
-			<rigid_body sid="rigid32" name="left_wheel_joint">
+			<rigid_body sid="rigid31" name="left_wheel_joint">
 				<technique_common/>
 			</rigid_body>
-			<rigid_body sid="rigid33" name="right_hub">
+			<rigid_body sid="rigid32" name="right_hub">
 				<technique_common/>
 			</rigid_body>
-			<rigid_body sid="rigid34" name="right_wheel_joint">
+			<rigid_body sid="rigid33" name="right_wheel_joint">
 				<technique_common/>
 			</rigid_body>
-			<rigid_body sid="rigid35" name="swivel">
+			<rigid_body sid="rigid34" name="swivel">
 				<technique_common>
 					<dynamic>true</dynamic>
 					<mass>0.1</mass>
@@ -4541,7 +4479,7 @@
 					<inertia>0.01 0.01 0.01</inertia>
 				</technique_common>
 			</rigid_body>
-			<rigid_body sid="rigid36" name="top_plate">
+			<rigid_body sid="rigid35" name="top_plate">
 				<technique_common/>
 			</rigid_body>
 		</physics_model>
@@ -4569,7 +4507,7 @@
 					<param>kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_base_front_joint_axis0_value</param>
 				</value>
 			</bind_joint_axis>
-			<bind_joint_axis target="node35/node_base_swivel_joint_axis0">
+			<bind_joint_axis target="node34/node_base_swivel_joint_axis0">
 				<axis>
 					<param>kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_base_swivel_joint_axis0</param>
 				</axis>
@@ -4577,7 +4515,7 @@
 					<param>kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_base_swivel_joint_axis0_value</param>
 				</value>
 			</bind_joint_axis>
-			<bind_joint_axis target="node36/node_base_top_joint_axis0">
+			<bind_joint_axis target="node35/node_base_top_joint_axis0">
 				<axis>
 					<param>kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_base_top_joint_axis0</param>
 				</axis>
@@ -4585,7 +4523,7 @@
 					<param>kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_base_top_joint_axis0_value</param>
 				</value>
 			</bind_joint_axis>
-			<bind_joint_axis target="node1/node35/node2/node_center_wheel_joint_axis0">
+			<bind_joint_axis target="node1/node34/node2/node_center_wheel_joint_axis0">
 				<axis>
 					<param>kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_center_wheel_joint_axis0</param>
 				</axis>
@@ -4593,15 +4531,7 @@
 					<param>kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_center_wheel_joint_axis0_value</param>
 				</value>
 			</bind_joint_axis>
-			<bind_joint_axis target="node1/node36/node22/node7/node5/node_katana_base_frame_joint_axis0">
-				<axis>
-					<param>kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_katana_base_frame_joint_axis0</param>
-				</axis>
-				<value>
-					<param>kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_katana_base_frame_joint_axis0_value</param>
-				</value>
-			</bind_joint_axis>
-			<bind_joint_axis target="node1/node36/node7/node_katana_baseplate_joint_axis0">
+			<bind_joint_axis target="node1/node35/node6/node_katana_baseplate_joint_axis0">
 				<axis>
 					<param>kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_katana_baseplate_joint_axis0</param>
 				</axis>
@@ -4609,7 +4539,7 @@
 					<param>kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_katana_baseplate_joint_axis0_value</param>
 				</value>
 			</bind_joint_axis>
-			<bind_joint_axis target="node1/node36/node22/node7/node6/node11/node12/node13/node14/node8/node_katana_gripper_joint_axis0">
+			<bind_joint_axis target="node1/node35/node21/node6/node5/node10/node11/node12/node13/node7/node_katana_gripper_joint_axis0">
 				<axis>
 					<param>kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_katana_gripper_joint_axis0</param>
 				</axis>
@@ -4617,7 +4547,7 @@
 					<param>kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_katana_gripper_joint_axis0_value</param>
 				</value>
 			</bind_joint_axis>
-			<bind_joint_axis target="node1/node36/node22/node7/node6/node11/node12/node13/node14/node9/node_katana_gripper_tool_frame_joint_axis0">
+			<bind_joint_axis target="node1/node35/node21/node6/node5/node10/node11/node12/node13/node8/node_katana_gripper_tool_frame_joint_axis0">
 				<axis>
 					<param>kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_katana_gripper_tool_frame_joint_axis0</param>
 				</axis>
@@ -4625,7 +4555,7 @@
 					<param>kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_katana_gripper_tool_frame_joint_axis0_value</param>
 				</value>
 			</bind_joint_axis>
-			<bind_joint_axis target="node1/node36/node22/node7/node6/node11/node12/node13/node14/node15/node10/node_katana_l_finger_joint_axis0">
+			<bind_joint_axis target="node1/node35/node21/node6/node5/node10/node11/node12/node13/node14/node9/node_katana_l_finger_joint_axis0">
 				<axis>
 					<param>kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_katana_l_finger_joint_axis0</param>
 				</axis>
@@ -4633,7 +4563,7 @@
 					<param>kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_katana_l_finger_joint_axis0_value</param>
 				</value>
 			</bind_joint_axis>
-			<bind_joint_axis target="node1/node36/node22/node7/node11/node_katana_motor1_pan_joint_axis0">
+			<bind_joint_axis target="node1/node35/node21/node6/node10/node_katana_motor1_pan_joint_axis0">
 				<axis>
 					<param>kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_katana_motor1_pan_joint_axis0</param>
 				</axis>
@@ -4641,7 +4571,7 @@
 					<param>kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_katana_motor1_pan_joint_axis0_value</param>
 				</value>
 			</bind_joint_axis>
-			<bind_joint_axis target="node1/node36/node22/node7/node6/node12/node_katana_motor2_lift_joint_axis0">
+			<bind_joint_axis target="node1/node35/node21/node6/node5/node11/node_katana_motor2_lift_joint_axis0">
 				<axis>
 					<param>kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_katana_motor2_lift_joint_axis0</param>
 				</axis>
@@ -4649,7 +4579,7 @@
 					<param>kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_katana_motor2_lift_joint_axis0_value</param>
 				</value>
 			</bind_joint_axis>
-			<bind_joint_axis target="node1/node36/node22/node7/node6/node11/node13/node_katana_motor3_lift_joint_axis0">
+			<bind_joint_axis target="node1/node35/node21/node6/node5/node10/node12/node_katana_motor3_lift_joint_axis0">
 				<axis>
 					<param>kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_katana_motor3_lift_joint_axis0</param>
 				</axis>
@@ -4657,7 +4587,7 @@
 					<param>kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_katana_motor3_lift_joint_axis0_value</param>
 				</value>
 			</bind_joint_axis>
-			<bind_joint_axis target="node1/node36/node22/node7/node6/node11/node12/node14/node_katana_motor4_lift_joint_axis0">
+			<bind_joint_axis target="node1/node35/node21/node6/node5/node10/node11/node13/node_katana_motor4_lift_joint_axis0">
 				<axis>
 					<param>kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_katana_motor4_lift_joint_axis0</param>
 				</axis>
@@ -4665,7 +4595,7 @@
 					<param>kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_katana_motor4_lift_joint_axis0_value</param>
 				</value>
 			</bind_joint_axis>
-			<bind_joint_axis target="node1/node36/node22/node7/node6/node11/node12/node13/node15/node_katana_motor5_wrist_roll_joint_axis0">
+			<bind_joint_axis target="node1/node35/node21/node6/node5/node10/node11/node12/node14/node_katana_motor5_wrist_roll_joint_axis0">
 				<axis>
 					<param>kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_katana_motor5_wrist_roll_joint_axis0</param>
 				</axis>
@@ -4673,7 +4603,7 @@
 					<param>kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_katana_motor5_wrist_roll_joint_axis0_value</param>
 				</value>
 			</bind_joint_axis>
-			<bind_joint_axis target="node1/node36/node22/node7/node6/node11/node12/node13/node14/node15/node16/node_katana_r_finger_joint_axis0">
+			<bind_joint_axis target="node1/node35/node21/node6/node5/node10/node11/node12/node13/node14/node15/node_katana_r_finger_joint_axis0">
 				<axis>
 					<param>kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_katana_r_finger_joint_axis0</param>
 				</axis>
@@ -4681,7 +4611,7 @@
 					<param>kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_katana_r_finger_joint_axis0_value</param>
 				</value>
 			</bind_joint_axis>
-			<bind_joint_axis target="node1/node36/node22/node28/node23/node30/node29/node26/node27/node24/node17/node_kinect_depth_joint_axis0">
+			<bind_joint_axis target="node1/node35/node21/node27/node22/node29/node28/node25/node26/node23/node16/node_kinect_depth_joint_axis0">
 				<axis>
 					<param>kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_kinect_depth_joint_axis0</param>
 				</axis>
@@ -4689,7 +4619,7 @@
 					<param>kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_kinect_depth_joint_axis0_value</param>
 				</value>
 			</bind_joint_axis>
-			<bind_joint_axis target="node1/node36/node22/node28/node23/node30/node29/node26/node27/node24/node19/node18/node_kinect_depth_optical_joint_axis0">
+			<bind_joint_axis target="node1/node35/node21/node27/node22/node29/node28/node25/node26/node23/node18/node17/node_kinect_depth_optical_joint_axis0">
 				<axis>
 					<param>kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_kinect_depth_optical_joint_axis0</param>
 				</axis>
@@ -4697,7 +4627,7 @@
 					<param>kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_kinect_depth_optical_joint_axis0_value</param>
 				</value>
 			</bind_joint_axis>
-			<bind_joint_axis target="node1/node36/node22/node28/node23/node30/node29/node26/node27/node24/node20/node_kinect_rgb_joint_axis0">
+			<bind_joint_axis target="node1/node35/node21/node27/node22/node29/node28/node25/node26/node23/node19/node_kinect_rgb_joint_axis0">
 				<axis>
 					<param>kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_kinect_rgb_joint_axis0</param>
 				</axis>
@@ -4705,7 +4635,7 @@
 					<param>kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_kinect_rgb_joint_axis0_value</param>
 				</value>
 			</bind_joint_axis>
-			<bind_joint_axis target="node1/node36/node22/node28/node23/node30/node29/node26/node27/node24/node19/node21/node_kinect_rgb_optical_joint_axis0">
+			<bind_joint_axis target="node1/node35/node21/node27/node22/node29/node28/node25/node26/node23/node18/node20/node_kinect_rgb_optical_joint_axis0">
 				<axis>
 					<param>kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_kinect_rgb_optical_joint_axis0</param>
 				</axis>
@@ -4713,7 +4643,7 @@
 					<param>kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_kinect_rgb_optical_joint_axis0_value</param>
 				</value>
 			</bind_joint_axis>
-			<bind_joint_axis target="node1/node36/node22/node6/node_kurtana_baseplate_katana_baseplate_joint_axis0">
+			<bind_joint_axis target="node1/node35/node21/node5/node_kurtana_baseplate_katana_baseplate_joint_axis0">
 				<axis>
 					<param>kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_kurtana_baseplate_katana_baseplate_joint_axis0</param>
 				</axis>
@@ -4721,7 +4651,7 @@
 					<param>kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_kurtana_baseplate_katana_baseplate_joint_axis0_value</param>
 				</value>
 			</bind_joint_axis>
-			<bind_joint_axis target="node1/node36/node22/node23/node_kurtana_horizontal_square_bar_joint_axis0">
+			<bind_joint_axis target="node1/node35/node21/node22/node_kurtana_horizontal_square_bar_joint_axis0">
 				<axis>
 					<param>kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_kurtana_horizontal_square_bar_joint_axis0</param>
 				</axis>
@@ -4729,7 +4659,7 @@
 					<param>kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_kurtana_horizontal_square_bar_joint_axis0_value</param>
 				</value>
 			</bind_joint_axis>
-			<bind_joint_axis target="node1/node36/node22/node28/node23/node30/node29/node26/node27/node19/node_kurtana_kinect_joint_axis0">
+			<bind_joint_axis target="node1/node35/node21/node27/node22/node29/node28/node25/node26/node18/node_kurtana_kinect_joint_axis0">
 				<axis>
 					<param>kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_kurtana_kinect_joint_axis0</param>
 				</axis>
@@ -4737,7 +4667,7 @@
 					<param>kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_kurtana_kinect_joint_axis0_value</param>
 				</value>
 			</bind_joint_axis>
-			<bind_joint_axis target="node1/node36/node22/node28/node23/node30/node29/node26/node24/node_kurtana_kinect_mounting_plate_joint_axis0">
+			<bind_joint_axis target="node1/node35/node21/node27/node22/node29/node28/node25/node23/node_kurtana_kinect_mounting_plate_joint_axis0">
 				<axis>
 					<param>kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_kurtana_kinect_mounting_plate_joint_axis0</param>
 				</axis>
@@ -4745,7 +4675,7 @@
 					<param>kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_kurtana_kinect_mounting_plate_joint_axis0_value</param>
 				</value>
 			</bind_joint_axis>
-			<bind_joint_axis target="node1/node36/node22/node25/node_kurtana_microphone_joint_axis0">
+			<bind_joint_axis target="node1/node35/node21/node24/node_kurtana_microphone_joint_axis0">
 				<axis>
 					<param>kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_kurtana_microphone_joint_axis0</param>
 				</axis>
@@ -4753,7 +4683,7 @@
 					<param>kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_kurtana_microphone_joint_axis0_value</param>
 				</value>
 			</bind_joint_axis>
-			<bind_joint_axis target="node1/node36/node22/node28/node23/node30/node29/node27/node_kurtana_pitch_joint_axis0">
+			<bind_joint_axis target="node1/node35/node21/node27/node22/node29/node28/node26/node_kurtana_pitch_joint_axis0">
 				<axis>
 					<param>kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_kurtana_pitch_joint_axis0</param>
 				</axis>
@@ -4761,7 +4691,7 @@
 					<param>kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_kurtana_pitch_joint_axis0_value</param>
 				</value>
 			</bind_joint_axis>
-			<bind_joint_axis target="node1/node36/node28/node_kurtana_pole_joint_axis0">
+			<bind_joint_axis target="node1/node35/node27/node_kurtana_pole_joint_axis0">
 				<axis>
 					<param>kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_kurtana_pole_joint_axis0</param>
 				</axis>
@@ -4769,7 +4699,7 @@
 					<param>kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_kurtana_pole_joint_axis0_value</param>
 				</value>
 			</bind_joint_axis>
-			<bind_joint_axis target="node1/node36/node22/node28/node23/node30/node26/node_kurtana_roll_joint_axis0">
+			<bind_joint_axis target="node1/node35/node21/node27/node22/node29/node25/node_kurtana_roll_joint_axis0">
 				<axis>
 					<param>kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_kurtana_roll_joint_axis0</param>
 				</axis>
@@ -4777,7 +4707,7 @@
 					<param>kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_kurtana_roll_joint_axis0_value</param>
 				</value>
 			</bind_joint_axis>
-			<bind_joint_axis target="node1/node36/node22/node28/node23/node29/node_kurtana_roll_servo_joint_axis0">
+			<bind_joint_axis target="node1/node35/node21/node27/node22/node28/node_kurtana_roll_servo_joint_axis0">
 				<axis>
 					<param>kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_kurtana_roll_servo_joint_axis0</param>
 				</axis>
@@ -4785,7 +4715,7 @@
 					<param>kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_kurtana_roll_servo_joint_axis0_value</param>
 				</value>
 			</bind_joint_axis>
-			<bind_joint_axis target="node1/node36/node22/node28/node30/node_kurtana_vertical_square_bar_joint_axis0">
+			<bind_joint_axis target="node1/node35/node21/node27/node29/node_kurtana_vertical_square_bar_joint_axis0">
 				<axis>
 					<param>kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_kurtana_vertical_square_bar_joint_axis0</param>
 				</axis>
@@ -4793,7 +4723,7 @@
 					<param>kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_kurtana_vertical_square_bar_joint_axis0_value</param>
 				</value>
 			</bind_joint_axis>
-			<bind_joint_axis target="node31/node_left_hub_joint_axis0">
+			<bind_joint_axis target="node30/node_left_hub_joint_axis0">
 				<axis>
 					<param>kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_left_hub_joint_axis0</param>
 				</axis>
@@ -4801,7 +4731,7 @@
 					<param>kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_left_hub_joint_axis0_value</param>
 				</value>
 			</bind_joint_axis>
-			<bind_joint_axis target="node1/node32/node_left_wheel_joint_axis0">
+			<bind_joint_axis target="node1/node31/node_left_wheel_joint_axis0">
 				<axis>
 					<param>kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_left_wheel_joint_axis0</param>
 				</axis>
@@ -4809,7 +4739,7 @@
 					<param>kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_left_wheel_joint_axis0_value</param>
 				</value>
 			</bind_joint_axis>
-			<bind_joint_axis target="node33/node_right_hub_joint_axis0">
+			<bind_joint_axis target="node32/node_right_hub_joint_axis0">
 				<axis>
 					<param>kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_right_hub_joint_axis0</param>
 				</axis>
@@ -4817,7 +4747,7 @@
 					<param>kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_right_hub_joint_axis0_value</param>
 				</value>
 			</bind_joint_axis>
-			<bind_joint_axis target="node1/node34/node_right_wheel_joint_axis0">
+			<bind_joint_axis target="node1/node33/node_right_wheel_joint_axis0">
 				<axis>
 					<param>kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_right_wheel_joint_axis0</param>
 				</axis>
@@ -4833,7 +4763,7 @@
 					<param>kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_swivel_hubcap_joint_axis0_value</param>
 				</value>
 			</bind_joint_axis>
-			<bind_joint_axis target="node1/node22/node_top_base_joint_axis0">
+			<bind_joint_axis target="node1/node21/node_top_base_joint_axis0">
 				<axis>
 					<param>kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_top_base_joint_axis0</param>
 				</axis>
