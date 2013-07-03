@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+
+<robot xmlns:sensor="http://playerstage.sourceforge.net/gazebo/xmlschema/#sensor"
+  xmlns:controller="http://playerstage.sourceforge.net/gazebo/xmlschema/#controller"
+  xmlns:interface="http://playerstage.sourceforge.net/gazebo/xmlschema/#interface"
+  xmlns:xacro="http://ros.org/wiki/xacro"
+  name="kurtana">
+
+  <property name="M_PI" value="3.1415926535897931" />
+
+  <!-- ******************** -->
+  <!-- *** KURTana Rack *** -->
+  <!-- ******************** -->
+  
+  <include filename="$(find kurt_description)/parts/kurtana_rack.urdf.xacro" />
+
+  <property name="kinect_x_offset" value="0.03" />
+  <property name="kinect_y_offset" value="0.0" />
+  <property name="kinect_z_offset" value="0.018" />
+
+
+  <!-- ************************ -->
+  <!-- *** Microsoft Kinect *** -->
+  <!-- ************************ -->
+  
+  <include filename="$(find kurt_description)/parts/kinect.urdf.xacro" />
+  <xacro:kinect camera="kinect" />
+
+  <joint name="kurtana_kinect_joint" type="fixed">
+    <parent link="kurtana_kinect_mounting_plate_link" />
+    <child  link="kinect_link" />
+    <origin xyz="${kinect_x_offset} ${kinect_y_offset} ${kinect_z_offset}" rpy="0 0 0"/>
+  </joint>
+  
+
+  <!-- **************************** -->
+  <!-- *** Neuronics Katana Arm *** -->
+  <!-- **************************** -->
+  
+ 
+
+
+</robot>

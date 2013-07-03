@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<robot 
+    name="asrob"
+    xmlns:sensor="http://playerstage.sourceforge.net/gazebo/xmlschema/#sensor"
+    xmlns:controller="http://playerstage.sourceforge.net/gazebo/xmlschema/#controller"
+    xmlns:interface="http://playerstage.sourceforge.net/gazebo/xmlschema/#interface"
+    xmlns:xacro="http://ros.org/wiki/xacro">
+
+
+     <!-- base-->
+
+ <include filename="$(find kurtana_moveit_config)/config/robot.urdf.xacro" /> 
+
+       
+      <joint name="mpo_700_rack_joint" type="fixed">
+        <parent link="base_link" />
+        <child link="kurtana_baseplate_link" />
+        <origin xyz="0 0 0.5" rpy="0 0 0" />
+      </joint>
+
+
+ <!-- rack -->
+    <include filename="$(find kurtana_moveit_config)/config/kurtana_top.urdf.xacro" />
+
+
+      <joint name="kurtana_baseplate_katana_baseplate_joint" type="fixed">
+        <parent link="katana_baseplate_link" />
+        <child link="jaco_base_link" />
+        <origin xyz="0 0 0.05" rpy="0 0 0" />
+      </joint>
+       
+ <!-- arm-->
+    <include filename="$(find kurtana_moveit_config)/config/jaco_arm.urdf" />
+
+
+
+
+  
+
+
+
+
+
+</robot>
+
