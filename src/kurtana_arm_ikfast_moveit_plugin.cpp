@@ -341,7 +341,7 @@ int IKFastKinematicsPlugin::solve(KDL::Frame &pose_frame, const std::vector<doub
   double yaw;
 
   orig.GetRPY(roll,pitch,yaw);
-  ROS_INFO_STREAM("pose: " << roll << " " << pitch << " " << yaw);
+  ROS_DEBUG_STREAM("pose: " << roll << " " << pitch << " " << yaw);
 
   KDL::Rotation mult = orig;//*rot;
 
@@ -355,7 +355,7 @@ int IKFastKinematicsPlugin::solve(KDL::Frame &pose_frame, const std::vector<doub
   // IKFast56/61
   ComputeIk(trans, direction.data, vfree.size() > 0 ? &vfree[0] : NULL, solutions);
 
-  ROS_INFO_STREAM("found " << solutions.GetNumSolutions() << " solutions");
+  ROS_DEBUG_STREAM("found " << solutions.GetNumSolutions() << " solutions");
   return solutions.GetNumSolutions();
 }
 
@@ -789,6 +789,15 @@ bool IKFastKinematicsPlugin::getPositionIK(const geometry_msgs::Pose &ik_pose,
   tf::poseMsgToKDL(ik_pose,frame);
 
   IkSolutionList<IkReal> solutions;
+
+  // print IK input on debug
+    tf::Quaternion q;
+    double roll, pitch, yaw;
+    tf::quaternionMsgToTF(ik_pose.orientation, q);
+    tf::Matrix3x3(q).getRPY(roll, pitch, yaw);
+    ROS_INFO("IK input - x:% 1.4f y:% 1.4f z:% 1.4f roll:% 1.4f pitch:% 1.4f yaw:% 1.4f (as quaternion: x:% 1.4f y:% 1.4f z:% 1.4f w:% 1.4f) ", ik_pose.position.x, ik_pose.position.y, ik_pose.position.z, roll, pitch, yaw, q.getX(), q.getY(), q.getZ(), q.getW());
+
+
   int numsol = solve(frame,vfree,solutions);
 
   ROS_DEBUG_STREAM_NAMED("ikfast","Found " << numsol << " solutions from IKFast");
