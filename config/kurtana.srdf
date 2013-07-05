@@ -80,6 +80,7 @@
     <disable_collisions link1="back_sonar" link2="katana_motor2_lift_link" reason="Never" />
     <disable_collisions link1="back_sonar" link2="katana_motor3_lift_link" reason="Never" />
     <disable_collisions link1="back_sonar" link2="katana_motor4_lift_link" reason="Never" />
+    <disable_collisions link1="back_sonar" link2="katana_motor5_wrist_roll_discs" reason="Never" />
     <disable_collisions link1="back_sonar" link2="katana_motor5_wrist_roll_link" reason="Never" />
     <disable_collisions link1="back_sonar" link2="katana_r_finger_link" reason="Never" />
     <disable_collisions link1="back_sonar" link2="kinect_link" reason="Never" />
@@ -107,6 +108,7 @@
     <disable_collisions link1="base_link" link2="katana_motor2_lift_link" reason="Never" />
     <disable_collisions link1="base_link" link2="katana_motor3_lift_link" reason="Never" />
     <disable_collisions link1="base_link" link2="katana_motor4_lift_link" reason="Never" />
+    <disable_collisions link1="base_link" link2="katana_motor5_wrist_roll_discs" reason="Never" />
     <disable_collisions link1="base_link" link2="katana_motor5_wrist_roll_link" reason="Never" />
     <disable_collisions link1="base_link" link2="kinect_link" reason="Never" />
     <disable_collisions link1="base_link" link2="kurtana_baseplate_link" reason="Never" />
@@ -119,9 +121,9 @@
     <disable_collisions link1="base_link" link2="kurtana_roll_servo_link" reason="Never" />
     <disable_collisions link1="base_link" link2="kurtana_vertical_square_bar_link" reason="Never" />
     <disable_collisions link1="base_link" link2="left_hub" reason="Adjacent" />
-    <disable_collisions link1="base_link" link2="left_wheel_joint" reason="Never" />
+    <disable_collisions link1="base_link" link2="left_wheel_joint" reason="Default" />
     <disable_collisions link1="base_link" link2="right_hub" reason="Adjacent" />
-    <disable_collisions link1="base_link" link2="right_wheel_joint" reason="Never" />
+    <disable_collisions link1="base_link" link2="right_wheel_joint" reason="Default" />
     <disable_collisions link1="base_link" link2="swivel" reason="Adjacent" />
     <disable_collisions link1="base_link" link2="top_plate" reason="Adjacent" />
     <disable_collisions link1="center_hubcap" link2="center_wheel" reason="Adjacent" />
@@ -134,6 +136,7 @@
     <disable_collisions link1="center_hubcap" link2="katana_motor2_lift_link" reason="Never" />
     <disable_collisions link1="center_hubcap" link2="katana_motor3_lift_link" reason="Never" />
     <disable_collisions link1="center_hubcap" link2="katana_motor4_lift_link" reason="Never" />
+    <disable_collisions link1="center_hubcap" link2="katana_motor5_wrist_roll_discs" reason="Never" />
     <disable_collisions link1="center_hubcap" link2="katana_motor5_wrist_roll_link" reason="Never" />
     <disable_collisions link1="center_hubcap" link2="katana_r_finger_link" reason="Never" />
     <disable_collisions link1="center_hubcap" link2="kinect_link" reason="Never" />
@@ -161,6 +164,7 @@
     <disable_collisions link1="center_wheel" link2="katana_motor2_lift_link" reason="Never" />
     <disable_collisions link1="center_wheel" link2="katana_motor3_lift_link" reason="Never" />
     <disable_collisions link1="center_wheel" link2="katana_motor4_lift_link" reason="Never" />
+    <disable_collisions link1="center_wheel" link2="katana_motor5_wrist_roll_discs" reason="Never" />
     <disable_collisions link1="center_wheel" link2="katana_motor5_wrist_roll_link" reason="Never" />
     <disable_collisions link1="center_wheel" link2="katana_r_finger_link" reason="Never" />
     <disable_collisions link1="center_wheel" link2="kinect_link" reason="Never" />
@@ -187,6 +191,7 @@
     <disable_collisions link1="front_sonar" link2="katana_motor2_lift_link" reason="Never" />
     <disable_collisions link1="front_sonar" link2="katana_motor3_lift_link" reason="Never" />
     <disable_collisions link1="front_sonar" link2="katana_motor4_lift_link" reason="Never" />
+    <disable_collisions link1="front_sonar" link2="katana_motor5_wrist_roll_discs" reason="Never" />
     <disable_collisions link1="front_sonar" link2="katana_motor5_wrist_roll_link" reason="Never" />
     <disable_collisions link1="front_sonar" link2="katana_r_finger_link" reason="Never" />
     <disable_collisions link1="front_sonar" link2="kinect_link" reason="Never" />
@@ -247,6 +252,7 @@
     <disable_collisions link1="katana_gripper_link" link2="katana_l_finger_link" reason="Adjacent" />
     <disable_collisions link1="katana_gripper_link" link2="katana_motor3_lift_link" reason="Never" />
     <disable_collisions link1="katana_gripper_link" link2="katana_motor4_lift_link" reason="Never" />
+    <disable_collisions link1="katana_gripper_link" link2="katana_motor5_wrist_roll_discs" reason="Never" />
     <disable_collisions link1="katana_gripper_link" link2="katana_motor5_wrist_roll_link" reason="Adjacent" />
     <disable_collisions link1="katana_gripper_link" link2="katana_r_finger_link" reason="Adjacent" />
     <disable_collisions link1="katana_gripper_link" link2="kinect_link" reason="Never" />
@@ -261,8 +267,9 @@
     <disable_collisions link1="katana_gripper_link" link2="top_plate" reason="Never" />
     <disable_collisions link1="katana_l_finger_link" link2="katana_motor3_lift_link" reason="Never" />
     <disable_collisions link1="katana_l_finger_link" link2="katana_motor4_lift_link" reason="Never" />
+    <disable_collisions link1="katana_l_finger_link" link2="katana_motor5_wrist_roll_discs" reason="Never" />
     <disable_collisions link1="katana_l_finger_link" link2="katana_motor5_wrist_roll_link" reason="Never" />
-    <disable_collisions link1="katana_l_finger_link" link2="katana_r_finger_link" reason="Never" />
+    <disable_collisions link1="katana_l_finger_link" link2="katana_r_finger_link" reason="Default" />
     <disable_collisions link1="katana_l_finger_link" link2="left_hub" reason="Never" />
     <disable_collisions link1="katana_l_finger_link" link2="left_wheel_joint" reason="Never" />
     <disable_collisions link1="katana_l_finger_link" link2="right_hub" reason="Never" />
@@ -304,6 +311,7 @@
     <disable_collisions link1="katana_motor2_lift_link" link2="swivel" reason="Never" />
     <disable_collisions link1="katana_motor2_lift_link" link2="top_plate" reason="Never" />
     <disable_collisions link1="katana_motor3_lift_link" link2="katana_motor4_lift_link" reason="Adjacent" />
+    <disable_collisions link1="katana_motor3_lift_link" link2="katana_motor5_wrist_roll_discs" reason="Never" />
     <disable_collisions link1="katana_motor3_lift_link" link2="katana_motor5_wrist_roll_link" reason="Never" />
     <disable_collisions link1="katana_motor3_lift_link" link2="katana_r_finger_link" reason="Never" />
     <disable_collisions link1="katana_motor3_lift_link" link2="kinect_link" reason="Never" />
@@ -321,6 +329,7 @@
     <disable_collisions link1="katana_motor3_lift_link" link2="right_wheel_joint" reason="Never" />
     <disable_collisions link1="katana_motor3_lift_link" link2="swivel" reason="Never" />
     <disable_collisions link1="katana_motor3_lift_link" link2="top_plate" reason="Never" />
+    <disable_collisions link1="katana_motor4_lift_link" link2="katana_motor5_wrist_roll_discs" reason="Never" />
     <disable_collisions link1="katana_motor4_lift_link" link2="katana_motor5_wrist_roll_link" reason="Adjacent" />
     <disable_collisions link1="katana_motor4_lift_link" link2="katana_r_finger_link" reason="Never" />
     <disable_collisions link1="katana_motor4_lift_link" link2="kinect_link" reason="Never" />
@@ -337,6 +346,19 @@
     <disable_collisions link1="katana_motor4_lift_link" link2="right_wheel_joint" reason="Never" />
     <disable_collisions link1="katana_motor4_lift_link" link2="swivel" reason="Never" />
     <disable_collisions link1="katana_motor4_lift_link" link2="top_plate" reason="Never" />
+    <disable_collisions link1="katana_motor5_wrist_roll_discs" link2="katana_motor5_wrist_roll_link" reason="Adjacent" />
+    <disable_collisions link1="katana_motor5_wrist_roll_discs" link2="katana_r_finger_link" reason="Never" />
+    <disable_collisions link1="katana_motor5_wrist_roll_discs" link2="kinect_link" reason="Never" />
+    <disable_collisions link1="katana_motor5_wrist_roll_discs" link2="kurtana_kinect_mounting_plate_link" reason="Never" />
+    <disable_collisions link1="katana_motor5_wrist_roll_discs" link2="kurtana_pitch_servo_link" reason="Never" />
+    <disable_collisions link1="katana_motor5_wrist_roll_discs" link2="kurtana_pitch_servo_movable_part_link" reason="Never" />
+    <disable_collisions link1="katana_motor5_wrist_roll_discs" link2="kurtana_roll_servo_link" reason="Never" />
+    <disable_collisions link1="katana_motor5_wrist_roll_discs" link2="left_hub" reason="Never" />
+    <disable_collisions link1="katana_motor5_wrist_roll_discs" link2="left_wheel_joint" reason="Never" />
+    <disable_collisions link1="katana_motor5_wrist_roll_discs" link2="right_hub" reason="Never" />
+    <disable_collisions link1="katana_motor5_wrist_roll_discs" link2="right_wheel_joint" reason="Never" />
+    <disable_collisions link1="katana_motor5_wrist_roll_discs" link2="swivel" reason="Never" />
+    <disable_collisions link1="katana_motor5_wrist_roll_discs" link2="top_plate" reason="Never" />
     <disable_collisions link1="katana_motor5_wrist_roll_link" link2="katana_r_finger_link" reason="Never" />
     <disable_collisions link1="katana_motor5_wrist_roll_link" link2="kinect_link" reason="Never" />
     <disable_collisions link1="katana_motor5_wrist_roll_link" link2="kurtana_kinect_mounting_plate_link" reason="Never" />
@@ -358,8 +380,8 @@
     <disable_collisions link1="kinect_link" link2="kurtana_horizontal_square_bar_link" reason="Never" />
     <disable_collisions link1="kinect_link" link2="kurtana_kinect_mounting_plate_link" reason="Adjacent" />
     <disable_collisions link1="kinect_link" link2="kurtana_microphone_link" reason="Never" />
-    <disable_collisions link1="kinect_link" link2="kurtana_pitch_servo_link" reason="Never" />
-    <disable_collisions link1="kinect_link" link2="kurtana_pitch_servo_movable_part_link" reason="Never" />
+    <disable_collisions link1="kinect_link" link2="kurtana_pitch_servo_link" reason="Default" />
+    <disable_collisions link1="kinect_link" link2="kurtana_pitch_servo_movable_part_link" reason="Default" />
     <disable_collisions link1="kinect_link" link2="kurtana_pole_link" reason="Never" />
     <disable_collisions link1="kinect_link" link2="kurtana_roll_servo_link" reason="Never" />
     <disable_collisions link1="kinect_link" link2="kurtana_vertical_square_bar_link" reason="Never" />
@@ -397,7 +419,7 @@
     <disable_collisions link1="kurtana_horizontal_square_bar_link" link2="swivel" reason="Never" />
     <disable_collisions link1="kurtana_horizontal_square_bar_link" link2="top_plate" reason="Never" />
     <disable_collisions link1="kurtana_kinect_mounting_plate_link" link2="kurtana_microphone_link" reason="Never" />
-    <disable_collisions link1="kurtana_kinect_mounting_plate_link" link2="kurtana_pitch_servo_link" reason="Never" />
+    <disable_collisions link1="kurtana_kinect_mounting_plate_link" link2="kurtana_pitch_servo_link" reason="Default" />
     <disable_collisions link1="kurtana_kinect_mounting_plate_link" link2="kurtana_pitch_servo_movable_part_link" reason="Adjacent" />
     <disable_collisions link1="kurtana_kinect_mounting_plate_link" link2="kurtana_pole_link" reason="Never" />
     <disable_collisions link1="kurtana_kinect_mounting_plate_link" link2="kurtana_roll_servo_link" reason="Never" />

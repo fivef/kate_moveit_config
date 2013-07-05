@@ -302,7 +302,9 @@
       <geometry>
         <box size="0.47 0.368 0.006"/>
       </geometry>
-      <material name="grey"/>
+      <material name="grey">
+        <color rgba="0.8 0.8 0.8 1"/>
+      </material>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
@@ -1024,6 +1026,31 @@
       <inertia ixx="0.000120481" ixy="0.000000015" ixz="-0.000001089" iyy="0.000132130" iyz="-0.000000124" izz="0.000093522"/>
     </inertial>
   </link>
+  <joint name="katana_motor5_wrist_roll_discs_joint" type="fixed">
+    <parent link="katana_motor5_wrist_roll_link"/>
+    <child link="katana_motor5_wrist_roll_discs"/>
+    <origin rpy="0 1.57079632679 0" xyz="0.0375 0 0"/>
+  </joint>
+  <link name="katana_motor5_wrist_roll_discs">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <cylinder length="0.025" radius="0.025"/>
+      </geometry>
+      <material name="grey"/>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <cylinder length="0.025" radius="0.025"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.05"/>
+      <origin xyz="0 0 0"/>
+      <inertia ixx="1.04166625e-05" ixy="0.0" ixz="0.0" iyy="1.04166625e-05" iyz="0.0" izz="1.5625e-05"/>
+    </inertial>
+  </link>
   <joint name="katana_gripper_joint" type="fixed">
     <parent link="katana_motor5_wrist_roll_link"/>
     <child link="katana_gripper_link"/>
@@ -1117,6 +1144,12 @@
     <parent link="katana_baseplate_link"/>
     <child link="katana_base_link"/>
     <origin rpy="0 0 0" xyz="0 0 0"/>
+  </joint>
+  <link name="katana_pattern"/>
+  <joint name="katana_pattern_joint" type="fixed">
+    <parent link="katana_motor4_lift_link"/>
+    <child link="katana_pattern"/>
+    <origin rpy="1.571 -1.571 0.151" xyz=".075 -.035 0.00"/>
   </joint>
   <joint name="top_base_joint" type="fixed">
     <parent link="top_plate"/>
