@@ -795,7 +795,7 @@ bool IKFastKinematicsPlugin::getPositionIK(const geometry_msgs::Pose &ik_pose,
     double roll, pitch, yaw;
     tf::quaternionMsgToTF(ik_pose.orientation, q);
     tf::Matrix3x3(q).getRPY(roll, pitch, yaw);
-    ROS_INFO("IK input - x:% 1.4f y:% 1.4f z:% 1.4f roll:% 1.4f pitch:% 1.4f yaw:% 1.4f (as quaternion: x:% 1.4f y:% 1.4f z:% 1.4f w:% 1.4f) ", ik_pose.position.x, ik_pose.position.y, ik_pose.position.z, roll, pitch, yaw, q.getX(), q.getY(), q.getZ(), q.getW());
+    ROS_DEBUG("IK input - x:% 1.4f y:% 1.4f z:% 1.4f roll:% 1.4f pitch:% 1.4f yaw:% 1.4f (as quaternion: x:% 1.4f y:% 1.4f z:% 1.4f w:% 1.4f) ", ik_pose.position.x, ik_pose.position.y, ik_pose.position.z, roll, pitch, yaw, q.getX(), q.getY(), q.getZ(), q.getW());
 
 
   int numsol = solve(frame,vfree,solutions);
@@ -808,7 +808,7 @@ bool IKFastKinematicsPlugin::getPositionIK(const geometry_msgs::Pose &ik_pose,
     {
       std::vector<double> sol;
       getSolution(solutions,s,sol);
-      ROS_INFO_NAMED("ikfast","Sol %d: %e   %e   %e   %e   %e   %e", s, sol[0], sol[1], sol[2], sol[3], sol[4], sol[5]);
+      ROS_DEBUG_NAMED("ikfast","Sol %d: %e   %e   %e   %e   %e   %e", s, sol[0], sol[1], sol[2], sol[3], sol[4], sol[5]);
 
       bool obeys_limits = true;
       for(unsigned int i = 0; i < sol.size(); i++)
