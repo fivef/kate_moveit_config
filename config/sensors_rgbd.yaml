@@ -4,28 +4,7 @@ sensors:
     max_range: 4.0
     frame_subsample: 1
     point_subsample: 1
-    self_mask:
-        min_sensor_dist: .8
-        self_see_default_padding: .04
-        self_see_default_scale: 1.0
-        self_see_links:
-            - name: katana_internal_controlbox_link 
-            - name: katana_base_link
-            - name: katana_motor1_pan_link
-            - name: katana_motor2_lift_link
-              padding: 0.07
-            - name: katana_motor3_lift_link
-              padding: 0.07
-            - name: katana_motor4_lift_link
-              padding: 0.07
-            - name: katana_motor5_wrist_roll_link
-              padding: 0.07
-            - name: katana_gripper_link
-              padding: 0.03
-            - name: katana_l_finger_link
-              padding: 0.02
-            - name: katana_r_finger_link
-              padding: 0.02
-            - name: kurtana_baseplate_link
-            - name: laser
-            - name: kurtana_pole_link
+    shape_padding: 0.05
+    shape_scale: 1.3
+    filtered_cloud_topic: filtered_cloud
+
