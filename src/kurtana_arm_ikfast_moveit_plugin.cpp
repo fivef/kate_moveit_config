@@ -541,7 +541,7 @@ bool IKFastKinematicsPlugin::searchPositionIK(const geometry_msgs::Pose &ik_pose
 {
   const IKCallbackFn solution_callback = 0; 
   std::vector<double> consistency_limits;
-
+ ROS_DEBUG_NAMED("ikfast", "searchPositionIK 2 size: %d address: %p",solution.size(), &solution);
   return searchPositionIK(ik_pose,
                           ik_seed_state,
                           timeout,
@@ -559,7 +559,9 @@ bool IKFastKinematicsPlugin::searchPositionIK(const geometry_msgs::Pose &ik_pose
                                            std::vector<double> &solution,
                                            moveit_msgs::MoveItErrorCodes &error_code,
                                            bool lock_redundancy) const
+
 {
+   ROS_DEBUG_NAMED("ikfast", "searchPositionIK 3 size: %d address: %p",solution.size(), &solution);
   const IKCallbackFn solution_callback = 0; 
   return searchPositionIK(ik_pose,
                           ik_seed_state,
@@ -580,11 +582,13 @@ bool IKFastKinematicsPlugin::searchPositionIK(const geometry_msgs::Pose &ik_pose
                                            bool lock_redundancy) const
 {
   std::vector<double> consistency_limits;
+  ROS_DEBUG_NAMED("ikfast", "searchPositionIK 1 size: %d address: %p",solution.size(), &solution);
   return searchPositionIK(ik_pose,
                           ik_seed_state,
                           timeout,
-                          solution,
+                          
                           consistency_limits,
+                            solution,
                           solution_callback,
                           error_code,
                           lock_redundancy);
@@ -599,6 +603,8 @@ bool IKFastKinematicsPlugin::searchPositionIK(const geometry_msgs::Pose &ik_pose
                                               moveit_msgs::MoveItErrorCodes &error_code,
                                               bool lock_redundant_joints) const
 {
+
+  ROS_DEBUG_NAMED("ikfast", "searchPositionIk (callback)incoming size: %d address: %p",solution.size(), &solution);
   ROS_DEBUG_STREAM_NAMED("ikfast","searchPositionIK");
 
   // Check if there are no redundant joints
@@ -620,6 +626,13 @@ bool IKFastKinematicsPlugin::searchPositionIK(const geometry_msgs::Pose &ik_pose
       solution_callback(ik_pose, solution, error_code);
       if(error_code.val == moveit_msgs::MoveItErrorCodes::SUCCESS)
       {
+        
+        
+        
+        ROS_DEBUG_NAMED("ikfast", "searchPositionIk (callback) size: %d address: %p",solution.size(), &solution);
+
+        ROS_DEBUG_NAMED("ikfast","Sol searchPositionIK (callback)  %e   %e   %e   %e   %e   ", solution[0], solution[1], solution[2], solution[3], solution[4]);
+        
         ROS_DEBUG_STREAM_NAMED("ikfast","Solution passes callback");
         return true;
       }
@@ -631,6 +644,7 @@ bool IKFastKinematicsPlugin::searchPositionIK(const geometry_msgs::Pose &ik_pose
     }
     else
     {
+      ROS_DEBUG_STREAM_NAMED("ikfast", "searchPositionIK (no callback): size of solution " << solution.size());
       return true; // no collision check callback provided
     }
   }
@@ -827,6 +841,8 @@ bool IKFastKinematicsPlugin::getPositionIK(const geometry_msgs::Pose &ik_pose,
       {
         // All elements of solution obey limits
         getSolution(solutions,s,solution);
+
+        ROS_DEBUG_STREAM_NAMED("ikfast","getPositionIK: size of solution " << solution.size());
         error_code.val = moveit_msgs::MoveItErrorCodes::SUCCESS;
         return true;
       }
