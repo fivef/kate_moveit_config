@@ -1,7 +1,8 @@
-controller_manager_ns: pr2_controller_manager
+controller_manager_ns: moveit_simple_controller_manager
 controller_list:
-  - name: "katana_arm_controller"
+  - name: katana_arm_controller
     ns: follow_joint_trajectory
+    type: FollowJointTrajectory
     default: true
     joints:
        - katana_motor1_pan_joint
@@ -10,3 +11,10 @@ controller_list:
        - katana_motor4_lift_joint
        - katana_motor5_wrist_roll_joint
 
+  - name: gripper_action_controller
+    ns: gripper_command
+    type: GripperCommand
+    default: true
+    joints:
+       - katana_l_finger_joint
+       - katana_r_finger_joint
