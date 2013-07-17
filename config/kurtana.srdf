@@ -301,7 +301,6 @@
     <disable_collisions link1="katana_motor2_lift_link" link2="kurtana_microphone_link" reason="Never" />
     <disable_collisions link1="katana_motor2_lift_link" link2="kurtana_pitch_servo_link" reason="Never" />
     <disable_collisions link1="katana_motor2_lift_link" link2="kurtana_pitch_servo_movable_part_link" reason="Never" />
-    <disable_collisions link1="katana_motor2_lift_link" link2="kurtana_pole_link" reason="Never" />
     <disable_collisions link1="katana_motor2_lift_link" link2="kurtana_roll_servo_link" reason="Never" />
     <disable_collisions link1="katana_motor2_lift_link" link2="kurtana_vertical_square_bar_link" reason="Never" />
     <disable_collisions link1="katana_motor2_lift_link" link2="left_hub" reason="Never" />

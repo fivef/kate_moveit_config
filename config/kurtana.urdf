@@ -346,32 +346,32 @@
   <joint name="kurtana_pole_joint" type="fixed">
     <parent link="kurtana_baseplate_link"/>
     <child link="kurtana_pole_link"/>
-    <origin xyz="-0.18 0 0.35"/>
+    <origin xyz="-0.165 0 0.3475"/>
   </joint>
   <link name="kurtana_pole_link">
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <box size="0.03 0.03 0.7"/>
+        <box size="0.03 0.03 0.695"/>
       </geometry>
       <material name="grey"/>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <box size="0.03 0.03 0.7"/>
+        <box size="0.03 0.03 0.695"/>
       </geometry>
     </collision>
     <inertial>
       <mass value="3.0"/>
       <origin xyz="0 0 0"/>
-      <inertia ixx="0.12272495091" ixy="0.0" ixz="0.0" iyy="0.12272495091" iyz="0.0" izz="0.00044999982"/>
+      <inertia ixx="0.120981201607" ixy="0.0" ixz="0.0" iyy="0.120981201607" iyz="0.0" izz="0.00044999982"/>
     </inertial>
   </link>
   <joint name="kurtana_microphone_joint" type="fixed">
     <parent link="kurtana_pole_link"/>
     <child link="kurtana_microphone_link"/>
-    <origin xyz="0.06 -0.055 0.385"/>
+    <origin xyz="0.06 -0.055 0.3825"/>
   </joint>
   <link name="kurtana_microphone_link">
     <visual>
@@ -396,7 +396,7 @@
   <joint name="kurtana_horizontal_square_bar_joint" type="fixed">
     <parent link="kurtana_pole_link"/>
     <child link="kurtana_horizontal_square_bar_link"/>
-    <origin xyz="0.0715 0 0.335"/>
+    <origin xyz="0.0715 0 0.3325"/>
   </joint>
   <link name="kurtana_horizontal_square_bar_link">
     <visual>
@@ -723,7 +723,7 @@
   <joint name="kurtana_kinect_joint" type="fixed">
     <parent link="kurtana_kinect_mounting_plate_link"/>
     <child link="kinect_link"/>
-    <origin rpy="0 0 0" xyz="0.03 0.0 0.018"/>
+    <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
   </joint>
   <transmission name="katana_motor1_pan_trans" type="pr2_mechanism_model/SimpleTransmission">
     <actuator name="katana_motor1_pan_motor"/>
@@ -1085,14 +1085,14 @@
   </joint>
   <link name="katana_r_finger_link">
     <visual>
-      <origin rpy="0 3.14159265359 0" xyz="0 0 0"/>
+      <origin rpy="0 3.14159265359 0.27" xyz="0 0 0"/>
       <geometry>
         <mesh filename="package://katana_description/meshes/katana/katana_gripper_r_finger.stl"/>
       </geometry>
       <material name="grey"/>
     </visual>
     <collision>
-      <origin rpy="0 3.14159265359 0" xyz="0 0 0"/>
+      <origin rpy="0 3.14159265359 0.27" xyz="0 0 0"/>
       <geometry>
         <mesh filename="package://katana_description/meshes/katana/convex/katana_gripper_r_finger_convex.stl"/>
       </geometry>
@@ -1112,14 +1112,14 @@
   </joint>
   <link name="katana_l_finger_link">
     <visual>
-      <origin rpy="0 3.14159265359 0" xyz="0 0 0"/>
+      <origin rpy="0 3.14159265359 0.27" xyz="0 0 0"/>
       <geometry>
         <mesh filename="package://katana_description/meshes/katana/katana_gripper_l_finger.stl"/>
       </geometry>
       <material name="grey"/>
     </visual>
     <collision>
-      <origin rpy="0 3.14159265359 0" xyz="0 0 0"/>
+      <origin rpy="0 3.14159265359 0.27" xyz="0 0 0"/>
       <geometry>
         <mesh filename="package://katana_description/meshes/katana/convex/katana_gripper_l_finger_convex.stl"/>
       </geometry>
