@@ -586,9 +586,8 @@ bool IKFastKinematicsPlugin::searchPositionIK(const geometry_msgs::Pose &ik_pose
   return searchPositionIK(ik_pose,
                           ik_seed_state,
                           timeout,
-                          
                           consistency_limits,
-                            solution,
+                          solution,
                           solution_callback,
                           error_code,
                           lock_redundancy);
