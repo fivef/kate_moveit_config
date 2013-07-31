@@ -2,28 +2,32 @@
 ## but will override them with values from the yaml configuration file if they
 ## exist, acceleration parameters however must still be specified in yaml since
 ## they are not usually found in the urdf 
-
+#1.84077 
+#0.992333
+#1.157721
+#1.840777
+#1.840777
 ## the acceleration limits have been calculated using acc_enc2rad(2). The 
 ## acceleration can be either 1 or 2 [encoders / (10 ms)^2]
 joint_limits:
   katana_motor1_pan_joint:
     has_position_limits: true
     has_velocity_limits: true
-    max_velocity: 1.84077
+    max_velocity: 1.10447 
     has_acceleration_limits: true
     max_acceleration: 4.908739
     angle_wraparound: false
   katana_motor2_lift_joint:
     has_position_limits: true
     has_velocity_limits: true
-    max_velocity: 0.992333
+    max_velocity: 0.5954
     has_acceleration_limits: true
     max_acceleration: 2.646220
     angle_wraparound: false
   katana_motor3_lift_joint:
     has_position_limits: true
     has_velocity_limits: true
-    max_velocity: 1.157721
+    max_velocity: 0.694633 
     has_acceleration_limits: true
     ## unexplicably, the acceleration limits seem to be exactly half of what acc_enc2rad(2) says
     max_acceleration: 3.087257
@@ -31,14 +35,14 @@ joint_limits:
   katana_motor4_lift_joint:
     has_position_limits: true
     has_velocity_limits: true
-    max_velocity: 1.840777
+    max_velocity: 1.10447 
     has_acceleration_limits: true
     max_acceleration: 4.908739
     angle_wraparound: false
   katana_motor5_wrist_roll_joint:
     has_position_limits: true
     has_velocity_limits: true
-    max_velocity: 1.840777
+    max_velocity: 1.10447 
     has_acceleration_limits: true
     max_acceleration: 4.908739
     angle_wraparound: false
@@ -48,9 +52,9 @@ joint_limits:
   # here for completenesses sake.
   katana_r_finger_joint:
     has_acceleration_limits: true
-    max_acceleration: 1.597410
+    max_acceleration: 2
     angle_wraparound: false
   katana_l_finger_joint:
     has_acceleration_limits: true
-    max_acceleration: 1.597410
+    max_acceleration: 2
     angle_wraparound: false
