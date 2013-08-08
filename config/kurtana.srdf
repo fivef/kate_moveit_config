@@ -46,10 +46,28 @@
     </group_state>
     <group_state name="home rotated" group="arm">
         <joint name="katana_motor1_pan_joint" value="-1.5298" />
-        <joint name="katana_motor2_lift_joint" value="2.1354" />
-        <joint name="katana_motor3_lift_joint" value="-2.1556" />
-        <joint name="katana_motor4_lift_joint" value="-1.97195" />
+        <joint name="katana_motor2_lift_joint" value="2.1028791784656846" />
+        <joint name="katana_motor3_lift_joint" value="-2.1459347986948654" />
+        <joint name="katana_motor4_lift_joint" value="-1.9131672032661904" />
         <joint name="katana_motor5_wrist_roll_joint" value="0" />
+    </group_state>
+
+<!--name: ['katana_r_finger_joint', 'kurtana_roll_joint', 'katana_motor3_lift_joint', 'katana_motor5_wrist_roll_joint', 'katana_motor4_lift_joint', 'swivel_hubcap_joint', 'katana_l_finger_joint', 'kurtana_pitch_joint', 'base_swivel_joint', 'katana_motor1_pan_joint', 'katana_motor2_lift_joint']
+position: [0.2901848727359157, 0.02, -2.2015054234635523, -1.3635384780830151e-05, -2.026559063106697, 0.0, 0.2901848727359157, 0.85, 0.0, -1.5297129124491238, 2.148592632888498]-->
+
+    <group_state name="home_stable" group="arm">
+        <joint name="katana_motor1_pan_joint" value="-1.5298" />
+        <joint name="katana_motor2_lift_joint" value="2.148592632888498" />
+        <joint name="katana_motor3_lift_joint" value="-2.2015054234635523" />
+        <joint name="katana_motor4_lift_joint" value="-2.026559063106697" />
+        <joint name="katana_motor5_wrist_roll_joint" value="0" />
+    </group_state>
+    <group_state name="dart_1" group="arm">
+        <joint name="katana_motor1_pan_joint" value="-2.5426311063057705" />
+        <joint name="katana_motor2_lift_joint" value="1.7687938747967904" />
+        <joint name="katana_motor3_lift_joint" value="-1.514976663300394" />
+        <joint name="katana_motor4_lift_joint" value="0.26447192321626556" />
+        <joint name="katana_motor5_wrist_roll_joint" value="-0.0071313062405709005" />
     </group_state>
     <group_state name="stretched forward joint3" group="arm">
         <joint name="katana_motor1_pan_joint" value="0" />
