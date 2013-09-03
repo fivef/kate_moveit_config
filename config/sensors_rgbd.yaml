@@ -3,8 +3,8 @@ sensors:
     point_cloud_topic: /kinect/depth_registered/points
     max_range: 4.0
     frame_subsample: 1
-    point_subsample: 1
-    shape_padding: 0.07
-    shape_scale: 1.4
+    point_subsample: 5
+    shape_padding: 0.02
+    shape_scale: 1.0
     filtered_cloud_topic: filtered_cloud
 
