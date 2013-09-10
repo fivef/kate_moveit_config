@@ -804,12 +804,17 @@ bool IKFastKinematicsPlugin::getPositionIK(const geometry_msgs::Pose &ik_pose,
     int p = free_params_[i];
     ROS_ERROR("%u is %f",p,ik_seed_state[p]);  // DTC
     vfree[i] = ik_seed_state[p];
+
   }
 
   KDL::Frame frame;
   tf::poseMsgToKDL(ik_pose,frame);
 
   IkSolutionList<IkReal> solutions;
+
+
+  ROS_DEBUG_STREAM_NAMED("ikfast", "IK pose: " << ik_pose);
+
   int numsol = solve(frame,vfree,solutions);
 
   ROS_DEBUG_STREAM_NAMED("ikfast","Found " << numsol << " solutions from IKFast");
