@@ -1,8 +1,8 @@
 moveit_setup_assistant_config:
   URDF:
-    package: "kurtana_moveit_config"
-    relative_path: config/kurtana.urdf
+    package: "kate_moveit_config"
+    relative_path: config/kate.urdf
   SRDF:
-    relative_path: config/kurtana.srdf
+    relative_path: config/kate.srdf
   CONFIG:
     generated_timestamp: 1369147255
