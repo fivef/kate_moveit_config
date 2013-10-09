@@ -6,5 +6,5 @@ sensors:
     point_subsample: 10
     shape_padding: 0.2
     shape_scale: 3
-    filtered_cloud_topic: filtered_cloud
+    #filtered_cloud_topic: filtered_cloud
 
