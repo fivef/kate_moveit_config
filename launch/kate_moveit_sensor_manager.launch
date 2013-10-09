@@ -1,6 +1,5 @@
 <launch>
 	<param name="octomap_frame" type="string" value="/kinect_link" />
 	<param name="octomap_resolution" type="double" value="0.025" />
-	<param name="max_range" type="double" value="4.0" />
 	<rosparam command="load" file="$(find kate_moveit_config)/config/sensors_rgbd.yaml" />
 </launch>
