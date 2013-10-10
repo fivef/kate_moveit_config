@@ -1,20 +1,18 @@
 controller_manager_ns: moveit_simple_controller_manager
 controller_list:
-  - name: katana_arm_controller
+  - name: "jaco_arm_controller"
     action_ns: follow_joint_trajectory
     type: FollowJointTrajectory
     default: true
     joints:
-       - katana_motor1_pan_joint
-       - katana_motor2_lift_joint
-       - katana_motor3_lift_joint
-       - katana_motor4_lift_joint
-       - katana_motor5_wrist_roll_joint
+        - jaco_joint_1
+        - jaco_joint_2
+        - jaco_joint_3
+        - jaco_joint_4
+        - jaco_joint_5
+        - jaco_joint_6
 
-  - name: gripper_action_controller
-    ns: gripper_command
-    type: GripperCommand
-    default: true
-    joints:
-       - katana_l_finger_joint
-       - katana_r_finger_joint
+
+        #- jaco_finger_1_joint
+        #- jaco_finger_2_joint
+        #- jaco_finger_3_joint
