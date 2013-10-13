@@ -55,32 +55,32 @@
   <joint name="kurtana_pole_joint" type="fixed">
     <parent link="kurtana_baseplate_link"/>
     <child link="kurtana_pole_link"/>
-    <origin xyz="-0.165 0 0.3475"/>
+    <origin xyz="-0.25 0 0.5"/>
   </joint>
   <link name="kurtana_pole_link">
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <box size="0.03 0.03 0.695"/>
+        <box size="0.03 0.03 1"/>
       </geometry>
       <material name="grey"/>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <box size="0.03 0.03 0.695"/>
+        <box size="0.03 0.03 1"/>
       </geometry>
     </collision>
     <inertial>
       <mass value="3.0"/>
       <origin xyz="0 0 0"/>
-      <inertia ixx="0.120981201607" ixy="0.0" ixz="0.0" iyy="0.120981201607" iyz="0.0" izz="0.00044999982"/>
+      <inertia ixx="0.25022489991" ixy="0.0" ixz="0.0" iyy="0.25022489991" iyz="0.0" izz="0.00044999982"/>
     </inertial>
   </link>
   <joint name="kurtana_microphone_joint" type="fixed">
     <parent link="kurtana_pole_link"/>
     <child link="kurtana_microphone_link"/>
-    <origin xyz="0.06 -0.055 0.3825"/>
+    <origin xyz="0.06 -0.055 0.535"/>
   </joint>
   <link name="kurtana_microphone_link">
     <visual>
@@ -105,7 +105,7 @@
   <joint name="kurtana_horizontal_square_bar_joint" type="fixed">
     <parent link="kurtana_pole_link"/>
     <child link="kurtana_horizontal_square_bar_link"/>
-    <origin xyz="0.0715 0 0.3325"/>
+    <origin xyz="0.0715 0 0.485"/>
   </joint>
   <link name="kurtana_horizontal_square_bar_link">
     <visual>
@@ -421,13 +421,13 @@
       <material name="JacoGrey"/>
       <!--origin xyz="0 0 -0.0525" rpy="0 0 0"/-->
       <geometry>
-        <mesh filename="package://jaco_description/meshes/joint_1.dae" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://jaco_description/meshes/joint_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </visual>
     <collision>
       <!--origin xyz="0 0 -0.0525" rpy="0 0 0"/-->
       <geometry>
-        <mesh filename="package://jaco_description/meshes/joint_1.dae" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://jaco_description/meshes/joint_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -453,13 +453,13 @@
       <material name="JacoGrey"/>
       <origin rpy="0 0 -1.570796327" xyz="0 0 -0.12"/>
       <geometry>
-        <mesh filename="package://jaco_description/meshes/joint_2.dae" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://jaco_description/meshes/joint_2.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </visual>
     <collision>
       <origin rpy="0 0 -1.570796327" xyz="0 0 -0.12"/>
       <geometry>
-        <mesh filename="package://jaco_description/meshes/joint_2.dae" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://jaco_description/meshes/joint_2.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -484,13 +484,13 @@
       <material name="JacoGrey"/>
       <origin rpy="0 1.570796327 0" xyz="0 0 0.015"/>
       <geometry>
-        <mesh filename="package://jaco_description/meshes/joint_3.dae" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://jaco_description/meshes/joint_3.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </visual>
     <collision>
       <origin rpy="0 1.570796327 0" xyz="0 0 0.015"/>
       <geometry>
-        <mesh filename="package://jaco_description/meshes/joint_3.dae" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://jaco_description/meshes/joint_3.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -515,13 +515,13 @@
       <material name="JacoGrey"/>
       <origin rpy="0 1.570796327 1.570796327" xyz="0 0 -0.012"/>
       <geometry>
-        <mesh filename="package://jaco_description/meshes/joint_4.dae" scale="1.000 1.000 1.000"/>
+        <mesh filename="package://jaco_description/meshes/joint_4.stl" scale="1.000 1.000 1.000"/>
       </geometry>
     </visual>
     <collision>
       <origin rpy="0 1.570796327 1.570796327" xyz="0 0 -0.012"/>
       <geometry>
-        <mesh filename="package://jaco_description/meshes/joint_4.dae" scale="1.000 1.000 1.000"/>
+        <mesh filename="package://jaco_description/meshes/joint_4.stl" scale="1.000 1.000 1.000"/>
       </geometry>
     </collision>
   </link>
@@ -546,13 +546,13 @@
       <material name="JacoGrey"/>
       <origin rpy="0 0 -1.570796327" xyz="0 0 -0.042276823"/>
       <geometry>
-        <mesh filename="package://jaco_description/meshes/joint_5.dae" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://jaco_description/meshes/joint_5.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </visual>
     <collision>
       <origin rpy="0 0 -1.570796327" xyz="0 0 -0.042276823"/>
       <geometry>
-        <mesh filename="package://jaco_description/meshes/joint_5.dae" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://jaco_description/meshes/joint_5.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -577,13 +577,13 @@
       <material name="JacoGrey"/>
       <origin rpy="0 -0.959931089 1.570796327" xyz="0 0 -0.042276823"/>
       <geometry>
-        <mesh filename="package://jaco_description/meshes/joint_6.dae" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://jaco_description/meshes/joint_6.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </visual>
     <collision>
       <origin rpy="0 -0.959931089 1.570796327" xyz="0 0 -0.042276823"/>
       <geometry>
-        <mesh filename="package://jaco_description/meshes/joint_6.dae" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://jaco_description/meshes/joint_6.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -611,14 +611,14 @@
       <!--origin xyz="0 0 -0.1850" rpy="0 0 -3.1415926535897931"/-->
       <origin rpy="0 0 0" xyz="0 0 -0.1850"/>
       <geometry>
-        <mesh filename="package://jaco_description/meshes/hand_with_noFinger.dae" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://jaco_description/meshes/hand_with_noFinger.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </visual>
     <collision>
       <!--origin xyz="0 0 -0.1850" rpy="0 0 -3.1415926535897931"/-->
       <origin rpy="0 0 0" xyz="0 0 -0.1850"/>
       <geometry>
-        <mesh filename="package://jaco_description/meshes/hand_with_noFinger.dae" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://jaco_description/meshes/hand_with_noFinger.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -629,7 +629,7 @@
   <joint name="jaco_gripper_tool_frame_joint" type="fixed">
     <parent link="jaco_link_6"/>
     <child link="jaco_gripper_tool_frame"/>
-    <origin rpy="0 -1.57079632679 1.57079632679" xyz="0 0 0"/>
+    <origin rpy="-0.2 -1.57079632679 1.57079632679" xyz="0 0 0"/>
   </joint>
   <link name="jaco_gripper_tool_frame">
     <!-- This is the coordinate system of the tool (this is the position
@@ -654,13 +654,13 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://jaco_description/meshes/finger.dae" scale="1 1 1"/>
+        <mesh filename="package://jaco_description/meshes/finger.stl" scale="1 1 1"/>
       </geometry>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://jaco_description/meshes/finger.dae" scale="1 1 1"/>
+        <mesh filename="package://jaco_description/meshes/finger.stl" scale="1 1 1"/>
       </geometry>
     </collision>
   </link>
@@ -685,13 +685,13 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://jaco_description/meshes/finger.dae" scale="1 1 1"/>
+        <mesh filename="package://jaco_description/meshes/finger.stl" scale="1 1 1"/>
       </geometry>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://jaco_description/meshes/finger.dae" scale="1 1 1"/>
+        <mesh filename="package://jaco_description/meshes/finger.stl" scale="1 1 1"/>
       </geometry>
     </collision>
   </link>
@@ -716,13 +716,13 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://jaco_description/meshes/finger.dae" scale="1 1 1"/>
+        <mesh filename="package://jaco_description/meshes/finger.stl" scale="1 1 1"/>
       </geometry>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://jaco_description/meshes/finger.dae" scale="1 1 1"/>
+        <mesh filename="package://jaco_description/meshes/finger.stl" scale="1 1 1"/>
       </geometry>
     </collision>
   </link>

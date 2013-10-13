@@ -13,6 +13,19 @@ controller_list:
         - jaco_joint_6
 
 
-        #- jaco_finger_1_joint
-        #- jaco_finger_2_joint
-        #- jaco_finger_3_joint
+  - name: "jaco_gripper_controller"
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    default: true
+    joints:
+        - jaco_finger_joint_1
+        - jaco_finger_joint_2
+        - jaco_finger_joint_3
+
+ # - name: gripper_controller
+  #  type: GripperCommand
+   # default: true
+    #joints:
+        #- jaco_finger_joint_1
+        #- jaco_finger_joint_2
+        #- jaco_finger_joint_3
