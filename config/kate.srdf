@@ -40,8 +40,6 @@
     <disable_collisions link1="base_link" link2="jaco_link_1" reason="Never" />
     <disable_collisions link1="base_link" link2="jaco_link_2" reason="Never" />
     <disable_collisions link1="base_link" link2="jaco_link_3" reason="Never" />
-    <disable_collisions link1="base_link" link2="jaco_link_4" reason="Never" />
-    <disable_collisions link1="base_link" link2="jaco_link_5" reason="Never" />
     <disable_collisions link1="base_link" link2="katana_baseplate_link" reason="Never" />
     <disable_collisions link1="base_link" link2="kinect_link" reason="Never" />
     <disable_collisions link1="base_link" link2="kurtana_baseplate_link" reason="Adjacent" />
@@ -97,20 +95,18 @@
     <disable_collisions link1="jaco_link_1" link2="kurtana_vertical_square_bar_link" reason="Never" />
     <disable_collisions link1="jaco_link_2" link2="jaco_link_3" reason="Adjacent" />
     <disable_collisions link1="jaco_link_2" link2="jaco_link_4" reason="Never" />
-    <disable_collisions link1="jaco_link_2" link2="katana_baseplate_link" reason="Never" />
     <disable_collisions link1="jaco_link_2" link2="kinect_link" reason="Never" />
-    <disable_collisions link1="jaco_link_2" link2="kurtana_baseplate_link" reason="Never" />
     <disable_collisions link1="jaco_link_2" link2="kurtana_horizontal_square_bar_link" reason="Never" />
     <disable_collisions link1="jaco_link_2" link2="kurtana_kinect_mounting_plate_link" reason="Never" />
     <disable_collisions link1="jaco_link_2" link2="kurtana_microphone_link" reason="Never" />
     <disable_collisions link1="jaco_link_2" link2="kurtana_pitch_servo_link" reason="Never" />
     <disable_collisions link1="jaco_link_2" link2="kurtana_pitch_servo_movable_part_link" reason="Never" />
+    <disable_collisions link1="jaco_link_2" link2="kurtana_pole_link" reason="Never" />
     <disable_collisions link1="jaco_link_2" link2="kurtana_roll_servo_link" reason="Never" />
     <disable_collisions link1="jaco_link_2" link2="kurtana_vertical_square_bar_link" reason="Never" />
     <disable_collisions link1="jaco_link_3" link2="jaco_link_4" reason="Adjacent" />
     <disable_collisions link1="jaco_link_3" link2="jaco_link_5" reason="Never" />
     <disable_collisions link1="jaco_link_3" link2="jaco_link_6" reason="Never" />
-    <disable_collisions link1="jaco_link_3" link2="katana_baseplate_link" reason="Never" />
     <disable_collisions link1="jaco_link_3" link2="kinect_link" reason="Never" />
     <disable_collisions link1="jaco_link_3" link2="kurtana_horizontal_square_bar_link" reason="Never" />
     <disable_collisions link1="jaco_link_3" link2="kurtana_kinect_mounting_plate_link" reason="Never" />
@@ -134,6 +130,7 @@
     <disable_collisions link1="jaco_link_5" link2="kurtana_kinect_mounting_plate_link" reason="Never" />
     <disable_collisions link1="jaco_link_5" link2="kurtana_pitch_servo_link" reason="Never" />
     <disable_collisions link1="jaco_link_5" link2="kurtana_pitch_servo_movable_part_link" reason="Never" />
+    <disable_collisions link1="jaco_link_5" link2="kurtana_roll_servo_link" reason="Never" />
     <disable_collisions link1="katana_baseplate_link" link2="kinect_link" reason="Never" />
     <disable_collisions link1="katana_baseplate_link" link2="kurtana_baseplate_link" reason="Adjacent" />
     <disable_collisions link1="katana_baseplate_link" link2="kurtana_horizontal_square_bar_link" reason="Never" />

@@ -629,7 +629,7 @@
   <joint name="jaco_gripper_tool_frame_joint" type="fixed">
     <parent link="jaco_link_6"/>
     <child link="jaco_gripper_tool_frame"/>
-    <origin rpy="-0.2 -1.57079632679 1.57079632679" xyz="0 0 0"/>
+    <origin rpy="-0.2 -1.57079632679 1.57079632679" xyz="0 0 -0.08"/>
   </joint>
   <link name="jaco_gripper_tool_frame">
     <!-- This is the coordinate system of the tool (this is the position
@@ -733,7 +733,7 @@
   <joint name="kurtana_baseplate_katana_baseplate_joint" type="fixed">
     <parent link="katana_baseplate_link"/>
     <child link="jaco_base_link"/>
-    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <origin rpy="1.57079632679 3.14159265359 1.57079632679" xyz="-0.27 0 0.27"/>
   </joint>
   <link name="base_link">
     <visual name="base_visual">
